@@ -1,0 +1,1261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2015E1F18EAD18700103FBE /* libSapanaViewerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */; };
+		E205F1D818D9D0780056AA87 /* TransformationVisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E205F1D618D9D0780056AA87 /* TransformationVisualizationViewController.m */; };
+		E205F1D918D9D0780056AA87 /* TransformationVisualizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E205F1D718D9D0780056AA87 /* TransformationVisualizationViewController.xib */; };
+		E206692F18C7C1460053B6FA /* CSTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E206692D18C7C1460053B6FA /* CSTopicViewController.m */; };
+		E206693018C7C1460053B6FA /* CSTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206692E18C7C1460053B6FA /* CSTopicViewController.xib */; };
+		E206693418C7C1B50053B6FA /* ModelCameraSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E206693218C7C1B50053B6FA /* ModelCameraSelectionViewController.m */; };
+		E206693518C7C1B50053B6FA /* ModelCameraSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206693318C7C1B50053B6FA /* ModelCameraSelectionViewController.xib */; };
+		E221D3EA18C6609B00508E1A /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E221D3E818C6609B00508E1A /* PreviewViewController.m */; };
+		E221D3EB18C6609B00508E1A /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E221D3E918C6609B00508E1A /* PreviewViewController.xib */; };
+		E254BB8218E2D6090017AFEA /* ModelInformationWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E254BB8118E2D6090017AFEA /* ModelInformationWrapper.mm */; };
+		E254BB8A18E2DA480017AFEA /* ModelInformationImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E254BB8918E2DA480017AFEA /* ModelInformationImpl.mm */; };
+		E255B6F918C8CF84003BEBA9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E255B6F818C8CF84003BEBA9 /* GLKit.framework */; };
+		E25710B518CDF311008537F1 /* SceneNodeModifierWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E25710B418CDF311008537F1 /* SceneNodeModifierWrapper.mm */; };
+		E25848E418C4972C004AEEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848E318C4972C004AEEDB /* Foundation.framework */; };
+		E25848E618C4972C004AEEDB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848E518C4972C004AEEDB /* CoreGraphics.framework */; };
+		E25848E818C4972C004AEEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848E718C4972C004AEEDB /* UIKit.framework */; };
+		E25848EE18C4972C004AEEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E25848EC18C4972C004AEEDB /* InfoPlist.strings */; };
+		E25848F018C4972C004AEEDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25848EF18C4972C004AEEDB /* main.m */; };
+		E25848F418C4972C004AEEDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E25848F318C4972C004AEEDB /* AppDelegate.m */; };
+		E25848F618C4972C004AEEDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25848F518C4972C004AEEDB /* Images.xcassets */; };
+		E25848FD18C4972D004AEEDB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848FC18C4972D004AEEDB /* XCTest.framework */; };
+		E25848FE18C4972D004AEEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848E318C4972C004AEEDB /* Foundation.framework */; };
+		E25848FF18C4972D004AEEDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25848E718C4972C004AEEDB /* UIKit.framework */; };
+		E258490718C4972D004AEEDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E258490518C4972D004AEEDB /* InfoPlist.strings */; };
+		E258490918C4972D004AEEDB /* SapanaViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E258490818C4972D004AEEDB /* SapanaViewerTests.m */; };
+		E258491618C49E54004AEEDB /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258491518C49E54004AEEDB /* MainMenuViewController.m */; };
+		E258491918C49E6F004AEEDB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258491818C49E6F004AEEDB /* MainViewController.m */; };
+		E258491C18C49E77004AEEDB /* ModelLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258491B18C49E77004AEEDB /* ModelLoaderViewController.m */; };
+		E258491F18C49E80004AEEDB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258491E18C49E80004AEEDB /* SettingsViewController.m */; };
+		E258492518C4A86C004AEEDB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E258492418C4A86C004AEEDB /* MainViewController.xib */; };
+		E258492718C4C5CB004AEEDB /* SapanaViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E258492618C4C5CB004AEEDB /* SapanaViewer.storyboard */; };
+		E258492A18C4C932004AEEDB /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258492918C4C932004AEEDB /* ContentViewController.m */; };
+		E258493018C4CA4C004AEEDB /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E258492E18C4CA4C004AEEDB /* CenterViewController.m */; };
+		E25B93DB18C8771D008D84DC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = E25B93DA18C8771D008D84DC /* Config.m */; };
+		E25B93DF18C89DD1008D84DC /* SapanaViewerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E25B93DE18C89DD1008D84DC /* SapanaViewerWrapper.mm */; };
+		E25C86F218D1A5E900BE78B1 /* colorPicker.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = E25C86F118D1A5E900BE78B1 /* colorPicker.bundle */; };
+		E25C870818D1A73A00BE78B1 /* colorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E25C86F518D1A73A00BE78B1 /* colorPicker.bundle */; };
+		E25C870918D1A73A00BE78B1 /* NEOColorPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C86F718D1A73A00BE78B1 /* NEOColorPickerBaseViewController.m */; };
+		E25C870A18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C86F918D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.m */; };
+		E25C870B18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25C86FA18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.xib */; };
+		E25C870C18D1A73A00BE78B1 /* NEOColorPickerGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C86FC18D1A73A00BE78B1 /* NEOColorPickerGradientView.m */; };
+		E25C870D18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C86FE18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.m */; };
+		E25C870E18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25C86FF18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib */; };
+		E25C870F18D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C870118D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.m */; };
+		E25C871018D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25C870218D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.xib */; };
+		E25C871118D1A73A00BE78B1 /* NEOColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C870418D1A73A00BE78B1 /* NEOColorPickerViewController.m */; };
+		E25C871218D1A73A00BE78B1 /* NEOColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25C870518D1A73A00BE78B1 /* NEOColorPickerViewController.xib */; };
+		E25C871318D1A73A00BE78B1 /* UIColor+NEOColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C870718D1A73A00BE78B1 /* UIColor+NEOColor.m */; };
+		E26568E718D6F097002CAE46 /* HierarchicalListControllerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26568E618D6F097002CAE46 /* HierarchicalListControllerWrapper.mm */; };
+		E26568EA18D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26568E918D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.mm */; };
+		E26568F718D73F89002CAE46 /* HierarchicalListItemWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26568F618D73F89002CAE46 /* HierarchicalListItemWrapper.mm */; };
+		E28EDC0118C5E11D00728B62 /* TopPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28EDBFF18C5E11D00728B62 /* TopPanelViewController.m */; };
+		E28EDC0218C5E11D00728B62 /* TopPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28EDC0018C5E11D00728B62 /* TopPanelViewController.xib */; };
+		E28EDC0518C6050F00728B62 /* TopicContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E28EDC0418C6050F00728B62 /* TopicContainer.m */; };
+		E28EDC0918C6056500728B62 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28EDC0718C6056500728B62 /* TopicViewController.m */; };
+		E28EDC0A18C6056500728B62 /* TopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28EDC0818C6056500728B62 /* TopicViewController.xib */; };
+		E28EDC0E18C61DDF00728B62 /* SceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28EDC0C18C61DDF00728B62 /* SceneViewController.m */; };
+		E28EDC0F18C61DDF00728B62 /* SceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28EDC0D18C61DDF00728B62 /* SceneViewController.xib */; };
+		E28EDC1218C627D500728B62 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E28EDC1118C627D500728B62 /* Util.m */; };
+		E29323CD18EAB64D009DB6C6 /* LeftPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29323CC18EAB64D009DB6C6 /* LeftPanelViewController.m */; };
+		E29323D018EAB659009DB6C6 /* RightPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29323CF18EAB659009DB6C6 /* RightPanelViewController.m */; };
+		E29323D218EAB67D009DB6C6 /* RightPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29323D118EAB67D009DB6C6 /* RightPanelViewController.xib */; };
+		E29323D418EAB689009DB6C6 /* LeftPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29323D318EAB689009DB6C6 /* LeftPanelViewController.xib */; };
+		E29323D618EAB693009DB6C6 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29323D518EAB693009DB6C6 /* CenterViewController.xib */; };
+		E2987C0518C7C77D008C00F5 /* HMTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2987C0318C7C77D008C00F5 /* HMTopicViewController.m */; };
+		E2987C0618C7C77D008C00F5 /* HMTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2987C0418C7C77D008C00F5 /* HMTopicViewController.xib */; };
+		E2987C0A18C7C9AA008C00F5 /* CSInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2987C0818C7C9AA008C00F5 /* CSInformationViewController.m */; };
+		E2987C0B18C7C9AA008C00F5 /* CSInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2987C0918C7C9AA008C00F5 /* CSInformationViewController.xib */; };
+		E2987C0F18C7CA8B008C00F5 /* CSConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2987C0D18C7CA8B008C00F5 /* CSConfigurationViewController.m */; };
+		E2987C1018C7CA8B008C00F5 /* CSConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2987C0E18C7CA8B008C00F5 /* CSConfigurationViewController.xib */; };
+		E2987C1418C7CE12008C00F5 /* HModelSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2987C1218C7CE12008C00F5 /* HModelSelectionViewController.m */; };
+		E2987C1518C7CE12008C00F5 /* HModelSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2987C1318C7CE12008C00F5 /* HModelSelectionViewController.xib */; };
+		E2987C1918C7CF95008C00F5 /* HMInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2987C1718C7CF95008C00F5 /* HMInformationViewController.m */; };
+		E2987C1A18C7CF95008C00F5 /* HMInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2987C1818C7CF95008C00F5 /* HMInformationViewController.xib */; };
+		E29A7B8018C7345C00B55EF0 /* ConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7B7E18C7345C00B55EF0 /* ConfigurationViewController.m */; };
+		E29A7B8118C7345C00B55EF0 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7B7F18C7345C00B55EF0 /* ConfigurationViewController.xib */; };
+		E29A7B8818C736C000B55EF0 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7B8618C736C000B55EF0 /* InformationViewController.m */; };
+		E29A7B8918C736C000B55EF0 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7B8718C736C000B55EF0 /* InformationViewController.xib */; };
+		E29A7B8D18C7382800B55EF0 /* SelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7B8B18C7382800B55EF0 /* SelectionViewController.m */; };
+		E29A7B8E18C7382800B55EF0 /* SelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7B8C18C7382800B55EF0 /* SelectionViewController.xib */; };
+		E29A7B9518C7523700B55EF0 /* ModelSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7B9318C7523700B55EF0 /* ModelSelectionViewController.m */; };
+		E29A7B9618C7523700B55EF0 /* ModelSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7B9418C7523700B55EF0 /* ModelSelectionViewController.xib */; };
+		E29A7B9B18C75BC900B55EF0 /* ModelingTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7B9918C75BC900B55EF0 /* ModelingTopicViewController.m */; };
+		E29A7B9C18C75BC900B55EF0 /* ModelingTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7B9A18C75BC900B55EF0 /* ModelingTopicViewController.xib */; };
+		E29A7BA318C76BEF00B55EF0 /* ModelConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7BA118C76BEF00B55EF0 /* ModelConfigurationViewController.m */; };
+		E29A7BA418C76BEF00B55EF0 /* ModelConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7BA218C76BEF00B55EF0 /* ModelConfigurationViewController.xib */; };
+		E29A7BAA18C76EA400B55EF0 /* ModelInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7BA818C76EA400B55EF0 /* ModelInformationViewController.m */; };
+		E29A7BAB18C76EA400B55EF0 /* ModelInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7BA918C76EA400B55EF0 /* ModelInformationViewController.xib */; };
+		E29A7BAE18C7713C00B55EF0 /* TransformationTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7BAD18C7713C00B55EF0 /* TransformationTopicViewController.m */; };
+		E29A7BB018C7716600B55EF0 /* TransformationTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7BAF18C7716600B55EF0 /* TransformationTopicViewController.xib */; };
+		E29A7BB318C773B300B55EF0 /* TransformationInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7BB218C773B300B55EF0 /* TransformationInformationViewController.m */; };
+		E29A7BB518C773D500B55EF0 /* TransformationInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7BB418C773D500B55EF0 /* TransformationInformationViewController.xib */; };
+		E29A7BB818C7778400B55EF0 /* TransformationConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29A7BB718C7778400B55EF0 /* TransformationConfigurationViewController.m */; };
+		E29A7BBA18C777B000B55EF0 /* TransformationConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29A7BB918C777B000B55EF0 /* TransformationConfigurationViewController.xib */; };
+		E2C9C00E18CF591F0058E016 /* SapanaViewerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2C9C00D18CF591F0058E016 /* SapanaViewerImpl.mm */; };
+		E2C9C01118CF5EC90058E016 /* TopicContainerCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C9C01018CF5EC90058E016 /* TopicContainerCollection.m */; };
+		E2CC4E0018C6660E0045B945 /* VisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CC4DFE18C6660E0045B945 /* VisualizationViewController.m */; };
+		E2CC4E0118C6660E0045B945 /* VisualizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CC4DFF18C6660E0045B945 /* VisualizationViewController.xib */; };
+		E2D0DE7418DF153E001065CD /* MatrixMultiplicationVisualisationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0DE7218DF153E001065CD /* MatrixMultiplicationVisualisationViewController.m */; };
+		E2D0DE7518DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D0DE7318DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib */; };
+		E2D0DE7918DF18AC001065CD /* HMVisualisationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0DE7718DF18AC001065CD /* HMVisualisationViewController.m */; };
+		E2D0DE7A18DF18AC001065CD /* HMVisualisationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D0DE7818DF18AC001065CD /* HMVisualisationViewController.xib */; };
+		E2DC45E418DC32E800E0EA29 /* TopicLayoutProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC45E318DC32E800E0EA29 /* TopicLayoutProperties.m */; };
+		E2E63B4A18D88B350072319F /* MatrixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E63B4818D88B350072319F /* MatrixViewController.m */; };
+		E2E63B4B18D88B350072319F /* MatrixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E63B4918D88B350072319F /* MatrixViewController.xib */; };
+		E2E63B4E18D89CCE0072319F /* TransMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E63B4D18D89CCE0072319F /* TransMatrix.m */; };
+		E2E63B5118D8A2B70072319F /* WrapperUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E63B5018D8A2B70072319F /* WrapperUtils.mm */; };
+		E2E7F8C118CF132000DDEDEA /* ListWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E7F8C018CF132000DDEDEA /* ListWrapper.mm */; };
+		E2E7F8C518CF259900DDEDEA /* ListWrapperImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E7F8C418CF259900DDEDEA /* ListWrapperImpl.mm */; };
+		E2E7F8CA18CF277600DDEDEA /* SceneNodeControllerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2E7F8C918CF277600DDEDEA /* SceneNodeControllerImpl.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E258490018C4972D004AEEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25848D818C4972C004AEEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25848DF18C4972C004AEEDB;
+			remoteInfo = SapanaViewer;
+		};
+		E2B5B72D18E17C3000E0DA59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E23FDB781860678B007BC04F;
+			remoteInfo = SapanaViewerLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E205F1D518D9D0780056AA87 /* TransformationVisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationVisualizationViewController.h; sourceTree = "<group>"; };
+		E205F1D618D9D0780056AA87 /* TransformationVisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationVisualizationViewController.m; sourceTree = "<group>"; };
+		E205F1D718D9D0780056AA87 /* TransformationVisualizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformationVisualizationViewController.xib; sourceTree = "<group>"; };
+		E206692C18C7C1460053B6FA /* CSTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTopicViewController.h; sourceTree = "<group>"; };
+		E206692D18C7C1460053B6FA /* CSTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTopicViewController.m; sourceTree = "<group>"; };
+		E206692E18C7C1460053B6FA /* CSTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTopicViewController.xib; sourceTree = "<group>"; };
+		E206693118C7C1B50053B6FA /* ModelCameraSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCameraSelectionViewController.h; sourceTree = "<group>"; };
+		E206693218C7C1B50053B6FA /* ModelCameraSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCameraSelectionViewController.m; sourceTree = "<group>"; };
+		E206693318C7C1B50053B6FA /* ModelCameraSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelCameraSelectionViewController.xib; sourceTree = "<group>"; };
+		E221D3E718C6609B00508E1A /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		E221D3E818C6609B00508E1A /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		E221D3E918C6609B00508E1A /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		E254BB8018E2D6090017AFEA /* ModelInformationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInformationWrapper.h; sourceTree = "<group>"; };
+		E254BB8118E2D6090017AFEA /* ModelInformationWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelInformationWrapper.mm; sourceTree = "<group>"; };
+		E254BB8818E2DA480017AFEA /* ModelInformationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInformationImpl.h; sourceTree = "<group>"; };
+		E254BB8918E2DA480017AFEA /* ModelInformationImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelInformationImpl.mm; sourceTree = "<group>"; };
+		E255B6F818C8CF84003BEBA9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E25710B318CDF311008537F1 /* SceneNodeModifierWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneNodeModifierWrapper.h; sourceTree = "<group>"; };
+		E25710B418CDF311008537F1 /* SceneNodeModifierWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneNodeModifierWrapper.mm; sourceTree = "<group>"; };
+		E25848E018C4972C004AEEDB /* SapanaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapanaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25848E318C4972C004AEEDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E25848E518C4972C004AEEDB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E25848E718C4972C004AEEDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E25848EB18C4972C004AEEDB /* SapanaViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SapanaViewer-Info.plist"; sourceTree = "<group>"; };
+		E25848ED18C4972C004AEEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E25848EF18C4972C004AEEDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25848F118C4972C004AEEDB /* SapanaViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SapanaViewer-Prefix.pch"; sourceTree = "<group>"; };
+		E25848F218C4972C004AEEDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E25848F318C4972C004AEEDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E25848F518C4972C004AEEDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E25848FB18C4972D004AEEDB /* SapanaViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapanaViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25848FC18C4972D004AEEDB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E258490418C4972D004AEEDB /* SapanaViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SapanaViewerTests-Info.plist"; sourceTree = "<group>"; };
+		E258490618C4972D004AEEDB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E258490818C4972D004AEEDB /* SapanaViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SapanaViewerTests.m; sourceTree = "<group>"; };
+		E258491418C49E54004AEEDB /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		E258491518C49E54004AEEDB /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		E258491718C49E6F004AEEDB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E258491818C49E6F004AEEDB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E258491A18C49E77004AEEDB /* ModelLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLoaderViewController.h; sourceTree = "<group>"; };
+		E258491B18C49E77004AEEDB /* ModelLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLoaderViewController.m; sourceTree = "<group>"; };
+		E258491D18C49E80004AEEDB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E258491E18C49E80004AEEDB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E258492418C4A86C004AEEDB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E258492618C4C5CB004AEEDB /* SapanaViewer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SapanaViewer.storyboard; sourceTree = "<group>"; };
+		E258492818C4C932004AEEDB /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		E258492918C4C932004AEEDB /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		E258492D18C4CA4C004AEEDB /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		E258492E18C4CA4C004AEEDB /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		E25B93D918C8771D008D84DC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		E25B93DA18C8771D008D84DC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		E25B93DD18C89DD1008D84DC /* SapanaViewerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SapanaViewerWrapper.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E25B93DE18C89DD1008D84DC /* SapanaViewerWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = SapanaViewerWrapper.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E25C86F118D1A5E900BE78B1 /* colorPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = colorPicker.bundle; path = "../../../../../../../Downloads/kartech-colorpicker-4c5d3db/Source/colorPicker.bundle"; sourceTree = "<group>"; };
+		E25C86F518D1A73A00BE78B1 /* colorPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = colorPicker.bundle; sourceTree = "<group>"; };
+		E25C86F618D1A73A00BE78B1 /* NEOColorPickerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerBaseViewController.h; sourceTree = "<group>"; };
+		E25C86F718D1A73A00BE78B1 /* NEOColorPickerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerBaseViewController.m; sourceTree = "<group>"; };
+		E25C86F818D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerFavoritesViewController.h; sourceTree = "<group>"; };
+		E25C86F918D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerFavoritesViewController.m; sourceTree = "<group>"; };
+		E25C86FA18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerFavoritesViewController.xib; sourceTree = "<group>"; };
+		E25C86FB18D1A73A00BE78B1 /* NEOColorPickerGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerGradientView.h; sourceTree = "<group>"; };
+		E25C86FC18D1A73A00BE78B1 /* NEOColorPickerGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerGradientView.m; sourceTree = "<group>"; };
+		E25C86FD18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHSLViewController.h; sourceTree = "<group>"; };
+		E25C86FE18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHSLViewController.m; sourceTree = "<group>"; };
+		E25C86FF18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHSLViewController.xib; sourceTree = "<group>"; };
+		E25C870018D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHueGridViewController.h; sourceTree = "<group>"; };
+		E25C870118D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHueGridViewController.m; sourceTree = "<group>"; };
+		E25C870218D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHueGridViewController.xib; sourceTree = "<group>"; };
+		E25C870318D1A73A00BE78B1 /* NEOColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerViewController.h; sourceTree = "<group>"; };
+		E25C870418D1A73A00BE78B1 /* NEOColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerViewController.m; sourceTree = "<group>"; };
+		E25C870518D1A73A00BE78B1 /* NEOColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerViewController.xib; sourceTree = "<group>"; };
+		E25C870618D1A73A00BE78B1 /* UIColor+NEOColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NEOColor.h"; sourceTree = "<group>"; };
+		E25C870718D1A73A00BE78B1 /* UIColor+NEOColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NEOColor.m"; sourceTree = "<group>"; };
+		E26568E518D6F097002CAE46 /* HierarchicalListControllerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HierarchicalListControllerWrapper.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E26568E618D6F097002CAE46 /* HierarchicalListControllerWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = HierarchicalListControllerWrapper.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E26568E818D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HierarchicalListControllerWrapperImpl.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E26568E918D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = HierarchicalListControllerWrapperImpl.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E26568F518D73F89002CAE46 /* HierarchicalListItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HierarchicalListItemWrapper.h; sourceTree = "<group>"; };
+		E26568F618D73F89002CAE46 /* HierarchicalListItemWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HierarchicalListItemWrapper.mm; sourceTree = "<group>"; };
+		E28EDBFE18C5E11D00728B62 /* TopPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPanelViewController.h; sourceTree = "<group>"; };
+		E28EDBFF18C5E11D00728B62 /* TopPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPanelViewController.m; sourceTree = "<group>"; };
+		E28EDC0018C5E11D00728B62 /* TopPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopPanelViewController.xib; sourceTree = "<group>"; };
+		E28EDC0318C6050F00728B62 /* TopicContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicContainer.h; sourceTree = "<group>"; };
+		E28EDC0418C6050F00728B62 /* TopicContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicContainer.m; sourceTree = "<group>"; };
+		E28EDC0618C6056500728B62 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
+		E28EDC0718C6056500728B62 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
+		E28EDC0818C6056500728B62 /* TopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicViewController.xib; sourceTree = "<group>"; };
+		E28EDC0B18C61DDF00728B62 /* SceneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneViewController.h; sourceTree = "<group>"; };
+		E28EDC0C18C61DDF00728B62 /* SceneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneViewController.m; sourceTree = "<group>"; };
+		E28EDC0D18C61DDF00728B62 /* SceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SceneViewController.xib; sourceTree = "<group>"; };
+		E28EDC1018C627D500728B62 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		E28EDC1118C627D500728B62 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		E29323CB18EAB64D009DB6C6 /* LeftPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftPanelViewController.h; sourceTree = "<group>"; };
+		E29323CC18EAB64D009DB6C6 /* LeftPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftPanelViewController.m; sourceTree = "<group>"; };
+		E29323CE18EAB659009DB6C6 /* RightPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightPanelViewController.h; sourceTree = "<group>"; };
+		E29323CF18EAB659009DB6C6 /* RightPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPanelViewController.m; sourceTree = "<group>"; };
+		E29323D118EAB67D009DB6C6 /* RightPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightPanelViewController.xib; sourceTree = "<group>"; };
+		E29323D318EAB689009DB6C6 /* LeftPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftPanelViewController.xib; sourceTree = "<group>"; };
+		E29323D518EAB693009DB6C6 /* CenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenterViewController.xib; sourceTree = "<group>"; };
+		E2987C0218C7C77D008C00F5 /* HMTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTopicViewController.h; sourceTree = "<group>"; };
+		E2987C0318C7C77D008C00F5 /* HMTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTopicViewController.m; sourceTree = "<group>"; };
+		E2987C0418C7C77D008C00F5 /* HMTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMTopicViewController.xib; sourceTree = "<group>"; };
+		E2987C0718C7C9AA008C00F5 /* CSInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSInformationViewController.h; sourceTree = "<group>"; };
+		E2987C0818C7C9AA008C00F5 /* CSInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSInformationViewController.m; sourceTree = "<group>"; };
+		E2987C0918C7C9AA008C00F5 /* CSInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSInformationViewController.xib; sourceTree = "<group>"; };
+		E2987C0C18C7CA8B008C00F5 /* CSConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSConfigurationViewController.h; sourceTree = "<group>"; };
+		E2987C0D18C7CA8B008C00F5 /* CSConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSConfigurationViewController.m; sourceTree = "<group>"; };
+		E2987C0E18C7CA8B008C00F5 /* CSConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSConfigurationViewController.xib; sourceTree = "<group>"; };
+		E2987C1118C7CE12008C00F5 /* HModelSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HModelSelectionViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E2987C1218C7CE12008C00F5 /* HModelSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HModelSelectionViewController.m; sourceTree = "<group>"; };
+		E2987C1318C7CE12008C00F5 /* HModelSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HModelSelectionViewController.xib; sourceTree = "<group>"; };
+		E2987C1618C7CF95008C00F5 /* HMInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMInformationViewController.h; sourceTree = "<group>"; };
+		E2987C1718C7CF95008C00F5 /* HMInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMInformationViewController.m; sourceTree = "<group>"; };
+		E2987C1818C7CF95008C00F5 /* HMInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMInformationViewController.xib; sourceTree = "<group>"; };
+		E29A7B7D18C7345C00B55EF0 /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
+		E29A7B7E18C7345C00B55EF0 /* ConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationViewController.m; sourceTree = "<group>"; };
+		E29A7B7F18C7345C00B55EF0 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigurationViewController.xib; sourceTree = "<group>"; };
+		E29A7B8518C736C000B55EF0 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		E29A7B8618C736C000B55EF0 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		E29A7B8718C736C000B55EF0 /* InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		E29A7B8A18C7382800B55EF0 /* SelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionViewController.h; sourceTree = "<group>"; };
+		E29A7B8B18C7382800B55EF0 /* SelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionViewController.m; sourceTree = "<group>"; };
+		E29A7B8C18C7382800B55EF0 /* SelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionViewController.xib; sourceTree = "<group>"; };
+		E29A7B9218C7523700B55EF0 /* ModelSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSelectionViewController.h; sourceTree = "<group>"; };
+		E29A7B9318C7523700B55EF0 /* ModelSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelSelectionViewController.m; sourceTree = "<group>"; };
+		E29A7B9418C7523700B55EF0 /* ModelSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelSelectionViewController.xib; sourceTree = "<group>"; };
+		E29A7B9818C75BC900B55EF0 /* ModelingTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelingTopicViewController.h; sourceTree = "<group>"; };
+		E29A7B9918C75BC900B55EF0 /* ModelingTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelingTopicViewController.m; sourceTree = "<group>"; };
+		E29A7B9A18C75BC900B55EF0 /* ModelingTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelingTopicViewController.xib; sourceTree = "<group>"; };
+		E29A7BA018C76BEF00B55EF0 /* ModelConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelConfigurationViewController.h; sourceTree = "<group>"; };
+		E29A7BA118C76BEF00B55EF0 /* ModelConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelConfigurationViewController.m; sourceTree = "<group>"; };
+		E29A7BA218C76BEF00B55EF0 /* ModelConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelConfigurationViewController.xib; sourceTree = "<group>"; };
+		E29A7BA718C76EA400B55EF0 /* ModelInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInformationViewController.h; sourceTree = "<group>"; };
+		E29A7BA818C76EA400B55EF0 /* ModelInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInformationViewController.m; sourceTree = "<group>"; };
+		E29A7BA918C76EA400B55EF0 /* ModelInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelInformationViewController.xib; sourceTree = "<group>"; };
+		E29A7BAC18C7713C00B55EF0 /* TransformationTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationTopicViewController.h; sourceTree = "<group>"; };
+		E29A7BAD18C7713C00B55EF0 /* TransformationTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationTopicViewController.m; sourceTree = "<group>"; };
+		E29A7BAF18C7716600B55EF0 /* TransformationTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformationTopicViewController.xib; sourceTree = "<group>"; };
+		E29A7BB118C773B300B55EF0 /* TransformationInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationInformationViewController.h; sourceTree = "<group>"; };
+		E29A7BB218C773B300B55EF0 /* TransformationInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationInformationViewController.m; sourceTree = "<group>"; };
+		E29A7BB418C773D500B55EF0 /* TransformationInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransformationInformationViewController.xib; path = Images.xcassets/TransformationInformationViewController.xib; sourceTree = "<group>"; };
+		E29A7BB618C7778400B55EF0 /* TransformationConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationConfigurationViewController.h; sourceTree = "<group>"; };
+		E29A7BB718C7778400B55EF0 /* TransformationConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationConfigurationViewController.m; sourceTree = "<group>"; };
+		E29A7BB918C777B000B55EF0 /* TransformationConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformationConfigurationViewController.xib; sourceTree = "<group>"; };
+		E2A393BF18C8DF8B0033EF40 /* libSapanaViewerLibrary-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSapanaViewerLibrary-Combined.a"; path = "../SapanaViewerLibrary/lib/libSapanaViewerLibrary-Combined.a"; sourceTree = "<group>"; };
+		E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SapanaViewerLibrary.xcodeproj; path = ../../SapanaViewerLibrary/SapanaViewerLibrary.xcodeproj; sourceTree = "<group>"; };
+		E2C9C00C18CF591F0058E016 /* SapanaViewerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SapanaViewerImpl.h; sourceTree = "<group>"; };
+		E2C9C00D18CF591F0058E016 /* SapanaViewerImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SapanaViewerImpl.mm; sourceTree = "<group>"; };
+		E2C9C00F18CF5EC90058E016 /* TopicContainerCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicContainerCollection.h; sourceTree = "<group>"; };
+		E2C9C01018CF5EC90058E016 /* TopicContainerCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicContainerCollection.m; sourceTree = "<group>"; };
+		E2CC4DFD18C6660E0045B945 /* VisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizationViewController.h; sourceTree = "<group>"; };
+		E2CC4DFE18C6660E0045B945 /* VisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisualizationViewController.m; sourceTree = "<group>"; };
+		E2CC4DFF18C6660E0045B945 /* VisualizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualizationViewController.xib; sourceTree = "<group>"; };
+		E2D0DE7118DF153E001065CD /* MatrixMultiplicationVisualisationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixMultiplicationVisualisationViewController.h; sourceTree = "<group>"; };
+		E2D0DE7218DF153E001065CD /* MatrixMultiplicationVisualisationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixMultiplicationVisualisationViewController.m; sourceTree = "<group>"; };
+		E2D0DE7318DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixMultiplicationVisualisationViewController.xib; sourceTree = "<group>"; };
+		E2D0DE7618DF18AC001065CD /* HMVisualisationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMVisualisationViewController.h; sourceTree = "<group>"; };
+		E2D0DE7718DF18AC001065CD /* HMVisualisationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMVisualisationViewController.m; sourceTree = "<group>"; };
+		E2D0DE7818DF18AC001065CD /* HMVisualisationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMVisualisationViewController.xib; sourceTree = "<group>"; };
+		E2DC45E218DC32E800E0EA29 /* TopicLayoutProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicLayoutProperties.h; sourceTree = "<group>"; };
+		E2DC45E318DC32E800E0EA29 /* TopicLayoutProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicLayoutProperties.m; sourceTree = "<group>"; };
+		E2E63B4718D88B350072319F /* MatrixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixViewController.h; sourceTree = "<group>"; };
+		E2E63B4818D88B350072319F /* MatrixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixViewController.m; sourceTree = "<group>"; };
+		E2E63B4918D88B350072319F /* MatrixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatrixViewController.xib; sourceTree = "<group>"; };
+		E2E63B4C18D89CCE0072319F /* TransMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransMatrix.h; sourceTree = "<group>"; };
+		E2E63B4D18D89CCE0072319F /* TransMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransMatrix.m; sourceTree = "<group>"; };
+		E2E63B4F18D8A2B70072319F /* WrapperUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperUtils.h; sourceTree = "<group>"; };
+		E2E63B5018D8A2B70072319F /* WrapperUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WrapperUtils.mm; sourceTree = "<group>"; };
+		E2E7F8BF18CF132000DDEDEA /* ListWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListWrapper.h; sourceTree = "<group>"; };
+		E2E7F8C018CF132000DDEDEA /* ListWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ListWrapper.mm; sourceTree = "<group>"; };
+		E2E7F8C318CF259900DDEDEA /* ListWrapperImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListWrapperImpl.h; sourceTree = "<group>"; };
+		E2E7F8C418CF259900DDEDEA /* ListWrapperImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ListWrapperImpl.mm; sourceTree = "<group>"; };
+		E2E7F8C818CF277600DDEDEA /* SceneNodeControllerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneNodeControllerImpl.h; sourceTree = "<group>"; };
+		E2E7F8C918CF277600DDEDEA /* SceneNodeControllerImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneNodeControllerImpl.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25848DD18C4972C004AEEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25C86F218D1A5E900BE78B1 /* colorPicker.bundle in Frameworks */,
+				E2015E1F18EAD18700103FBE /* libSapanaViewerLibrary.a in Frameworks */,
+				E255B6F918C8CF84003BEBA9 /* GLKit.framework in Frameworks */,
+				E25848E618C4972C004AEEDB /* CoreGraphics.framework in Frameworks */,
+				E25848E818C4972C004AEEDB /* UIKit.framework in Frameworks */,
+				E25848E418C4972C004AEEDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25848F818C4972D004AEEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25848FD18C4972D004AEEDB /* XCTest.framework in Frameworks */,
+				E25848FF18C4972D004AEEDB /* UIKit.framework in Frameworks */,
+				E25848FE18C4972D004AEEDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E205F1DA18D9D0800056AA87 /* VisualizationViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E205F1D518D9D0780056AA87 /* TransformationVisualizationViewController.h */,
+				E205F1D618D9D0780056AA87 /* TransformationVisualizationViewController.m */,
+				E2D0DE7618DF18AC001065CD /* HMVisualisationViewController.h */,
+				E2D0DE7718DF18AC001065CD /* HMVisualisationViewController.m */,
+				E2D0DE6D18DF146C001065CD /* Visualisation Utils */,
+			);
+			name = VisualizationViewControllers;
+			sourceTree = "<group>";
+		};
+		E205F1DB18D9D09B0056AA87 /* Visualization Views */ = {
+			isa = PBXGroup;
+			children = (
+				E205F1D718D9D0780056AA87 /* TransformationVisualizationViewController.xib */,
+				E2D0DE7818DF18AC001065CD /* HMVisualisationViewController.xib */,
+				E2D0DE7018DF14AB001065CD /* Visualisation Utils */,
+			);
+			name = "Visualization Views";
+			sourceTree = "<group>";
+		};
+		E254BB7D18E2D59B0017AFEA /* Wrapped Types */ = {
+			isa = PBXGroup;
+			children = (
+				E254BB8018E2D6090017AFEA /* ModelInformationWrapper.h */,
+				E254BB8118E2D6090017AFEA /* ModelInformationWrapper.mm */,
+				E254BB8718E2D71A0017AFEA /* Implementations */,
+			);
+			name = "Wrapped Types";
+			sourceTree = "<group>";
+		};
+		E254BB8718E2D71A0017AFEA /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				E254BB8818E2DA480017AFEA /* ModelInformationImpl.h */,
+				E254BB8918E2DA480017AFEA /* ModelInformationImpl.mm */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		E25848D718C4972C004AEEDB = {
+			isa = PBXGroup;
+			children = (
+				E25848E918C4972C004AEEDB /* SapanaViewer */,
+				E258490218C4972D004AEEDB /* SapanaViewerTests */,
+				E25848E218C4972C004AEEDB /* Frameworks */,
+				E25848E118C4972C004AEEDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E25848E118C4972C004AEEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25848E018C4972C004AEEDB /* SapanaViewer.app */,
+				E25848FB18C4972D004AEEDB /* SapanaViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25848E218C4972C004AEEDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25C86F118D1A5E900BE78B1 /* colorPicker.bundle */,
+				E2A393BF18C8DF8B0033EF40 /* libSapanaViewerLibrary-Combined.a */,
+				E255B6F818C8CF84003BEBA9 /* GLKit.framework */,
+				E25848E318C4972C004AEEDB /* Foundation.framework */,
+				E25848E518C4972C004AEEDB /* CoreGraphics.framework */,
+				E25848E718C4972C004AEEDB /* UIKit.framework */,
+				E25848FC18C4972D004AEEDB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E25848E918C4972C004AEEDB /* SapanaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				E258492118C4A273004AEEDB /* Classes */,
+				E258492018C4A263004AEEDB /* Views */,
+				E25C86F318D1A6E900BE78B1 /* Libraries and Frameworks */,
+				E25848F518C4972C004AEEDB /* Images.xcassets */,
+				E25848EA18C4972C004AEEDB /* Supporting Files */,
+			);
+			path = SapanaViewer;
+			sourceTree = "<group>";
+		};
+		E25848EA18C4972C004AEEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E25848EB18C4972C004AEEDB /* SapanaViewer-Info.plist */,
+				E25848EC18C4972C004AEEDB /* InfoPlist.strings */,
+				E25848EF18C4972C004AEEDB /* main.m */,
+				E25848F118C4972C004AEEDB /* SapanaViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E258490218C4972D004AEEDB /* SapanaViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E258490818C4972D004AEEDB /* SapanaViewerTests.m */,
+				E258490318C4972D004AEEDB /* Supporting Files */,
+			);
+			path = SapanaViewerTests;
+			sourceTree = "<group>";
+		};
+		E258490318C4972D004AEEDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E258490418C4972D004AEEDB /* SapanaViewerTests-Info.plist */,
+				E258490518C4972D004AEEDB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E258492018C4A263004AEEDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E258492618C4C5CB004AEEDB /* SapanaViewer.storyboard */,
+				E29A7B8318C7347800B55EF0 /* Main Menu */,
+				E29A7B8218C7346400B55EF0 /* Panels */,
+				E29A7B8418C7349600B55EF0 /* Topic View */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E258492118C4A273004AEEDB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E25848F218C4972C004AEEDB /* AppDelegate.h */,
+				E25848F318C4972C004AEEDB /* AppDelegate.m */,
+				E25B93DC18C89DBD008D84DC /* Wraper */,
+				E258491718C49E6F004AEEDB /* MainViewController.h */,
+				E258491818C49E6F004AEEDB /* MainViewController.m */,
+				E2CC4E0418C66EF80045B945 /* Util */,
+				E2CC4E0318C66EB40045B945 /* Main Menu */,
+				E2CC4E0218C66E860045B945 /* Panels */,
+				E2CC4E0518C66F0A0045B945 /* Topic view */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E25B93DC18C89DBD008D84DC /* Wraper */ = {
+			isa = PBXGroup;
+			children = (
+				E278FEFF18E46B5B00331A35 /* Wrapped Controller */,
+				E2E7F8BF18CF132000DDEDEA /* ListWrapper.h */,
+				E2E7F8C018CF132000DDEDEA /* ListWrapper.mm */,
+				E2E7F8C318CF259900DDEDEA /* ListWrapperImpl.h */,
+				E2E7F8C418CF259900DDEDEA /* ListWrapperImpl.mm */,
+				E26568F518D73F89002CAE46 /* HierarchicalListItemWrapper.h */,
+				E26568F618D73F89002CAE46 /* HierarchicalListItemWrapper.mm */,
+				E254BB7D18E2D59B0017AFEA /* Wrapped Types */,
+				E2E63B4F18D8A2B70072319F /* WrapperUtils.h */,
+				E2E63B5018D8A2B70072319F /* WrapperUtils.mm */,
+			);
+			name = Wraper;
+			sourceTree = "<group>";
+		};
+		E25C86F318D1A6E900BE78B1 /* Libraries and Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5B72718E17C2100E0DA59 /* Sapana Viewer Library */,
+				E25C86F418D1A71200BE78B1 /* Color Picker */,
+			);
+			name = "Libraries and Frameworks";
+			sourceTree = "<group>";
+		};
+		E25C86F418D1A71200BE78B1 /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				E25C86F518D1A73A00BE78B1 /* colorPicker.bundle */,
+				E25C86F618D1A73A00BE78B1 /* NEOColorPickerBaseViewController.h */,
+				E25C86F718D1A73A00BE78B1 /* NEOColorPickerBaseViewController.m */,
+				E25C86F818D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.h */,
+				E25C86F918D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.m */,
+				E25C86FA18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.xib */,
+				E25C86FB18D1A73A00BE78B1 /* NEOColorPickerGradientView.h */,
+				E25C86FC18D1A73A00BE78B1 /* NEOColorPickerGradientView.m */,
+				E25C86FD18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.h */,
+				E25C86FE18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.m */,
+				E25C86FF18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib */,
+				E25C870018D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.h */,
+				E25C870118D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.m */,
+				E25C870218D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.xib */,
+				E25C870318D1A73A00BE78B1 /* NEOColorPickerViewController.h */,
+				E25C870418D1A73A00BE78B1 /* NEOColorPickerViewController.m */,
+				E25C870518D1A73A00BE78B1 /* NEOColorPickerViewController.xib */,
+				E25C870618D1A73A00BE78B1 /* UIColor+NEOColor.h */,
+				E25C870718D1A73A00BE78B1 /* UIColor+NEOColor.m */,
+			);
+			name = "Color Picker";
+			sourceTree = "<group>";
+		};
+		E278FEFF18E46B5B00331A35 /* Wrapped Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E25B93DD18C89DD1008D84DC /* SapanaViewerWrapper.h */,
+				E25B93DE18C89DD1008D84DC /* SapanaViewerWrapper.mm */,
+				E25710B318CDF311008537F1 /* SceneNodeModifierWrapper.h */,
+				E25710B418CDF311008537F1 /* SceneNodeModifierWrapper.mm */,
+				E26568E518D6F097002CAE46 /* HierarchicalListControllerWrapper.h */,
+				E26568E618D6F097002CAE46 /* HierarchicalListControllerWrapper.mm */,
+				E278FF0218E46B7A00331A35 /* Implementations */,
+			);
+			name = "Wrapped Controller";
+			sourceTree = "<group>";
+		};
+		E278FF0218E46B7A00331A35 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				E2C9C00C18CF591F0058E016 /* SapanaViewerImpl.h */,
+				E2C9C00D18CF591F0058E016 /* SapanaViewerImpl.mm */,
+				E2E7F8C818CF277600DDEDEA /* SceneNodeControllerImpl.h */,
+				E2E7F8C918CF277600DDEDEA /* SceneNodeControllerImpl.mm */,
+				E26568E818D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.h */,
+				E26568E918D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.mm */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		E29A7B8218C7346400B55EF0 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				E28EDC0018C5E11D00728B62 /* TopPanelViewController.xib */,
+				E29323D118EAB67D009DB6C6 /* RightPanelViewController.xib */,
+				E29323D318EAB689009DB6C6 /* LeftPanelViewController.xib */,
+				E29323D518EAB693009DB6C6 /* CenterViewController.xib */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		E29A7B8318C7347800B55EF0 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E258492418C4A86C004AEEDB /* MainViewController.xib */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		E29A7B8418C7349600B55EF0 /* Topic View */ = {
+			isa = PBXGroup;
+			children = (
+				E28EDC0818C6056500728B62 /* TopicViewController.xib */,
+				E29A7B9D18C75BD000B55EF0 /* Topic Views */,
+				E29A7B8C18C7382800B55EF0 /* SelectionViewController.xib */,
+				E29A7B8F18C751BC00B55EF0 /* Selection Views */,
+				E28EDC0D18C61DDF00728B62 /* SceneViewController.xib */,
+				E2CC4DFF18C6660E0045B945 /* VisualizationViewController.xib */,
+				E205F1DB18D9D09B0056AA87 /* Visualization Views */,
+				E221D3E918C6609B00508E1A /* PreviewViewController.xib */,
+				E29A7B8718C736C000B55EF0 /* InformationViewController.xib */,
+				E29A7BA518C76E5D00B55EF0 /* Information Views */,
+				E29A7B7F18C7345C00B55EF0 /* ConfigurationViewController.xib */,
+				E29A7B9E18C76BAB00B55EF0 /* Configuration Views */,
+			);
+			name = "Topic View";
+			sourceTree = "<group>";
+		};
+		E29A7B8F18C751BC00B55EF0 /* Selection Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7B9418C7523700B55EF0 /* ModelSelectionViewController.xib */,
+				E206693318C7C1B50053B6FA /* ModelCameraSelectionViewController.xib */,
+				E2987C1318C7CE12008C00F5 /* HModelSelectionViewController.xib */,
+			);
+			name = "Selection Views";
+			sourceTree = "<group>";
+		};
+		E29A7B9118C751F600B55EF0 /* SelectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7B9218C7523700B55EF0 /* ModelSelectionViewController.h */,
+				E29A7B9318C7523700B55EF0 /* ModelSelectionViewController.m */,
+				E206693118C7C1B50053B6FA /* ModelCameraSelectionViewController.h */,
+				E206693218C7C1B50053B6FA /* ModelCameraSelectionViewController.m */,
+				E2987C1118C7CE12008C00F5 /* HModelSelectionViewController.h */,
+				E2987C1218C7CE12008C00F5 /* HModelSelectionViewController.m */,
+			);
+			name = SelectionViews;
+			sourceTree = "<group>";
+		};
+		E29A7B9718C75BAB00B55EF0 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7B9818C75BC900B55EF0 /* ModelingTopicViewController.h */,
+				E29A7B9918C75BC900B55EF0 /* ModelingTopicViewController.m */,
+				E29A7BAC18C7713C00B55EF0 /* TransformationTopicViewController.h */,
+				E29A7BAD18C7713C00B55EF0 /* TransformationTopicViewController.m */,
+				E206692C18C7C1460053B6FA /* CSTopicViewController.h */,
+				E206692D18C7C1460053B6FA /* CSTopicViewController.m */,
+				E2987C0218C7C77D008C00F5 /* HMTopicViewController.h */,
+				E2987C0318C7C77D008C00F5 /* HMTopicViewController.m */,
+			);
+			name = Topics;
+			sourceTree = "<group>";
+		};
+		E29A7B9D18C75BD000B55EF0 /* Topic Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7B9A18C75BC900B55EF0 /* ModelingTopicViewController.xib */,
+				E29A7BAF18C7716600B55EF0 /* TransformationTopicViewController.xib */,
+				E206692E18C7C1460053B6FA /* CSTopicViewController.xib */,
+				E2987C0418C7C77D008C00F5 /* HMTopicViewController.xib */,
+			);
+			name = "Topic Views";
+			sourceTree = "<group>";
+		};
+		E29A7B9E18C76BAB00B55EF0 /* Configuration Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7BA218C76BEF00B55EF0 /* ModelConfigurationViewController.xib */,
+				E29A7BB918C777B000B55EF0 /* TransformationConfigurationViewController.xib */,
+				E2987C0E18C7CA8B008C00F5 /* CSConfigurationViewController.xib */,
+			);
+			name = "Configuration Views";
+			sourceTree = "<group>";
+		};
+		E29A7B9F18C76BBF00B55EF0 /* Configuration View */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7BA018C76BEF00B55EF0 /* ModelConfigurationViewController.h */,
+				E29A7BA118C76BEF00B55EF0 /* ModelConfigurationViewController.m */,
+				E29A7BB618C7778400B55EF0 /* TransformationConfigurationViewController.h */,
+				E29A7BB718C7778400B55EF0 /* TransformationConfigurationViewController.m */,
+				E2987C0C18C7CA8B008C00F5 /* CSConfigurationViewController.h */,
+				E2987C0D18C7CA8B008C00F5 /* CSConfigurationViewController.m */,
+			);
+			name = "Configuration View";
+			sourceTree = "<group>";
+		};
+		E29A7BA518C76E5D00B55EF0 /* Information Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7BA918C76EA400B55EF0 /* ModelInformationViewController.xib */,
+				E29A7BB418C773D500B55EF0 /* TransformationInformationViewController.xib */,
+				E2987C0918C7C9AA008C00F5 /* CSInformationViewController.xib */,
+				E2987C1818C7CF95008C00F5 /* HMInformationViewController.xib */,
+				E2E63B4618D88B040072319F /* Utils */,
+			);
+			name = "Information Views";
+			sourceTree = "<group>";
+		};
+		E29A7BA618C76E6700B55EF0 /* Information Views */ = {
+			isa = PBXGroup;
+			children = (
+				E29A7BA718C76EA400B55EF0 /* ModelInformationViewController.h */,
+				E29A7BA818C76EA400B55EF0 /* ModelInformationViewController.m */,
+				E29A7BB118C773B300B55EF0 /* TransformationInformationViewController.h */,
+				E29A7BB218C773B300B55EF0 /* TransformationInformationViewController.m */,
+				E2987C0718C7C9AA008C00F5 /* CSInformationViewController.h */,
+				E2987C0818C7C9AA008C00F5 /* CSInformationViewController.m */,
+				E2987C1618C7CF95008C00F5 /* HMInformationViewController.h */,
+				E2987C1718C7CF95008C00F5 /* HMInformationViewController.m */,
+			);
+			name = "Information Views";
+			sourceTree = "<group>";
+		};
+		E2B5B72718E17C2100E0DA59 /* Sapana Viewer Library */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */,
+			);
+			name = "Sapana Viewer Library";
+			sourceTree = "<group>";
+		};
+		E2B5B72918E17C3000E0DA59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2CC4E0218C66E860045B945 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				E258492818C4C932004AEEDB /* ContentViewController.h */,
+				E258492918C4C932004AEEDB /* ContentViewController.m */,
+				E258492D18C4CA4C004AEEDB /* CenterViewController.h */,
+				E258492E18C4CA4C004AEEDB /* CenterViewController.m */,
+				E28EDBFE18C5E11D00728B62 /* TopPanelViewController.h */,
+				E28EDBFF18C5E11D00728B62 /* TopPanelViewController.m */,
+				E29323CB18EAB64D009DB6C6 /* LeftPanelViewController.h */,
+				E29323CC18EAB64D009DB6C6 /* LeftPanelViewController.m */,
+				E29323CE18EAB659009DB6C6 /* RightPanelViewController.h */,
+				E29323CF18EAB659009DB6C6 /* RightPanelViewController.m */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
+		E2CC4E0318C66EB40045B945 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E258491A18C49E77004AEEDB /* ModelLoaderViewController.h */,
+				E258491B18C49E77004AEEDB /* ModelLoaderViewController.m */,
+				E258491D18C49E80004AEEDB /* SettingsViewController.h */,
+				E258491E18C49E80004AEEDB /* SettingsViewController.m */,
+				E258491418C49E54004AEEDB /* MainMenuViewController.h */,
+				E258491518C49E54004AEEDB /* MainMenuViewController.m */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		E2CC4E0418C66EF80045B945 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E25B93D918C8771D008D84DC /* Config.h */,
+				E25B93DA18C8771D008D84DC /* Config.m */,
+				E28EDC1018C627D500728B62 /* Util.h */,
+				E28EDC1118C627D500728B62 /* Util.m */,
+				E28EDC0318C6050F00728B62 /* TopicContainer.h */,
+				E28EDC0418C6050F00728B62 /* TopicContainer.m */,
+				E2DC45E218DC32E800E0EA29 /* TopicLayoutProperties.h */,
+				E2DC45E318DC32E800E0EA29 /* TopicLayoutProperties.m */,
+				E2C9C00F18CF5EC90058E016 /* TopicContainerCollection.h */,
+				E2C9C01018CF5EC90058E016 /* TopicContainerCollection.m */,
+				E2E63B4C18D89CCE0072319F /* TransMatrix.h */,
+				E2E63B4D18D89CCE0072319F /* TransMatrix.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		E2CC4E0518C66F0A0045B945 /* Topic view */ = {
+			isa = PBXGroup;
+			children = (
+				E28EDC0618C6056500728B62 /* TopicViewController.h */,
+				E28EDC0718C6056500728B62 /* TopicViewController.m */,
+				E29A7B9718C75BAB00B55EF0 /* Topics */,
+				E29A7B8A18C7382800B55EF0 /* SelectionViewController.h */,
+				E29A7B8B18C7382800B55EF0 /* SelectionViewController.m */,
+				E29A7B9118C751F600B55EF0 /* SelectionViews */,
+				E28EDC0B18C61DDF00728B62 /* SceneViewController.h */,
+				E28EDC0C18C61DDF00728B62 /* SceneViewController.m */,
+				E221D3E718C6609B00508E1A /* PreviewViewController.h */,
+				E221D3E818C6609B00508E1A /* PreviewViewController.m */,
+				E2CC4DFD18C6660E0045B945 /* VisualizationViewController.h */,
+				E2CC4DFE18C6660E0045B945 /* VisualizationViewController.m */,
+				E205F1DA18D9D0800056AA87 /* VisualizationViewControllers */,
+				E29A7B8518C736C000B55EF0 /* InformationViewController.h */,
+				E29A7B8618C736C000B55EF0 /* InformationViewController.m */,
+				E29A7BA618C76E6700B55EF0 /* Information Views */,
+				E29A7B7D18C7345C00B55EF0 /* ConfigurationViewController.h */,
+				E29A7B7E18C7345C00B55EF0 /* ConfigurationViewController.m */,
+				E29A7B9F18C76BBF00B55EF0 /* Configuration View */,
+			);
+			name = "Topic view";
+			sourceTree = "<group>";
+		};
+		E2D0DE6D18DF146C001065CD /* Visualisation Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2D0DE7118DF153E001065CD /* MatrixMultiplicationVisualisationViewController.h */,
+				E2D0DE7218DF153E001065CD /* MatrixMultiplicationVisualisationViewController.m */,
+			);
+			name = "Visualisation Utils";
+			sourceTree = "<group>";
+		};
+		E2D0DE7018DF14AB001065CD /* Visualisation Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2D0DE7318DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib */,
+			);
+			name = "Visualisation Utils";
+			sourceTree = "<group>";
+		};
+		E2E63B4618D88B040072319F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2E63B4718D88B350072319F /* MatrixViewController.h */,
+				E2E63B4818D88B350072319F /* MatrixViewController.m */,
+				E2E63B4918D88B350072319F /* MatrixViewController.xib */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25848DF18C4972C004AEEDB /* SapanaViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E258490C18C4972D004AEEDB /* Build configuration list for PBXNativeTarget "SapanaViewer" */;
+			buildPhases = (
+				E25848DC18C4972C004AEEDB /* Sources */,
+				E25848DD18C4972C004AEEDB /* Frameworks */,
+				E25848DE18C4972C004AEEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SapanaViewer;
+			productName = SapanaViewer;
+			productReference = E25848E018C4972C004AEEDB /* SapanaViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25848FA18C4972D004AEEDB /* SapanaViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E258490F18C4972D004AEEDB /* Build configuration list for PBXNativeTarget "SapanaViewerTests" */;
+			buildPhases = (
+				E25848F718C4972D004AEEDB /* Sources */,
+				E25848F818C4972D004AEEDB /* Frameworks */,
+				E25848F918C4972D004AEEDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E258490118C4972D004AEEDB /* PBXTargetDependency */,
+			);
+			name = SapanaViewerTests;
+			productName = SapanaViewerTests;
+			productReference = E25848FB18C4972D004AEEDB /* SapanaViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25848D818C4972C004AEEDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Visualization and MultiMedia Lab, University of Zurich, Switzerland";
+				TargetAttributes = {
+					E25848FA18C4972D004AEEDB = {
+						TestTargetID = E25848DF18C4972C004AEEDB;
+					};
+				};
+			};
+			buildConfigurationList = E25848DB18C4972C004AEEDB /* Build configuration list for PBXProject "SapanaViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E25848D718C4972C004AEEDB;
+			productRefGroup = E25848E118C4972C004AEEDB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E2B5B72918E17C3000E0DA59 /* Products */;
+					ProjectRef = E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E25848DF18C4972C004AEEDB /* SapanaViewer */,
+				E25848FA18C4972D004AEEDB /* SapanaViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSapanaViewerLibrary.a;
+			remoteRef = E2B5B72D18E17C3000E0DA59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25848DE18C4972C004AEEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29A7BB518C773D500B55EF0 /* TransformationInformationViewController.xib in Resources */,
+				E25C870E18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib in Resources */,
+				E29A7B8E18C7382800B55EF0 /* SelectionViewController.xib in Resources */,
+				E25C871218D1A73A00BE78B1 /* NEOColorPickerViewController.xib in Resources */,
+				E25C870818D1A73A00BE78B1 /* colorPicker.bundle in Resources */,
+				E2CC4E0118C6660E0045B945 /* VisualizationViewController.xib in Resources */,
+				E206693018C7C1460053B6FA /* CSTopicViewController.xib in Resources */,
+				E28EDC0F18C61DDF00728B62 /* SceneViewController.xib in Resources */,
+				E29323D418EAB689009DB6C6 /* LeftPanelViewController.xib in Resources */,
+				E25C871018D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.xib in Resources */,
+				E205F1D918D9D0780056AA87 /* TransformationVisualizationViewController.xib in Resources */,
+				E25848EE18C4972C004AEEDB /* InfoPlist.strings in Resources */,
+				E258492718C4C5CB004AEEDB /* SapanaViewer.storyboard in Resources */,
+				E29323D618EAB693009DB6C6 /* CenterViewController.xib in Resources */,
+				E2987C1A18C7CF95008C00F5 /* HMInformationViewController.xib in Resources */,
+				E2987C1018C7CA8B008C00F5 /* CSConfigurationViewController.xib in Resources */,
+				E2987C0B18C7C9AA008C00F5 /* CSInformationViewController.xib in Resources */,
+				E2987C0618C7C77D008C00F5 /* HMTopicViewController.xib in Resources */,
+				E29A7BB018C7716600B55EF0 /* TransformationTopicViewController.xib in Resources */,
+				E221D3EB18C6609B00508E1A /* PreviewViewController.xib in Resources */,
+				E29A7BAB18C76EA400B55EF0 /* ModelInformationViewController.xib in Resources */,
+				E2D0DE7518DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib in Resources */,
+				E258492518C4A86C004AEEDB /* MainViewController.xib in Resources */,
+				E29A7BBA18C777B000B55EF0 /* TransformationConfigurationViewController.xib in Resources */,
+				E29A7BA418C76BEF00B55EF0 /* ModelConfigurationViewController.xib in Resources */,
+				E2D0DE7A18DF18AC001065CD /* HMVisualisationViewController.xib in Resources */,
+				E206693518C7C1B50053B6FA /* ModelCameraSelectionViewController.xib in Resources */,
+				E29323D218EAB67D009DB6C6 /* RightPanelViewController.xib in Resources */,
+				E28EDC0A18C6056500728B62 /* TopicViewController.xib in Resources */,
+				E28EDC0218C5E11D00728B62 /* TopPanelViewController.xib in Resources */,
+				E29A7B8118C7345C00B55EF0 /* ConfigurationViewController.xib in Resources */,
+				E25848F618C4972C004AEEDB /* Images.xcassets in Resources */,
+				E2987C1518C7CE12008C00F5 /* HModelSelectionViewController.xib in Resources */,
+				E25C870B18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.xib in Resources */,
+				E29A7B9618C7523700B55EF0 /* ModelSelectionViewController.xib in Resources */,
+				E2E63B4B18D88B350072319F /* MatrixViewController.xib in Resources */,
+				E29A7B9C18C75BC900B55EF0 /* ModelingTopicViewController.xib in Resources */,
+				E29A7B8918C736C000B55EF0 /* InformationViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25848F918C4972D004AEEDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E258490718C4972D004AEEDB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25848DC18C4972C004AEEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29323D018EAB659009DB6C6 /* RightPanelViewController.m in Sources */,
+				E25B93DB18C8771D008D84DC /* Config.m in Sources */,
+				E2E63B4E18D89CCE0072319F /* TransMatrix.m in Sources */,
+				E29A7BA318C76BEF00B55EF0 /* ModelConfigurationViewController.m in Sources */,
+				E26568F718D73F89002CAE46 /* HierarchicalListItemWrapper.mm in Sources */,
+				E2D0DE7418DF153E001065CD /* MatrixMultiplicationVisualisationViewController.m in Sources */,
+				E25848F418C4972C004AEEDB /* AppDelegate.m in Sources */,
+				E258493018C4CA4C004AEEDB /* CenterViewController.m in Sources */,
+				E221D3EA18C6609B00508E1A /* PreviewViewController.m in Sources */,
+				E258492A18C4C932004AEEDB /* ContentViewController.m in Sources */,
+				E25C871118D1A73A00BE78B1 /* NEOColorPickerViewController.m in Sources */,
+				E2987C1918C7CF95008C00F5 /* HMInformationViewController.m in Sources */,
+				E29A7B9518C7523700B55EF0 /* ModelSelectionViewController.m in Sources */,
+				E2987C0F18C7CA8B008C00F5 /* CSConfigurationViewController.m in Sources */,
+				E29A7B8D18C7382800B55EF0 /* SelectionViewController.m in Sources */,
+				E2E7F8C118CF132000DDEDEA /* ListWrapper.mm in Sources */,
+				E258491618C49E54004AEEDB /* MainMenuViewController.m in Sources */,
+				E28EDC1218C627D500728B62 /* Util.m in Sources */,
+				E254BB8A18E2DA480017AFEA /* ModelInformationImpl.mm in Sources */,
+				E29A7BAA18C76EA400B55EF0 /* ModelInformationViewController.m in Sources */,
+				E25C870A18D1A73A00BE78B1 /* NEOColorPickerFavoritesViewController.m in Sources */,
+				E254BB8218E2D6090017AFEA /* ModelInformationWrapper.mm in Sources */,
+				E2E7F8CA18CF277600DDEDEA /* SceneNodeControllerImpl.mm in Sources */,
+				E25C870918D1A73A00BE78B1 /* NEOColorPickerBaseViewController.m in Sources */,
+				E25C870F18D1A73A00BE78B1 /* NEOColorPickerHueGridViewController.m in Sources */,
+				E2CC4E0018C6660E0045B945 /* VisualizationViewController.m in Sources */,
+				E2D0DE7918DF18AC001065CD /* HMVisualisationViewController.m in Sources */,
+				E28EDC0518C6050F00728B62 /* TopicContainer.m in Sources */,
+				E29A7B9B18C75BC900B55EF0 /* ModelingTopicViewController.m in Sources */,
+				E29A7BB318C773B300B55EF0 /* TransformationInformationViewController.m in Sources */,
+				E2E63B5118D8A2B70072319F /* WrapperUtils.mm in Sources */,
+				E2987C1418C7CE12008C00F5 /* HModelSelectionViewController.m in Sources */,
+				E29A7BB818C7778400B55EF0 /* TransformationConfigurationViewController.m in Sources */,
+				E258491C18C49E77004AEEDB /* ModelLoaderViewController.m in Sources */,
+				E205F1D818D9D0780056AA87 /* TransformationVisualizationViewController.m in Sources */,
+				E2987C0A18C7C9AA008C00F5 /* CSInformationViewController.m in Sources */,
+				E2C9C00E18CF591F0058E016 /* SapanaViewerImpl.mm in Sources */,
+				E2987C0518C7C77D008C00F5 /* HMTopicViewController.m in Sources */,
+				E206693418C7C1B50053B6FA /* ModelCameraSelectionViewController.m in Sources */,
+				E28EDC0918C6056500728B62 /* TopicViewController.m in Sources */,
+				E29A7BAE18C7713C00B55EF0 /* TransformationTopicViewController.m in Sources */,
+				E29A7B8018C7345C00B55EF0 /* ConfigurationViewController.m in Sources */,
+				E29A7B8818C736C000B55EF0 /* InformationViewController.m in Sources */,
+				E2DC45E418DC32E800E0EA29 /* TopicLayoutProperties.m in Sources */,
+				E2E7F8C518CF259900DDEDEA /* ListWrapperImpl.mm in Sources */,
+				E25C871318D1A73A00BE78B1 /* UIColor+NEOColor.m in Sources */,
+				E28EDC0118C5E11D00728B62 /* TopPanelViewController.m in Sources */,
+				E206692F18C7C1460053B6FA /* CSTopicViewController.m in Sources */,
+				E258491F18C49E80004AEEDB /* SettingsViewController.m in Sources */,
+				E26568E718D6F097002CAE46 /* HierarchicalListControllerWrapper.mm in Sources */,
+				E25710B518CDF311008537F1 /* SceneNodeModifierWrapper.mm in Sources */,
+				E25B93DF18C89DD1008D84DC /* SapanaViewerWrapper.mm in Sources */,
+				E2E63B4A18D88B350072319F /* MatrixViewController.m in Sources */,
+				E26568EA18D6F0AE002CAE46 /* HierarchicalListControllerWrapperImpl.mm in Sources */,
+				E25848F018C4972C004AEEDB /* main.m in Sources */,
+				E29323CD18EAB64D009DB6C6 /* LeftPanelViewController.m in Sources */,
+				E28EDC0E18C61DDF00728B62 /* SceneViewController.m in Sources */,
+				E25C870D18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.m in Sources */,
+				E2C9C01118CF5EC90058E016 /* TopicContainerCollection.m in Sources */,
+				E25C870C18D1A73A00BE78B1 /* NEOColorPickerGradientView.m in Sources */,
+				E258491918C49E6F004AEEDB /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25848F718C4972D004AEEDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E258490918C4972D004AEEDB /* SapanaViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E258490118C4972D004AEEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25848DF18C4972C004AEEDB /* SapanaViewer */;
+			targetProxy = E258490018C4972D004AEEDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E25848EC18C4972C004AEEDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25848ED18C4972C004AEEDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E258490518C4972D004AEEDB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E258490618C4972D004AEEDB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E258490A18C4972D004AEEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
+			};
+			name = Debug;
+		};
+		E258490B18C4972D004AEEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E258490D18C4972D004AEEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SapanaViewer/SapanaViewer-Prefix.pch";
+				INFOPLIST_FILE = "SapanaViewer/SapanaViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SapanaViewerLibrary-daqhrkqtvuzwaraycbzekqprowmv/Build/Products/Debug-iphoneos",
+					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/lib,
+					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SapanaViewerLibrary/build/Debug-iphonesimulator/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E258490E18C4972D004AEEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SapanaViewer/SapanaViewer-Prefix.pch";
+				INFOPLIST_FILE = "SapanaViewer/SapanaViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SapanaViewerLibrary-daqhrkqtvuzwaraycbzekqprowmv/Build/Products/Debug-iphoneos",
+					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/lib,
+					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SapanaViewerLibrary/build/Debug-iphonesimulator/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E258491018C4972D004AEEDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SapanaViewer.app/SapanaViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SapanaViewer/SapanaViewer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SapanaViewerTests/SapanaViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E258491118C4972D004AEEDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SapanaViewer.app/SapanaViewer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SapanaViewer/SapanaViewer-Prefix.pch";
+				INFOPLIST_FILE = "SapanaViewerTests/SapanaViewerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25848DB18C4972C004AEEDB /* Build configuration list for PBXProject "SapanaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E258490A18C4972D004AEEDB /* Debug */,
+				E258490B18C4972D004AEEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E258490C18C4972D004AEEDB /* Build configuration list for PBXNativeTarget "SapanaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E258490D18C4972D004AEEDB /* Debug */,
+				E258490E18C4972D004AEEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E258490F18C4972D004AEEDB /* Build configuration list for PBXNativeTarget "SapanaViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E258491018C4972D004AEEDB /* Debug */,
+				E258491118C4972D004AEEDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E25848D818C4972C004AEEDB /* Project object */;
+}

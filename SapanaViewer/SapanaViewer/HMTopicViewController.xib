@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMTopicViewController">
+            <connections>
+                <outlet property="configurationView" destination="kQY-eK-wTe" id="ZKe-sS-Hii"/>
+                <outlet property="informationView" destination="4ZE-Sa-3RF" id="AXU-XB-IAc"/>
+                <outlet property="sceneView" destination="vY1-PX-8mz" id="OPK-nH-zpq"/>
+                <outlet property="selectionView" destination="Kus-Gj-s5a" id="OT1-QD-Ykq"/>
+                <outlet property="view" destination="HZM-5T-AHd" id="d4w-tL-ccG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HZM-5T-AHd">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="724"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kus-Gj-s5a" userLabel="Selection View">
+                    <rect key="frame" x="20" y="11" width="257" height="489"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ZE-Sa-3RF" userLabel="Information View">
+                    <rect key="frame" x="20" y="508" width="257" height="196"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vY1-PX-8mz" userLabel="Scene View">
+                    <rect key="frame" x="285" y="11" width="719" height="489"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQY-eK-wTe" userLabel="Configuration View">
+                    <rect key="frame" x="285" y="508" width="719" height="196"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

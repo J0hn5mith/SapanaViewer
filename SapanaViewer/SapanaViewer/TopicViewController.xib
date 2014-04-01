@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="5053"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopicViewController">
+            <connections>
+                <outlet property="configurationView" destination="8M0-Na-FFl" id="D1D-Px-0nf"/>
+                <outlet property="informationView" destination="nma-6N-2ig" id="Uzk-Nn-wf5"/>
+                <outlet property="sceneView" destination="xdW-h3-Lyc" id="R9I-ut-cjZ"/>
+                <outlet property="selectionView" destination="mYN-NM-DRH" id="Pub-UB-cT8"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="724"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYN-NM-DRH" userLabel="Selection View">
+                    <rect key="frame" x="20" y="11" width="250" height="482"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nma-6N-2ig" userLabel="Information View">
+                    <rect key="frame" x="20" y="513" width="250" height="191"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-h3-Lyc" userLabel="Scene View">
+                    <rect key="frame" x="290" y="11" width="714" height="482"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-Na-FFl" userLabel="Controlling View">
+                    <rect key="frame" x="290" y="513" width="714" height="191"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.092259526250000001" green="0.15711572770000001" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="1"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.83542427007299269" green="0.9654904871841764" blue="0.99469679594039917" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nma-6N-2ig" firstAttribute="top" secondItem="mYN-NM-DRH" secondAttribute="bottom" constant="20" id="OQK-R1-Q60"/>
+                <constraint firstItem="xdW-h3-Lyc" firstAttribute="leading" secondItem="mYN-NM-DRH" secondAttribute="trailing" constant="20" id="Qxe-Op-6ya"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
