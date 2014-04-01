@@ -1,0 +1,1168 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E2455F291863443A000EEB2F /* SapanaViewerLibraryiOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E2455F2A1863443B000EEB2F /* Build configuration list for PBXAggregateTarget "SapanaViewerLibraryiOS" */;
+			buildPhases = (
+				E2455F2D1863447B000EEB2F /* Run Script */,
+				E2455F3218634B56000EEB2F /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = SapanaViewerLibraryiOS;
+			productName = SapanaViewerLibraryiOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E21D9B101875ADB400B6ED08 /* RenderableCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */; };
+		E21D9B111875ADB400B6ED08 /* RenderableCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */; };
+		E21D9B141875C3D800B6ED08 /* TestRenderableCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */; };
+		E21D9B151875C3D800B6ED08 /* TestRenderableCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */; };
+		E2455F2418634369000EEB2F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23FDBF3186069F0007BC04F /* OpenGLES.framework */; };
+		E255B6F718C8AEF0003BEBA9 /* SapanaViewer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */; };
+		E256F3CA1864A83800C1FDA3 /* TestController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBECB1864767100217658 /* TestController.cpp */; };
+		E256F3CD1864A83800C1FDA3 /* TestSceneData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBE96186470AA00217658 /* TestSceneData.cpp */; };
+		E256F3D01864A99500C1FDA3 /* TestSceneRendererContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */; };
+		E256F3D11864A99500C1FDA3 /* TestSceneRendererContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */; };
+		E256F3D41864AEA300C1FDA3 /* TestRenderableScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */; };
+		E256F3D51864AEA300C1FDA3 /* TestRenderableScene.h in Headers */ = {isa = PBXBuildFile; fileRef = E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */; };
+		E2594D8F18631B65005570B0 /* ModelRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8018631B65005570B0 /* ModelRenderer.cpp */; };
+		E2594D9018631B65005570B0 /* ModelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8118631B65005570B0 /* ModelRenderer.h */; };
+		E2594D9118631B65005570B0 /* RenderableModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8218631B65005570B0 /* RenderableModel.cpp */; };
+		E2594D9218631B65005570B0 /* RenderableModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8318631B65005570B0 /* RenderableModel.h */; };
+		E2594D9318631B65005570B0 /* RenderableModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8418631B65005570B0 /* RenderableModelNode.h */; };
+		E2594D9418631B65005570B0 /* RenderableScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8518631B65005570B0 /* RenderableScene.cpp */; };
+		E2594D9518631B65005570B0 /* RenderableScene.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8618631B65005570B0 /* RenderableScene.h */; };
+		E2594D9618631B65005570B0 /* IRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8718631B65005570B0 /* IRenderer.h */; };
+		E2594D9918631B65005570B0 /* SceneRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8A18631B65005570B0 /* SceneRenderer.cpp */; };
+		E2594D9A18631B65005570B0 /* SceneRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8B18631B65005570B0 /* SceneRenderer.h */; };
+		E2594D9B18631B65005570B0 /* SceneRendererContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8C18631B65005570B0 /* SceneRendererContext.cpp */; };
+		E2594D9C18631B65005570B0 /* SceneRendererContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8D18631B65005570B0 /* SceneRendererContext.h */; };
+		E25C0CA5188D9AD600DC5B6B /* TreeViewNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25C0CA3188D9AD600DC5B6B /* TreeViewNode.cpp */; };
+		E25C0CA6188D9AD600DC5B6B /* TreeViewNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CA4188D9AD600DC5B6B /* TreeViewNode.h */; };
+		E25C0CAE188DB25F00DC5B6B /* ITreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CAC188DB25F00DC5B6B /* ITreeView.h */; };
+		E25C0CB1188DB2F900DC5B6B /* SceneNodeTreeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25C0CAF188DB2F900DC5B6B /* SceneNodeTreeView.cpp */; };
+		E25C0CB2188DB2F900DC5B6B /* SceneNodeTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CB0188DB2F900DC5B6B /* SceneNodeTreeView.h */; };
+		E25C0CB5188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */; };
+		E25C0CB6188DB47A00DC5B6B /* TestSceneNodeTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */; };
+		E278FEFD18E46AB400331A35 /* SceneGraphController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2C56E3418844F9500D8B535 /* SceneGraphController.h */; };
+		E27B6489188DDD3E00FC7547 /* TreeViewNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E25C0CA4188D9AD600DC5B6B /* TreeViewNode.h */; };
+		E28BA13318707AF100B189F3 /* TestModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28BA13118707AF100B189F3 /* TestModelNode.cpp */; };
+		E28BA13418707AF100B189F3 /* TestModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BA13218707AF100B189F3 /* TestModelNode.h */; };
+		E28E04B818997D1200CF4705 /* IRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = E28E04B618997D1200CF4705 /* IRenderable.h */; };
+		E28F246E18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h in Headers */ = {isa = PBXBuildFile; fileRef = E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */; };
+		E29FC09E1870813300A9B42E /* TestRenderableModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */; };
+		E29FC09F1870813300A9B42E /* TestRenderableModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */; };
+		E29FC0A0187081DB00A9B42E /* TestSceneData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBE97186470AA00217658 /* TestSceneData.h */; };
+		E29FC0A2187082A100A9B42E /* RenderableModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */; };
+		E2A13D791872FA3700F57EFE /* CubeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBE91186470AA00217658 /* CubeData.cpp */; };
+		E2A1904818EAB89300472122 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1904618EAB89300472122 /* Camera.cpp */; };
+		E2A1904918EAB89300472122 /* Camera.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904618EAB89300472122 /* Camera.cpp */; };
+		E2A1904A18EAB89300472122 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1904718EAB89300472122 /* Camera.h */; };
+		E2A1904B18EAB89300472122 /* Camera.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904718EAB89300472122 /* Camera.h */; };
+		E2A1905018EAB89E00472122 /* CameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1904C18EAB89E00472122 /* CameraNode.cpp */; };
+		E2A1905118EAB89E00472122 /* CameraNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904C18EAB89E00472122 /* CameraNode.cpp */; };
+		E2A1905218EAB89E00472122 /* CameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1904D18EAB89E00472122 /* CameraNode.h */; };
+		E2A1905318EAB89E00472122 /* CameraNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904D18EAB89E00472122 /* CameraNode.h */; };
+		E2A1905418EAB89E00472122 /* FrameNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1904E18EAB89E00472122 /* FrameNode.cpp */; };
+		E2A1905518EAB89E00472122 /* FrameNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904E18EAB89E00472122 /* FrameNode.cpp */; };
+		E2A1905618EAB89E00472122 /* FrameNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1904F18EAB89E00472122 /* FrameNode.h */; };
+		E2A1905718EAB89E00472122 /* FrameNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904F18EAB89E00472122 /* FrameNode.h */; };
+		E2A1905B18EAB8F200472122 /* INotification.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1905818EAB8F200472122 /* INotification.h */; };
+		E2A1905C18EAB8F200472122 /* INotification.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1905818EAB8F200472122 /* INotification.h */; };
+		E2A1905D18EAB8F200472122 /* IObservable.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1905918EAB8F200472122 /* IObservable.h */; };
+		E2A1905E18EAB8F200472122 /* IObservable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1905918EAB8F200472122 /* IObservable.h */; };
+		E2A1905F18EAB8F200472122 /* IObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1905A18EAB8F200472122 /* IObserver.h */; };
+		E2A1906018EAB8F200472122 /* IObserver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1905A18EAB8F200472122 /* IObserver.h */; };
+		E2A1906318EAB91900472122 /* LeafNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1906118EAB91900472122 /* LeafNode.cpp */; };
+		E2A1906418EAB91900472122 /* LeafNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906118EAB91900472122 /* LeafNode.cpp */; };
+		E2A1906518EAB91900472122 /* LeafNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1906218EAB91900472122 /* LeafNode.h */; };
+		E2A1906618EAB91900472122 /* LeafNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906218EAB91900472122 /* LeafNode.h */; };
+		E2A1906918EAB92400472122 /* ModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1906718EAB92400472122 /* ModelNode.cpp */; };
+		E2A1906A18EAB92400472122 /* ModelNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906718EAB92400472122 /* ModelNode.cpp */; };
+		E2A1906B18EAB92400472122 /* ModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1906818EAB92400472122 /* ModelNode.h */; };
+		E2A1906C18EAB92400472122 /* ModelNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906818EAB92400472122 /* ModelNode.h */; };
+		E2A1906F18EAB93900472122 /* ModelData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1906D18EAB93900472122 /* ModelData.cpp */; };
+		E2A1907018EAB93900472122 /* ModelData.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906D18EAB93900472122 /* ModelData.cpp */; };
+		E2A1907118EAB93900472122 /* ModelData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1906E18EAB93900472122 /* ModelData.h */; };
+		E2A1907218EAB93900472122 /* ModelData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1906E18EAB93900472122 /* ModelData.h */; };
+		E2A1907518EAB95600472122 /* NodeGraber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1907318EAB95600472122 /* NodeGraber.cpp */; };
+		E2A1907618EAB95600472122 /* NodeGraber.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907318EAB95600472122 /* NodeGraber.cpp */; };
+		E2A1907718EAB95600472122 /* NodeGraber.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1907418EAB95600472122 /* NodeGraber.h */; };
+		E2A1907818EAB95600472122 /* NodeGraber.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907418EAB95600472122 /* NodeGraber.h */; };
+		E2A1907D18EAB97900472122 /* ObservableImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1907918EAB97900472122 /* ObservableImpl.cpp */; };
+		E2A1907E18EAB97900472122 /* ObservableImpl.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907918EAB97900472122 /* ObservableImpl.cpp */; };
+		E2A1907F18EAB97900472122 /* ObservableImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1907A18EAB97900472122 /* ObservableImpl.h */; };
+		E2A1908018EAB97900472122 /* ObservableImpl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907A18EAB97900472122 /* ObservableImpl.h */; };
+		E2A1908118EAB97900472122 /* ObserverImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1907B18EAB97900472122 /* ObserverImpl.cpp */; };
+		E2A1908218EAB97900472122 /* ObserverImpl.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907B18EAB97900472122 /* ObserverImpl.cpp */; };
+		E2A1908318EAB97900472122 /* ObserverImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1907C18EAB97900472122 /* ObserverImpl.h */; };
+		E2A1908418EAB97900472122 /* ObserverImpl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1907C18EAB97900472122 /* ObserverImpl.h */; };
+		E2A1908918EAB9C000472122 /* RootNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1908718EAB9C000472122 /* RootNode.cpp */; };
+		E2A1908A18EAB9C000472122 /* RootNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1908718EAB9C000472122 /* RootNode.cpp */; };
+		E2A1908B18EAB9C000472122 /* RootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1908818EAB9C000472122 /* RootNode.h */; };
+		E2A1908C18EAB9C000472122 /* RootNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1908818EAB9C000472122 /* RootNode.h */; };
+		E2A1909018EAB9F100472122 /* SceneGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1908E18EAB9F100472122 /* SceneGraph.cpp */; };
+		E2A1909118EAB9F100472122 /* SceneGraph.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1908E18EAB9F100472122 /* SceneGraph.cpp */; };
+		E2A1909218EAB9F100472122 /* SceneGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1908F18EAB9F100472122 /* SceneGraph.h */; };
+		E2A1909318EAB9F100472122 /* SceneGraph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1908F18EAB9F100472122 /* SceneGraph.h */; };
+		E2A1909618EABA1F00472122 /* SceneNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1909418EABA1F00472122 /* SceneNode.cpp */; };
+		E2A1909718EABA1F00472122 /* SceneNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1909418EABA1F00472122 /* SceneNode.cpp */; };
+		E2A1909818EABA1F00472122 /* SceneNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1909518EABA1F00472122 /* SceneNode.h */; };
+		E2A1909918EABA1F00472122 /* SceneNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1909518EABA1F00472122 /* SceneNode.h */; };
+		E2A1909C18EABA3000472122 /* SceneNodeModifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */; };
+		E2A1909D18EABA3000472122 /* SceneNodeModifier.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */; };
+		E2A1909E18EABA3000472122 /* SceneNodeModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1909B18EABA3000472122 /* SceneNodeModifier.h */; };
+		E2A1909F18EABA3000472122 /* SceneNodeModifier.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1909B18EABA3000472122 /* SceneNodeModifier.h */; };
+		E2A190A118EABA5800472122 /* Util.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190A018EABA5800472122 /* Util.h */; };
+		E2A190A218EABA5800472122 /* Util.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190A018EABA5800472122 /* Util.h */; };
+		E2A190A518EABAA400472122 /* SceneRendererController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190A318EABAA400472122 /* SceneRendererController.cpp */; };
+		E2A190A618EABAA400472122 /* SceneRendererController.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190A318EABAA400472122 /* SceneRendererController.cpp */; };
+		E2A190A718EABAA400472122 /* SceneRendererController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190A418EABAA400472122 /* SceneRendererController.h */; };
+		E2A190A818EABAA400472122 /* SceneRendererController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190A418EABAA400472122 /* SceneRendererController.h */; };
+		E2A190AB18EABAE100472122 /* HierarchicalList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190A918EABAE100472122 /* HierarchicalList.cpp */; };
+		E2A190AC18EABAE100472122 /* HierarchicalList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190A918EABAE100472122 /* HierarchicalList.cpp */; };
+		E2A190AD18EABAE100472122 /* HierarchicalList.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190AA18EABAE100472122 /* HierarchicalList.h */; };
+		E2A190AE18EABAE100472122 /* HierarchicalList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190AA18EABAE100472122 /* HierarchicalList.h */; };
+		E2A190B118EABAEF00472122 /* HierarchicalListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */; };
+		E2A190B218EABAEF00472122 /* HierarchicalListItem.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */; };
+		E2A190B318EABAEF00472122 /* HierarchicalListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190B018EABAEF00472122 /* HierarchicalListItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2A190B418EABAEF00472122 /* HierarchicalListItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190B018EABAEF00472122 /* HierarchicalListItem.h */; };
+		E2A190B718EABAFC00472122 /* HierarchicalModelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */; };
+		E2A190B818EABAFC00472122 /* HierarchicalModelList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */; };
+		E2A190B918EABAFC00472122 /* HierarchicalModelList.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190B618EABAFC00472122 /* HierarchicalModelList.h */; };
+		E2A190BA18EABAFC00472122 /* HierarchicalModelList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190B618EABAFC00472122 /* HierarchicalModelList.h */; };
+		E2A190BD18EABB2D00472122 /* HierarchicalListController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190BB18EABB2D00472122 /* HierarchicalListController.cpp */; };
+		E2A190BE18EABB2D00472122 /* HierarchicalListController.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190BB18EABB2D00472122 /* HierarchicalListController.cpp */; };
+		E2A190BF18EABB2D00472122 /* HierarchicalListController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190BC18EABB2D00472122 /* HierarchicalListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A190C018EABB2D00472122 /* HierarchicalListController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190BC18EABB2D00472122 /* HierarchicalListController.h */; };
+		E2A190C218EABB4800472122 /* IController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190C118EABB4800472122 /* IController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A190C318EABB4800472122 /* IController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190C118EABB4800472122 /* IController.h */; };
+		E2A190C618EABB6500472122 /* ListSpv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190C418EABB6500472122 /* ListSpv.cpp */; };
+		E2A190C718EABB6500472122 /* ListSpv.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190C418EABB6500472122 /* ListSpv.cpp */; };
+		E2A190C818EABB6500472122 /* ListSpv.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190C518EABB6500472122 /* ListSpv.h */; };
+		E2A190C918EABB6500472122 /* ListSpv.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190C518EABB6500472122 /* ListSpv.h */; };
+		E2A190CC18EABB6E00472122 /* ListItemSpv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190CA18EABB6E00472122 /* ListItemSpv.cpp */; };
+		E2A190CD18EABB6E00472122 /* ListItemSpv.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190CA18EABB6E00472122 /* ListItemSpv.cpp */; };
+		E2A190CE18EABB6E00472122 /* ListItemSpv.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190CB18EABB6E00472122 /* ListItemSpv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A190CF18EABB6E00472122 /* ListItemSpv.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190CB18EABB6E00472122 /* ListItemSpv.h */; };
+		E2A190D118EABB8D00472122 /* ITreeViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190D018EABB8D00472122 /* ITreeViewItem.h */; };
+		E2A190D218EABB8D00472122 /* ITreeViewItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190D018EABB8D00472122 /* ITreeViewItem.h */; };
+		E2A190D718EABBAC00472122 /* MatrixForGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190D318EABBAC00472122 /* MatrixForGUI.cpp */; };
+		E2A190D818EABBAC00472122 /* MatrixForGUI.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190D318EABBAC00472122 /* MatrixForGUI.cpp */; };
+		E2A190D918EABBAC00472122 /* MatrixForGUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190D418EABBAC00472122 /* MatrixForGUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A190DA18EABBAC00472122 /* MatrixForGUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190D418EABBAC00472122 /* MatrixForGUI.h */; };
+		E2A190DB18EABBAC00472122 /* ModelInformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190D518EABBAC00472122 /* ModelInformation.cpp */; };
+		E2A190DC18EABBAC00472122 /* ModelInformation.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190D518EABBAC00472122 /* ModelInformation.cpp */; };
+		E2A190DD18EABBAC00472122 /* ModelInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190D618EABBAC00472122 /* ModelInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A190DE18EABBAC00472122 /* ModelInformation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190D618EABBAC00472122 /* ModelInformation.h */; };
+		E2A190E518EABBD800472122 /* ModelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190DF18EABBD800472122 /* ModelList.cpp */; };
+		E2A190E618EABBD800472122 /* ModelList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190DF18EABBD800472122 /* ModelList.cpp */; };
+		E2A190E718EABBD800472122 /* ModelList.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190E018EABBD800472122 /* ModelList.h */; };
+		E2A190E818EABBD800472122 /* ModelList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190E018EABBD800472122 /* ModelList.h */; };
+		E2A190E918EABBD800472122 /* NodeAncestorList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190E118EABBD800472122 /* NodeAncestorList.cpp */; };
+		E2A190EA18EABBD800472122 /* NodeAncestorList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190E118EABBD800472122 /* NodeAncestorList.cpp */; };
+		E2A190EB18EABBD800472122 /* NodeAncestorList.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190E218EABBD800472122 /* NodeAncestorList.h */; };
+		E2A190EC18EABBD800472122 /* NodeAncestorList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190E218EABBD800472122 /* NodeAncestorList.h */; };
+		E2A190ED18EABBD800472122 /* NodeTransformationsList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190E318EABBD800472122 /* NodeTransformationsList.cpp */; };
+		E2A190EE18EABBD800472122 /* NodeTransformationsList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190E318EABBD800472122 /* NodeTransformationsList.cpp */; };
+		E2A190EF18EABBD800472122 /* NodeTransformationsList.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190E418EABBD800472122 /* NodeTransformationsList.h */; };
+		E2A190F018EABBD800472122 /* NodeTransformationsList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190E418EABBD800472122 /* NodeTransformationsList.h */; };
+		E2A190F318EABC0B00472122 /* RendererUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190F118EABC0B00472122 /* RendererUtils.cpp */; };
+		E2A190F418EABC0B00472122 /* RendererUtils.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190F118EABC0B00472122 /* RendererUtils.cpp */; };
+		E2A190F518EABC0B00472122 /* RendererUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190F218EABC0B00472122 /* RendererUtils.h */; };
+		E2A190F618EABC0B00472122 /* RendererUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190F218EABC0B00472122 /* RendererUtils.h */; };
+		E2A190F918EABC2000472122 /* RenderableLeafNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */; };
+		E2A190FA18EABC2000472122 /* RenderableLeafNode.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */; };
+		E2A190FB18EABC2000472122 /* RenderableLeafNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190F818EABC2000472122 /* RenderableLeafNode.h */; };
+		E2A190FC18EABC2000472122 /* RenderableLeafNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190F818EABC2000472122 /* RenderableLeafNode.h */; };
+		E2A190FF18EABC4600472122 /* SceneNodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190FD18EABC4600472122 /* SceneNodeController.cpp */; };
+		E2A1910018EABC4600472122 /* SceneNodeController.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190FD18EABC4600472122 /* SceneNodeController.cpp */; };
+		E2A1910118EABC4600472122 /* SceneNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190FE18EABC4600472122 /* SceneNodeController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A1910218EABC4600472122 /* SceneNodeController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190FE18EABC4600472122 /* SceneNodeController.h */; };
+		E2A1910518EABC8500472122 /* SceneNodeProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */; };
+		E2A1910618EABC8500472122 /* SceneNodeProperties.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */; };
+		E2A1910718EABC8500472122 /* SceneNodeProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1910418EABC8500472122 /* SceneNodeProperties.h */; };
+		E2A1910818EABC8500472122 /* SceneNodeProperties.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1910418EABC8500472122 /* SceneNodeProperties.h */; };
+		E2A1910A18EABCB800472122 /* TypeDefSpv.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1910918EABCB800472122 /* TypeDefSpv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2A1910B18EABCB800472122 /* TypeDefSpv.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1910918EABCB800472122 /* TypeDefSpv.h */; };
+		E2BCBE881864557400217658 /* IRenderer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2594D8718631B65005570B0 /* IRenderer.h */; };
+		E2BCBECE1864767100217658 /* TestController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBECC1864767100217658 /* TestController.h */; };
+		E2BCBECF1864767D00217658 /* TestController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2BCBECC1864767100217658 /* TestController.h */; };
+		E2BF0AFA1872F94D00D9E0F0 /* CubeData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBE92186470AA00217658 /* CubeData.h */; };
+		E2C56E3B18844F9500D8B535 /* SceneGraphController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */; };
+		E2C56E3C18844F9500D8B535 /* SceneGraphController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E3418844F9500D8B535 /* SceneGraphController.h */; };
+		E2C56E4118844FB300D8B535 /* TestSceneRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */; };
+		E2C56E4218844FB300D8B535 /* TestSceneRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */; };
+		E2C56E491884541500D8B535 /* TestSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E471884541500D8B535 /* TestSceneManager.cpp */; };
+		E2C56E4A1884541500D8B535 /* TestSceneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E481884541500D8B535 /* TestSceneManager.h */; };
+		E2C56E4D1884942F00D8B535 /* TestCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */; };
+		E2C56E4E1884942F00D8B535 /* TestCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E4C1884942F00D8B535 /* TestCameraNode.h */; };
+		E2C98E4618EABF6B008D6018 /* IController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190C118EABB4800472122 /* IController.h */; };
+		E2C98E4718EABF6E008D6018 /* SceneNodeController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190FE18EABC4600472122 /* SceneNodeController.h */; };
+		E2C98E4818EABF74008D6018 /* SceneRendererController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190A418EABAA400472122 /* SceneRendererController.h */; };
+		E2C98E4918EABF78008D6018 /* HierarchicalListController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190BC18EABB2D00472122 /* HierarchicalListController.h */; };
+		E2C98E4A18EABF7D008D6018 /* SapanaViewer.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */; };
+		E2C98E4B18EAC047008D6018 /* MatrixForGUI.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190D418EABBAC00472122 /* MatrixForGUI.h */; };
+		E2C98E4C18EAC04A008D6018 /* ModelInformation.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190D618EABBAC00472122 /* ModelInformation.h */; };
+		E2C98E5118EAC1B4008D6018 /* ListController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C98E4F18EAC1B4008D6018 /* ListController.cpp */; };
+		E2C98E5218EAC1B4008D6018 /* ListController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C98E5018EAC1B4008D6018 /* ListController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D90410188558C900A7A0F5 /* RenderableCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2D9040E188558C900A7A0F5 /* RenderableCamera.cpp */; };
+		E2D90411188558C900A7A0F5 /* RenderableCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D9040F188558C900A7A0F5 /* RenderableCamera.h */; };
+		E2DCB5E3187735CB00E7B440 /* SapanaViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2DCB5DF187735CB00E7B440 /* SapanaViewer.cpp */; };
+		E2DCB5E4187735CB00E7B440 /* SapanaViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2DCB5E5187735CB00E7B440 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2DCB5E1187735CB00E7B440 /* Screen.cpp */; };
+		E2DCB5E6187735CB00E7B440 /* Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DCB5E2187735CB00E7B440 /* Screen.h */; };
+		E2E4B294187D5EE600EDB878 /* TestNotificationImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */; };
+		E2E4B295187D5EE600EDB878 /* TestNotificationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2455F3218634B56000EEB2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				E2A190EE18EABBD800472122 /* NodeTransformationsList.cpp in CopyFiles */,
+				E2A1909F18EABA3000472122 /* SceneNodeModifier.h in CopyFiles */,
+				E278FEFD18E46AB400331A35 /* SceneGraphController.h in CopyFiles */,
+				E2A190FA18EABC2000472122 /* RenderableLeafNode.cpp in CopyFiles */,
+				E2A190EA18EABBD800472122 /* NodeAncestorList.cpp in CopyFiles */,
+				E2A190B218EABAEF00472122 /* HierarchicalListItem.cpp in CopyFiles */,
+				E2A1905C18EAB8F200472122 /* INotification.h in CopyFiles */,
+				E2A190BE18EABB2D00472122 /* HierarchicalListController.cpp in CopyFiles */,
+				E2A190D218EABB8D00472122 /* ITreeViewItem.h in CopyFiles */,
+				E2A190DA18EABBAC00472122 /* MatrixForGUI.h in CopyFiles */,
+				E2A190F418EABC0B00472122 /* RendererUtils.cpp in CopyFiles */,
+				E2A190B818EABAFC00472122 /* HierarchicalModelList.cpp in CopyFiles */,
+				E2A1908C18EAB9C000472122 /* RootNode.h in CopyFiles */,
+				E2A190A818EABAA400472122 /* SceneRendererController.h in CopyFiles */,
+				E2A1907018EAB93900472122 /* ModelData.cpp in CopyFiles */,
+				E2A1910618EABC8500472122 /* SceneNodeProperties.cpp in CopyFiles */,
+				E2A190EC18EABBD800472122 /* NodeAncestorList.h in CopyFiles */,
+				E2A1908018EAB97900472122 /* ObservableImpl.h in CopyFiles */,
+				E2A190A618EABAA400472122 /* SceneRendererController.cpp in CopyFiles */,
+				E2A1906618EAB91900472122 /* LeafNode.h in CopyFiles */,
+				E2A1905E18EAB8F200472122 /* IObservable.h in CopyFiles */,
+				E2A1910818EABC8500472122 /* SceneNodeProperties.h in CopyFiles */,
+				E2A190AE18EABAE100472122 /* HierarchicalList.h in CopyFiles */,
+				E2A190C918EABB6500472122 /* ListSpv.h in CopyFiles */,
+				E2A1909118EAB9F100472122 /* SceneGraph.cpp in CopyFiles */,
+				E2A190CD18EABB6E00472122 /* ListItemSpv.cpp in CopyFiles */,
+				E2A1905118EAB89E00472122 /* CameraNode.cpp in CopyFiles */,
+				E2A190C318EABB4800472122 /* IController.h in CopyFiles */,
+				E2A1908A18EAB9C000472122 /* RootNode.cpp in CopyFiles */,
+				E2A1907218EAB93900472122 /* ModelData.h in CopyFiles */,
+				E2A1906C18EAB92400472122 /* ModelNode.h in CopyFiles */,
+				E2A1904B18EAB89300472122 /* Camera.h in CopyFiles */,
+				E255B6F718C8AEF0003BEBA9 /* SapanaViewer.h in CopyFiles */,
+				E2A1906018EAB8F200472122 /* IObserver.h in CopyFiles */,
+				E2A190F618EABC0B00472122 /* RendererUtils.h in CopyFiles */,
+				E2A1908418EAB97900472122 /* ObserverImpl.h in CopyFiles */,
+				E2A1907618EAB95600472122 /* NodeGraber.cpp in CopyFiles */,
+				E2A1904918EAB89300472122 /* Camera.cpp in CopyFiles */,
+				E2A190BA18EABAFC00472122 /* HierarchicalModelList.h in CopyFiles */,
+				E2A190D818EABBAC00472122 /* MatrixForGUI.cpp in CopyFiles */,
+				E2A190F018EABBD800472122 /* NodeTransformationsList.h in CopyFiles */,
+				E2A1909918EABA1F00472122 /* SceneNode.h in CopyFiles */,
+				E2A1908218EAB97900472122 /* ObserverImpl.cpp in CopyFiles */,
+				E2A1906418EAB91900472122 /* LeafNode.cpp in CopyFiles */,
+				E2A1906A18EAB92400472122 /* ModelNode.cpp in CopyFiles */,
+				E2A1910218EABC4600472122 /* SceneNodeController.h in CopyFiles */,
+				E2A1910B18EABCB800472122 /* TypeDefSpv.h in CopyFiles */,
+				E2A1907E18EAB97900472122 /* ObservableImpl.cpp in CopyFiles */,
+				E2A1909718EABA1F00472122 /* SceneNode.cpp in CopyFiles */,
+				E2A1905318EAB89E00472122 /* CameraNode.h in CopyFiles */,
+				E2A1905718EAB89E00472122 /* FrameNode.h in CopyFiles */,
+				E2A190CF18EABB6E00472122 /* ListItemSpv.h in CopyFiles */,
+				E2A1909318EAB9F100472122 /* SceneGraph.h in CopyFiles */,
+				E2A190DC18EABBAC00472122 /* ModelInformation.cpp in CopyFiles */,
+				E2A1905518EAB89E00472122 /* FrameNode.cpp in CopyFiles */,
+				E27B6489188DDD3E00FC7547 /* TreeViewNode.h in CopyFiles */,
+				E2A190AC18EABAE100472122 /* HierarchicalList.cpp in CopyFiles */,
+				E2A190C018EABB2D00472122 /* HierarchicalListController.h in CopyFiles */,
+				E2BCBECF1864767D00217658 /* TestController.h in CopyFiles */,
+				E2A190E818EABBD800472122 /* ModelList.h in CopyFiles */,
+				E2A190B418EABAEF00472122 /* HierarchicalListItem.h in CopyFiles */,
+				E2A1909D18EABA3000472122 /* SceneNodeModifier.cpp in CopyFiles */,
+				E2A1910018EABC4600472122 /* SceneNodeController.cpp in CopyFiles */,
+				E2A1907818EAB95600472122 /* NodeGraber.h in CopyFiles */,
+				E2A190E618EABBD800472122 /* ModelList.cpp in CopyFiles */,
+				E2A190C718EABB6500472122 /* ListSpv.cpp in CopyFiles */,
+				E2A190FC18EABC2000472122 /* RenderableLeafNode.h in CopyFiles */,
+				E2A190DE18EABBAC00472122 /* ModelInformation.h in CopyFiles */,
+				E2BCBE881864557400217658 /* IRenderer.h in CopyFiles */,
+				E2A190A218EABA5800472122 /* Util.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C98E4518EABF0F008D6018 /* Copy Headers to Includes */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}TEST";
+			dstSubfolderSpec = 16;
+			files = (
+				E2C98E4A18EABF7D008D6018 /* SapanaViewer.h in Copy Headers to Includes */,
+				E2C98E4618EABF6B008D6018 /* IController.h in Copy Headers to Includes */,
+				E2C98E4718EABF6E008D6018 /* SceneNodeController.h in Copy Headers to Includes */,
+				E2C98E4818EABF74008D6018 /* SceneRendererController.h in Copy Headers to Includes */,
+				E2C98E4918EABF78008D6018 /* HierarchicalListController.h in Copy Headers to Includes */,
+				E2C98E4B18EAC047008D6018 /* MatrixForGUI.h in Copy Headers to Includes */,
+				E2C98E4C18EAC04A008D6018 /* ModelInformation.h in Copy Headers to Includes */,
+			);
+			name = "Copy Headers to Includes";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableCameraNode.cpp; path = src/spvr/RenderableCameraNode.cpp; sourceTree = "<group>"; };
+		E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableCameraNode.h; path = src/spvr/RenderableCameraNode.h; sourceTree = "<group>"; };
+		E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableCameraNode.cpp; path = test/TestRenderableCameraNode.cpp; sourceTree = "<group>"; };
+		E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableCameraNode.h; path = test/TestRenderableCameraNode.h; sourceTree = "<group>"; };
+		E23FDB781860678B007BC04F /* libSapanaViewerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSapanaViewerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23FDBF3186069F0007BC04F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E2455F22186340FC000EEB2F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneRendererContext.cpp; path = test/TestSceneRendererContext.cpp; sourceTree = "<group>"; };
+		E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneRendererContext.h; path = test/TestSceneRendererContext.h; sourceTree = "<group>"; };
+		E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableScene.cpp; path = test/TestRenderableScene.cpp; sourceTree = "<group>"; };
+		E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableScene.h; path = test/TestRenderableScene.h; sourceTree = "<group>"; };
+		E2594D8018631B65005570B0 /* ModelRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelRenderer.cpp; path = src/spvr/ModelRenderer.cpp; sourceTree = "<group>"; };
+		E2594D8118631B65005570B0 /* ModelRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelRenderer.h; path = src/spvr/ModelRenderer.h; sourceTree = "<group>"; };
+		E2594D8218631B65005570B0 /* RenderableModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableModel.cpp; path = src/spvr/RenderableModel.cpp; sourceTree = "<group>"; };
+		E2594D8318631B65005570B0 /* RenderableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableModel.h; path = src/spvr/RenderableModel.h; sourceTree = "<group>"; };
+		E2594D8418631B65005570B0 /* RenderableModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableModelNode.h; path = src/spvr/RenderableModelNode.h; sourceTree = "<group>"; };
+		E2594D8518631B65005570B0 /* RenderableScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableScene.cpp; path = src/spvr/RenderableScene.cpp; sourceTree = "<group>"; };
+		E2594D8618631B65005570B0 /* RenderableScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableScene.h; path = src/spvr/RenderableScene.h; sourceTree = "<group>"; };
+		E2594D8718631B65005570B0 /* IRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRenderer.h; path = src/spvr/IRenderer.h; sourceTree = "<group>"; };
+		E2594D8A18631B65005570B0 /* SceneRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneRenderer.cpp; path = src/spvr/SceneRenderer.cpp; sourceTree = "<group>"; };
+		E2594D8B18631B65005570B0 /* SceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneRenderer.h; path = src/spvr/SceneRenderer.h; sourceTree = "<group>"; };
+		E2594D8C18631B65005570B0 /* SceneRendererContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneRendererContext.cpp; path = src/spvr/SceneRendererContext.cpp; sourceTree = "<group>"; };
+		E2594D8D18631B65005570B0 /* SceneRendererContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneRendererContext.h; path = src/spvr/SceneRendererContext.h; sourceTree = "<group>"; };
+		E2594DD718633A27005570B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E2594DE518633A28005570B0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E2594DE818633A28005570B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E25C0CA3188D9AD600DC5B6B /* TreeViewNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TreeViewNode.cpp; path = src/spvg/TreeViewNode.cpp; sourceTree = "<group>"; };
+		E25C0CA4188D9AD600DC5B6B /* TreeViewNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreeViewNode.h; path = src/spvg/TreeViewNode.h; sourceTree = "<group>"; };
+		E25C0CAC188DB25F00DC5B6B /* ITreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITreeView.h; path = src/spvg/ITreeView.h; sourceTree = "<group>"; };
+		E25C0CAF188DB2F900DC5B6B /* SceneNodeTreeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeTreeView.cpp; path = src/spvg/SceneNodeTreeView.cpp; sourceTree = "<group>"; };
+		E25C0CB0188DB2F900DC5B6B /* SceneNodeTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeTreeView.h; path = src/spvg/SceneNodeTreeView.h; sourceTree = "<group>"; };
+		E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneNodeTreeView.cpp; path = test/TestSceneNodeTreeView.cpp; sourceTree = "<group>"; };
+		E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneNodeTreeView.h; path = test/TestSceneNodeTreeView.h; sourceTree = "<group>"; };
+		E26828B51874D275000AA0C0 /* external */ = {isa = PBXFileReference; lastKnownFileType = folder; path = external; sourceTree = "<group>"; };
+		E28BA13118707AF100B189F3 /* TestModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestModelNode.cpp; path = test/TestModelNode.cpp; sourceTree = "<group>"; };
+		E28BA13218707AF100B189F3 /* TestModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestModelNode.h; path = test/TestModelNode.h; sourceTree = "<group>"; };
+		E28E04B618997D1200CF4705 /* IRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRenderable.h; path = src/spvr/IRenderable.h; sourceTree = "<group>"; };
+		E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleInheritableEnableSharedFromThis.h; path = src/spvu/MultipleInheritableEnableSharedFromThis.h; sourceTree = "<group>"; };
+		E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableModelNode.cpp; path = test/TestRenderableModelNode.cpp; sourceTree = "<group>"; };
+		E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableModelNode.h; path = test/TestRenderableModelNode.h; sourceTree = "<group>"; };
+		E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableModelNode.cpp; path = src/spvr/RenderableModelNode.cpp; sourceTree = "<group>"; };
+		E2A1904618EAB89300472122 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = src/spvs/Camera.cpp; sourceTree = "<group>"; };
+		E2A1904718EAB89300472122 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = src/spvs/Camera.h; sourceTree = "<group>"; };
+		E2A1904C18EAB89E00472122 /* CameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraNode.cpp; path = src/spvs/CameraNode.cpp; sourceTree = "<group>"; };
+		E2A1904D18EAB89E00472122 /* CameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraNode.h; path = src/spvs/CameraNode.h; sourceTree = "<group>"; };
+		E2A1904E18EAB89E00472122 /* FrameNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FrameNode.cpp; path = src/spvs/FrameNode.cpp; sourceTree = "<group>"; };
+		E2A1904F18EAB89E00472122 /* FrameNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrameNode.h; path = src/spvs/FrameNode.h; sourceTree = "<group>"; };
+		E2A1905818EAB8F200472122 /* INotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INotification.h; path = src/spvu/INotification.h; sourceTree = "<group>"; };
+		E2A1905918EAB8F200472122 /* IObservable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IObservable.h; path = src/spvu/IObservable.h; sourceTree = "<group>"; };
+		E2A1905A18EAB8F200472122 /* IObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IObserver.h; path = src/spvu/IObserver.h; sourceTree = "<group>"; };
+		E2A1906118EAB91900472122 /* LeafNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LeafNode.cpp; path = src/spvs/LeafNode.cpp; sourceTree = "<group>"; };
+		E2A1906218EAB91900472122 /* LeafNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeafNode.h; path = src/spvs/LeafNode.h; sourceTree = "<group>"; };
+		E2A1906718EAB92400472122 /* ModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelNode.cpp; path = src/spvs/ModelNode.cpp; sourceTree = "<group>"; };
+		E2A1906818EAB92400472122 /* ModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelNode.h; path = src/spvs/ModelNode.h; sourceTree = "<group>"; };
+		E2A1906D18EAB93900472122 /* ModelData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelData.cpp; path = src/spvs/ModelData.cpp; sourceTree = "<group>"; };
+		E2A1906E18EAB93900472122 /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelData.h; path = src/spvs/ModelData.h; sourceTree = "<group>"; };
+		E2A1907318EAB95600472122 /* NodeGraber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeGraber.cpp; path = src/spvs/NodeGraber.cpp; sourceTree = "<group>"; };
+		E2A1907418EAB95600472122 /* NodeGraber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeGraber.h; path = src/spvs/NodeGraber.h; sourceTree = "<group>"; };
+		E2A1907918EAB97900472122 /* ObservableImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObservableImpl.cpp; path = src/spvu/ObservableImpl.cpp; sourceTree = "<group>"; };
+		E2A1907A18EAB97900472122 /* ObservableImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObservableImpl.h; path = src/spvu/ObservableImpl.h; sourceTree = "<group>"; };
+		E2A1907B18EAB97900472122 /* ObserverImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObserverImpl.cpp; path = src/spvu/ObserverImpl.cpp; sourceTree = "<group>"; };
+		E2A1907C18EAB97900472122 /* ObserverImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObserverImpl.h; path = src/spvu/ObserverImpl.h; sourceTree = "<group>"; };
+		E2A1908718EAB9C000472122 /* RootNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootNode.cpp; path = src/spvs/RootNode.cpp; sourceTree = "<group>"; };
+		E2A1908818EAB9C000472122 /* RootNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootNode.h; path = src/spvs/RootNode.h; sourceTree = "<group>"; };
+		E2A1908E18EAB9F100472122 /* SceneGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGraph.cpp; path = src/spvs/SceneGraph.cpp; sourceTree = "<group>"; };
+		E2A1908F18EAB9F100472122 /* SceneGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGraph.h; path = src/spvs/SceneGraph.h; sourceTree = "<group>"; };
+		E2A1909418EABA1F00472122 /* SceneNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNode.cpp; path = src/spvs/SceneNode.cpp; sourceTree = "<group>"; };
+		E2A1909518EABA1F00472122 /* SceneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNode.h; path = src/spvs/SceneNode.h; sourceTree = "<group>"; };
+		E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeModifier.cpp; path = src/spvs/SceneNodeModifier.cpp; sourceTree = "<group>"; };
+		E2A1909B18EABA3000472122 /* SceneNodeModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeModifier.h; path = src/spvs/SceneNodeModifier.h; sourceTree = "<group>"; };
+		E2A190A018EABA5800472122 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = src/spvu/Util.h; sourceTree = "<group>"; };
+		E2A190A318EABAA400472122 /* SceneRendererController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneRendererController.cpp; path = src/spv/SceneRendererController.cpp; sourceTree = "<group>"; };
+		E2A190A418EABAA400472122 /* SceneRendererController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneRendererController.h; path = src/spv/SceneRendererController.h; sourceTree = "<group>"; };
+		E2A190A918EABAE100472122 /* HierarchicalList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HierarchicalList.cpp; path = src/spvg/HierarchicalList.cpp; sourceTree = "<group>"; };
+		E2A190AA18EABAE100472122 /* HierarchicalList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HierarchicalList.h; path = src/spvg/HierarchicalList.h; sourceTree = "<group>"; };
+		E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HierarchicalListItem.cpp; path = src/spvg/HierarchicalListItem.cpp; sourceTree = "<group>"; };
+		E2A190B018EABAEF00472122 /* HierarchicalListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HierarchicalListItem.h; path = src/spvg/HierarchicalListItem.h; sourceTree = "<group>"; };
+		E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HierarchicalModelList.cpp; path = src/spvg/HierarchicalModelList.cpp; sourceTree = "<group>"; };
+		E2A190B618EABAFC00472122 /* HierarchicalModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HierarchicalModelList.h; path = src/spvg/HierarchicalModelList.h; sourceTree = "<group>"; };
+		E2A190BB18EABB2D00472122 /* HierarchicalListController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HierarchicalListController.cpp; path = src/spv/HierarchicalListController.cpp; sourceTree = "<group>"; };
+		E2A190BC18EABB2D00472122 /* HierarchicalListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HierarchicalListController.h; path = src/spv/HierarchicalListController.h; sourceTree = "<group>"; };
+		E2A190C118EABB4800472122 /* IController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IController.h; path = src/spv/IController.h; sourceTree = "<group>"; };
+		E2A190C418EABB6500472122 /* ListSpv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ListSpv.cpp; path = src/spvg/ListSpv.cpp; sourceTree = "<group>"; };
+		E2A190C518EABB6500472122 /* ListSpv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListSpv.h; path = src/spvg/ListSpv.h; sourceTree = "<group>"; };
+		E2A190CA18EABB6E00472122 /* ListItemSpv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ListItemSpv.cpp; path = src/spvg/ListItemSpv.cpp; sourceTree = "<group>"; };
+		E2A190CB18EABB6E00472122 /* ListItemSpv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListItemSpv.h; path = src/spvg/ListItemSpv.h; sourceTree = "<group>"; };
+		E2A190D018EABB8D00472122 /* ITreeViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITreeViewItem.h; path = src/spvg/ITreeViewItem.h; sourceTree = "<group>"; };
+		E2A190D318EABBAC00472122 /* MatrixForGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatrixForGUI.cpp; path = src/spvg/MatrixForGUI.cpp; sourceTree = "<group>"; };
+		E2A190D418EABBAC00472122 /* MatrixForGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixForGUI.h; path = src/spvg/MatrixForGUI.h; sourceTree = "<group>"; };
+		E2A190D518EABBAC00472122 /* ModelInformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelInformation.cpp; path = src/spvg/ModelInformation.cpp; sourceTree = "<group>"; };
+		E2A190D618EABBAC00472122 /* ModelInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelInformation.h; path = src/spvg/ModelInformation.h; sourceTree = "<group>"; };
+		E2A190DF18EABBD800472122 /* ModelList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelList.cpp; path = src/spvg/ModelList.cpp; sourceTree = "<group>"; };
+		E2A190E018EABBD800472122 /* ModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelList.h; path = src/spvg/ModelList.h; sourceTree = "<group>"; };
+		E2A190E118EABBD800472122 /* NodeAncestorList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeAncestorList.cpp; path = src/spvg/NodeAncestorList.cpp; sourceTree = "<group>"; };
+		E2A190E218EABBD800472122 /* NodeAncestorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeAncestorList.h; path = src/spvg/NodeAncestorList.h; sourceTree = "<group>"; };
+		E2A190E318EABBD800472122 /* NodeTransformationsList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeTransformationsList.cpp; path = src/spvg/NodeTransformationsList.cpp; sourceTree = "<group>"; };
+		E2A190E418EABBD800472122 /* NodeTransformationsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeTransformationsList.h; path = src/spvg/NodeTransformationsList.h; sourceTree = "<group>"; };
+		E2A190F118EABC0B00472122 /* RendererUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RendererUtils.cpp; path = src/spvr/RendererUtils.cpp; sourceTree = "<group>"; };
+		E2A190F218EABC0B00472122 /* RendererUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RendererUtils.h; path = src/spvr/RendererUtils.h; sourceTree = "<group>"; };
+		E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableLeafNode.cpp; path = src/spvr/RenderableLeafNode.cpp; sourceTree = "<group>"; };
+		E2A190F818EABC2000472122 /* RenderableLeafNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableLeafNode.h; path = src/spvr/RenderableLeafNode.h; sourceTree = "<group>"; };
+		E2A190FD18EABC4600472122 /* SceneNodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeController.cpp; path = src/spv/SceneNodeController.cpp; sourceTree = "<group>"; };
+		E2A190FE18EABC4600472122 /* SceneNodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeController.h; path = src/spv/SceneNodeController.h; sourceTree = "<group>"; };
+		E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeProperties.cpp; path = src/spvs/SceneNodeProperties.cpp; sourceTree = "<group>"; };
+		E2A1910418EABC8500472122 /* SceneNodeProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeProperties.h; path = src/spvs/SceneNodeProperties.h; sourceTree = "<group>"; };
+		E2A1910918EABCB800472122 /* TypeDefSpv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDefSpv.h; path = src/spvu/TypeDefSpv.h; sourceTree = "<group>"; };
+		E2BCBE91186470AA00217658 /* CubeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeData.cpp; path = test/CubeData.cpp; sourceTree = "<group>"; };
+		E2BCBE92186470AA00217658 /* CubeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeData.h; path = test/CubeData.h; sourceTree = "<group>"; };
+		E2BCBE93186470AA00217658 /* CubeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeRenderer.cpp; path = test/CubeRenderer.cpp; sourceTree = "<group>"; };
+		E2BCBE94186470AA00217658 /* CubeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeRenderer.h; path = test/CubeRenderer.h; sourceTree = "<group>"; };
+		E2BCBE95186470AA00217658 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = test/main.cpp; sourceTree = "<group>"; };
+		E2BCBE96186470AA00217658 /* TestSceneData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneData.cpp; path = test/TestSceneData.cpp; sourceTree = "<group>"; };
+		E2BCBE97186470AA00217658 /* TestSceneData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneData.h; path = test/TestSceneData.h; sourceTree = "<group>"; };
+		E2BCBECB1864767100217658 /* TestController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestController.cpp; path = test/TestController.cpp; sourceTree = "<group>"; };
+		E2BCBECC1864767100217658 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestController.h; path = test/TestController.h; sourceTree = "<group>"; };
+		E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGraphController.cpp; path = src/spv/SceneGraphController.cpp; sourceTree = "<group>"; };
+		E2C56E3418844F9500D8B535 /* SceneGraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGraphController.h; path = src/spv/SceneGraphController.h; sourceTree = "<group>"; };
+		E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneRenderer.cpp; path = test/TestSceneRenderer.cpp; sourceTree = "<group>"; };
+		E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneRenderer.h; path = test/TestSceneRenderer.h; sourceTree = "<group>"; };
+		E2C56E471884541500D8B535 /* TestSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneManager.cpp; path = test/TestSceneManager.cpp; sourceTree = "<group>"; };
+		E2C56E481884541500D8B535 /* TestSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneManager.h; path = test/TestSceneManager.h; sourceTree = "<group>"; };
+		E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestCameraNode.cpp; path = test/TestCameraNode.cpp; sourceTree = "<group>"; };
+		E2C56E4C1884942F00D8B535 /* TestCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCameraNode.h; path = test/TestCameraNode.h; sourceTree = "<group>"; };
+		E2C98E4F18EAC1B4008D6018 /* ListController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ListController.cpp; path = src/spv/ListController.cpp; sourceTree = "<group>"; };
+		E2C98E5018EAC1B4008D6018 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListController.h; path = src/spv/ListController.h; sourceTree = "<group>"; };
+		E2D9040E188558C900A7A0F5 /* RenderableCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableCamera.cpp; path = src/spvr/RenderableCamera.cpp; sourceTree = "<group>"; };
+		E2D9040F188558C900A7A0F5 /* RenderableCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableCamera.h; path = src/spvr/RenderableCamera.h; sourceTree = "<group>"; };
+		E2DCB5DF187735CB00E7B440 /* SapanaViewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SapanaViewer.cpp; path = src/spv/SapanaViewer.cpp; sourceTree = "<group>"; };
+		E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SapanaViewer.h; path = src/spv/SapanaViewer.h; sourceTree = "<group>"; };
+		E2DCB5E1187735CB00E7B440 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Screen.cpp; path = src/spv/Screen.cpp; sourceTree = "<group>"; };
+		E2DCB5E2187735CB00E7B440 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Screen.h; path = src/spv/Screen.h; sourceTree = "<group>"; };
+		E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestNotificationImpl.cpp; path = test/TestNotificationImpl.cpp; sourceTree = "<group>"; };
+		E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestNotificationImpl.h; path = test/TestNotificationImpl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E23FDB751860678B007BC04F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2455F2418634369000EEB2F /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E23FDB6F1860678B007BC04F = {
+			isa = PBXGroup;
+			children = (
+				E26828B51874D275000AA0C0 /* external */,
+				E23FDBF3186069F0007BC04F /* OpenGLES.framework */,
+				E23FDB7F186067CB007BC04F /* src */,
+				E2BCBE901864708B00217658 /* test */,
+				E2594DD618633A27005570B0 /* Frameworks */,
+				E23FDB791860678B007BC04F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E23FDB791860678B007BC04F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E23FDB781860678B007BC04F /* libSapanaViewerLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E23FDB7F186067CB007BC04F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E25C0C96188D8CC600DC5B6B /* spvg */,
+				E25C0C91188D8B8900DC5B6B /* spvs */,
+				E28F246A18898DFD00DD944C /* spvu */,
+				E23FDB8118606818007BC04F /* spvr */,
+				E23FDB80186067E5007BC04F /* spv */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		E23FDB80186067E5007BC04F /* spv */ = {
+			isa = PBXGroup;
+			children = (
+				E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */,
+				E2DCB5DF187735CB00E7B440 /* SapanaViewer.cpp */,
+				E278FEF518E455E700331A35 /* Controller */,
+				E2DCB5E1187735CB00E7B440 /* Screen.cpp */,
+				E2DCB5E2187735CB00E7B440 /* Screen.h */,
+			);
+			name = spv;
+			sourceTree = "<group>";
+		};
+		E23FDB8118606818007BC04F /* spvr */ = {
+			isa = PBXGroup;
+			children = (
+				E28FB55E18E066F80009D425 /* Renderer */,
+				E28FB55F18E067450009D425 /* Renderable Data */,
+				E28FB55D18E066E30009D425 /* Renderable Nodes */,
+				E2A190F118EABC0B00472122 /* RendererUtils.cpp */,
+				E2A190F218EABC0B00472122 /* RendererUtils.h */,
+			);
+			name = spvr;
+			sourceTree = "<group>";
+		};
+		E2594DD618633A27005570B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2455F22186340FC000EEB2F /* OpenGL.framework */,
+				E2594DD718633A27005570B0 /* Foundation.framework */,
+				E2594DE518633A28005570B0 /* XCTest.framework */,
+				E2594DE818633A28005570B0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E25C0C91188D8B8900DC5B6B /* spvs */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5B72518E07D0000E0DA59 /* Scene Graph and Nodes */,
+				E2B5B72418E07CEB00E0DA59 /* Data */,
+				E278FEFB18E45D6D00331A35 /* Accessors */,
+				E2B5B72618E07D1200E0DA59 /* spvs Utils */,
+			);
+			name = spvs;
+			sourceTree = "<group>";
+		};
+		E25C0C96188D8CC600DC5B6B /* spvg */ = {
+			isa = PBXGroup;
+			children = (
+				E2B5B73018E184BD00E0DA59 /* List Base Classes */,
+				E2B5B73118E184E200E0DA59 /* List Implementations */,
+				E2B5B73318E1852B00E0DA59 /* Wrapped Data Types */,
+				E2B5B73218E184FF00E0DA59 /* Old Tree View REMOVE */,
+			);
+			name = spvg;
+			sourceTree = "<group>";
+		};
+		E278FEF518E455E700331A35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190C118EABB4800472122 /* IController.h */,
+				E2C56E3418844F9500D8B535 /* SceneGraphController.h */,
+				E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */,
+				E2A190FE18EABC4600472122 /* SceneNodeController.h */,
+				E2A190FD18EABC4600472122 /* SceneNodeController.cpp */,
+				E2A190A318EABAA400472122 /* SceneRendererController.cpp */,
+				E2A190A418EABAA400472122 /* SceneRendererController.h */,
+				E292DA6818E5C5CB00AE18D3 /* GUI Abstraction controller */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E278FEFB18E45D6D00331A35 /* Accessors */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */,
+				E2A1909B18EABA3000472122 /* SceneNodeModifier.h */,
+			);
+			name = Accessors;
+			sourceTree = "<group>";
+		};
+		E28F246A18898DFD00DD944C /* spvu */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190A018EABA5800472122 /* Util.h */,
+				E2A1910918EABCB800472122 /* TypeDefSpv.h */,
+				E2A1908518EAB98200472122 /* Interfaces */,
+				E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */,
+			);
+			name = spvu;
+			sourceTree = "<group>";
+		};
+		E28FB55D18E066E30009D425 /* Renderable Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E2594D8418631B65005570B0 /* RenderableModelNode.h */,
+				E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */,
+				E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */,
+				E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */,
+				E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */,
+				E2A190F818EABC2000472122 /* RenderableLeafNode.h */,
+			);
+			name = "Renderable Nodes";
+			sourceTree = "<group>";
+		};
+		E28FB55E18E066F80009D425 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				E2594D8718631B65005570B0 /* IRenderer.h */,
+				E2594D8B18631B65005570B0 /* SceneRenderer.h */,
+				E2594D8A18631B65005570B0 /* SceneRenderer.cpp */,
+				E2594D8D18631B65005570B0 /* SceneRendererContext.h */,
+				E2594D8C18631B65005570B0 /* SceneRendererContext.cpp */,
+				E2594D8118631B65005570B0 /* ModelRenderer.h */,
+				E2594D8018631B65005570B0 /* ModelRenderer.cpp */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		E28FB55F18E067450009D425 /* Renderable Data */ = {
+			isa = PBXGroup;
+			children = (
+				E28E04B618997D1200CF4705 /* IRenderable.h */,
+				E2594D8618631B65005570B0 /* RenderableScene.h */,
+				E2594D8518631B65005570B0 /* RenderableScene.cpp */,
+				E2594D8318631B65005570B0 /* RenderableModel.h */,
+				E2594D8218631B65005570B0 /* RenderableModel.cpp */,
+				E2D9040F188558C900A7A0F5 /* RenderableCamera.h */,
+				E2D9040E188558C900A7A0F5 /* RenderableCamera.cpp */,
+			);
+			name = "Renderable Data";
+			sourceTree = "<group>";
+		};
+		E292DA6818E5C5CB00AE18D3 /* GUI Abstraction controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190BC18EABB2D00472122 /* HierarchicalListController.h */,
+				E2A190BB18EABB2D00472122 /* HierarchicalListController.cpp */,
+				E2C98E5018EAC1B4008D6018 /* ListController.h */,
+				E2C98E4F18EAC1B4008D6018 /* ListController.cpp */,
+			);
+			name = "GUI Abstraction controller";
+			sourceTree = "<group>";
+		};
+		E2A1908518EAB98200472122 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1905818EAB8F200472122 /* INotification.h */,
+				E2A1905918EAB8F200472122 /* IObservable.h */,
+				E2A1905A18EAB8F200472122 /* IObserver.h */,
+				E2A1908618EAB98E00472122 /* Implementations */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		E2A1908618EAB98E00472122 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1907918EAB97900472122 /* ObservableImpl.cpp */,
+				E2A1907A18EAB97900472122 /* ObservableImpl.h */,
+				E2A1907B18EAB97900472122 /* ObserverImpl.cpp */,
+				E2A1907C18EAB97900472122 /* ObserverImpl.h */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		E2A1908D18EAB9CD00472122 /* Custom Leaf Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1906718EAB92400472122 /* ModelNode.cpp */,
+				E2A1906818EAB92400472122 /* ModelNode.h */,
+				E2A1904C18EAB89E00472122 /* CameraNode.cpp */,
+				E2A1904D18EAB89E00472122 /* CameraNode.h */,
+			);
+			name = "Custom Leaf Nodes";
+			sourceTree = "<group>";
+		};
+		E2B5B72418E07CEB00E0DA59 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1904618EAB89300472122 /* Camera.cpp */,
+				E2A1904718EAB89300472122 /* Camera.h */,
+				E2A1906D18EAB93900472122 /* ModelData.cpp */,
+				E2A1906E18EAB93900472122 /* ModelData.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E2B5B72518E07D0000E0DA59 /* Scene Graph and Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1908F18EAB9F100472122 /* SceneGraph.h */,
+				E2A1908E18EAB9F100472122 /* SceneGraph.cpp */,
+				E2A1909518EABA1F00472122 /* SceneNode.h */,
+				E2A1909418EABA1F00472122 /* SceneNode.cpp */,
+				E2A1904E18EAB89E00472122 /* FrameNode.cpp */,
+				E2A1904F18EAB89E00472122 /* FrameNode.h */,
+				E2A1906118EAB91900472122 /* LeafNode.cpp */,
+				E2A1906218EAB91900472122 /* LeafNode.h */,
+				E2A1908718EAB9C000472122 /* RootNode.cpp */,
+				E2A1908818EAB9C000472122 /* RootNode.h */,
+				E2A1908D18EAB9CD00472122 /* Custom Leaf Nodes */,
+			);
+			name = "Scene Graph and Nodes";
+			sourceTree = "<group>";
+		};
+		E2B5B72618E07D1200E0DA59 /* spvs Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */,
+				E2A1910418EABC8500472122 /* SceneNodeProperties.h */,
+				E2A1907318EAB95600472122 /* NodeGraber.cpp */,
+				E2A1907418EAB95600472122 /* NodeGraber.h */,
+			);
+			name = "spvs Utils";
+			sourceTree = "<group>";
+		};
+		E2B5B73018E184BD00E0DA59 /* List Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190C518EABB6500472122 /* ListSpv.h */,
+				E2A190C418EABB6500472122 /* ListSpv.cpp */,
+				E2A190A918EABAE100472122 /* HierarchicalList.cpp */,
+				E2A190AA18EABAE100472122 /* HierarchicalList.h */,
+				E2A190CA18EABB6E00472122 /* ListItemSpv.cpp */,
+				E2A190CB18EABB6E00472122 /* ListItemSpv.h */,
+				E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */,
+				E2A190B018EABAEF00472122 /* HierarchicalListItem.h */,
+			);
+			name = "List Base Classes";
+			sourceTree = "<group>";
+		};
+		E2B5B73118E184E200E0DA59 /* List Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */,
+				E2A190B618EABAFC00472122 /* HierarchicalModelList.h */,
+				E2A190DF18EABBD800472122 /* ModelList.cpp */,
+				E2A190E018EABBD800472122 /* ModelList.h */,
+				E2A190E118EABBD800472122 /* NodeAncestorList.cpp */,
+				E2A190E218EABBD800472122 /* NodeAncestorList.h */,
+				E2A190E318EABBD800472122 /* NodeTransformationsList.cpp */,
+				E2A190E418EABBD800472122 /* NodeTransformationsList.h */,
+			);
+			name = "List Implementations";
+			sourceTree = "<group>";
+		};
+		E2B5B73218E184FF00E0DA59 /* Old Tree View REMOVE */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190D018EABB8D00472122 /* ITreeViewItem.h */,
+				E25C0CA4188D9AD600DC5B6B /* TreeViewNode.h */,
+				E25C0CA3188D9AD600DC5B6B /* TreeViewNode.cpp */,
+				E25C0CAC188DB25F00DC5B6B /* ITreeView.h */,
+				E25C0CB0188DB2F900DC5B6B /* SceneNodeTreeView.h */,
+				E25C0CAF188DB2F900DC5B6B /* SceneNodeTreeView.cpp */,
+			);
+			name = "Old Tree View REMOVE";
+			sourceTree = "<group>";
+		};
+		E2B5B73318E1852B00E0DA59 /* Wrapped Data Types */ = {
+			isa = PBXGroup;
+			children = (
+				E2A190D318EABBAC00472122 /* MatrixForGUI.cpp */,
+				E2A190D418EABBAC00472122 /* MatrixForGUI.h */,
+				E2A190D518EABBAC00472122 /* ModelInformation.cpp */,
+				E2A190D618EABBAC00472122 /* ModelInformation.h */,
+			);
+			name = "Wrapped Data Types";
+			sourceTree = "<group>";
+		};
+		E2BCBE901864708B00217658 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */,
+				E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */,
+				E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */,
+				E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */,
+				E2BCBECC1864767100217658 /* TestController.h */,
+				E2BCBECB1864767100217658 /* TestController.cpp */,
+				E2BCBE92186470AA00217658 /* CubeData.h */,
+				E2BCBE91186470AA00217658 /* CubeData.cpp */,
+				E2BCBE93186470AA00217658 /* CubeRenderer.cpp */,
+				E2BCBE94186470AA00217658 /* CubeRenderer.h */,
+				E2BCBE95186470AA00217658 /* main.cpp */,
+				E2BCBE97186470AA00217658 /* TestSceneData.h */,
+				E2BCBE96186470AA00217658 /* TestSceneData.cpp */,
+				E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */,
+				E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */,
+				E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */,
+				E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */,
+				E28BA13118707AF100B189F3 /* TestModelNode.cpp */,
+				E28BA13218707AF100B189F3 /* TestModelNode.h */,
+				E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */,
+				E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */,
+				E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */,
+				E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */,
+				E2C56E481884541500D8B535 /* TestSceneManager.h */,
+				E2C56E471884541500D8B535 /* TestSceneManager.cpp */,
+				E2C56E4C1884942F00D8B535 /* TestCameraNode.h */,
+				E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */,
+				E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */,
+				E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E23FDB761860678B007BC04F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DCB5E4187735CB00E7B440 /* SapanaViewer.h in Headers */,
+				E2A1910118EABC4600472122 /* SceneNodeController.h in Headers */,
+				E2C98E5218EAC1B4008D6018 /* ListController.h in Headers */,
+				E2A190C218EABB4800472122 /* IController.h in Headers */,
+				E2A190BF18EABB2D00472122 /* HierarchicalListController.h in Headers */,
+				E2A1910A18EABCB800472122 /* TypeDefSpv.h in Headers */,
+				E2A190D918EABBAC00472122 /* MatrixForGUI.h in Headers */,
+				E2A190DD18EABBAC00472122 /* ModelInformation.h in Headers */,
+				E2A190CE18EABB6E00472122 /* ListItemSpv.h in Headers */,
+				E2A190B318EABAEF00472122 /* HierarchicalListItem.h in Headers */,
+				E2A190A118EABA5800472122 /* Util.h in Headers */,
+				E2A1907F18EAB97900472122 /* ObservableImpl.h in Headers */,
+				E2A1904A18EAB89300472122 /* Camera.h in Headers */,
+				E2A190E718EABBD800472122 /* ModelList.h in Headers */,
+				E2A1906518EAB91900472122 /* LeafNode.h in Headers */,
+				E2A1909218EAB9F100472122 /* SceneGraph.h in Headers */,
+				E25C0CB2188DB2F900DC5B6B /* SceneNodeTreeView.h in Headers */,
+				E2BF0AFA1872F94D00D9E0F0 /* CubeData.h in Headers */,
+				E2D90411188558C900A7A0F5 /* RenderableCamera.h in Headers */,
+				E29FC0A0187081DB00A9B42E /* TestSceneData.h in Headers */,
+				E21D9B111875ADB400B6ED08 /* RenderableCameraNode.h in Headers */,
+				E2A190EF18EABBD800472122 /* NodeTransformationsList.h in Headers */,
+				E25C0CAE188DB25F00DC5B6B /* ITreeView.h in Headers */,
+				E2C56E4A1884541500D8B535 /* TestSceneManager.h in Headers */,
+				E2A190A718EABAA400472122 /* SceneRendererController.h in Headers */,
+				E2A190C818EABB6500472122 /* ListSpv.h in Headers */,
+				E2A190FB18EABC2000472122 /* RenderableLeafNode.h in Headers */,
+				E2A190EB18EABBD800472122 /* NodeAncestorList.h in Headers */,
+				E29FC09F1870813300A9B42E /* TestRenderableModelNode.h in Headers */,
+				E2A190D118EABB8D00472122 /* ITreeViewItem.h in Headers */,
+				E28F246E18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h in Headers */,
+				E25C0CA6188D9AD600DC5B6B /* TreeViewNode.h in Headers */,
+				E2A1908318EAB97900472122 /* ObserverImpl.h in Headers */,
+				E2594D9618631B65005570B0 /* IRenderer.h in Headers */,
+				E2594D9018631B65005570B0 /* ModelRenderer.h in Headers */,
+				E2A1909E18EABA3000472122 /* SceneNodeModifier.h in Headers */,
+				E2594D9A18631B65005570B0 /* SceneRenderer.h in Headers */,
+				E25C0CB6188DB47A00DC5B6B /* TestSceneNodeTreeView.h in Headers */,
+				E2E4B295187D5EE600EDB878 /* TestNotificationImpl.h in Headers */,
+				E2C56E4E1884942F00D8B535 /* TestCameraNode.h in Headers */,
+				E2A1906B18EAB92400472122 /* ModelNode.h in Headers */,
+				E2594D9318631B65005570B0 /* RenderableModelNode.h in Headers */,
+				E2594D9C18631B65005570B0 /* SceneRendererContext.h in Headers */,
+				E21D9B151875C3D800B6ED08 /* TestRenderableCameraNode.h in Headers */,
+				E2A1905218EAB89E00472122 /* CameraNode.h in Headers */,
+				E2C56E3C18844F9500D8B535 /* SceneGraphController.h in Headers */,
+				E2A1907718EAB95600472122 /* NodeGraber.h in Headers */,
+				E2594D9218631B65005570B0 /* RenderableModel.h in Headers */,
+				E28E04B818997D1200CF4705 /* IRenderable.h in Headers */,
+				E2A1905F18EAB8F200472122 /* IObserver.h in Headers */,
+				E2A190F518EABC0B00472122 /* RendererUtils.h in Headers */,
+				E2BCBECE1864767100217658 /* TestController.h in Headers */,
+				E2A1908B18EAB9C000472122 /* RootNode.h in Headers */,
+				E2DCB5E6187735CB00E7B440 /* Screen.h in Headers */,
+				E2C56E4218844FB300D8B535 /* TestSceneRenderer.h in Headers */,
+				E2A1907118EAB93900472122 /* ModelData.h in Headers */,
+				E28BA13418707AF100B189F3 /* TestModelNode.h in Headers */,
+				E256F3D11864A99500C1FDA3 /* TestSceneRendererContext.h in Headers */,
+				E2A1905D18EAB8F200472122 /* IObservable.h in Headers */,
+				E2594D9518631B65005570B0 /* RenderableScene.h in Headers */,
+				E256F3D51864AEA300C1FDA3 /* TestRenderableScene.h in Headers */,
+				E2A1905618EAB89E00472122 /* FrameNode.h in Headers */,
+				E2A190AD18EABAE100472122 /* HierarchicalList.h in Headers */,
+				E2A1905B18EAB8F200472122 /* INotification.h in Headers */,
+				E2A1910718EABC8500472122 /* SceneNodeProperties.h in Headers */,
+				E2A190B918EABAFC00472122 /* HierarchicalModelList.h in Headers */,
+				E2A1909818EABA1F00472122 /* SceneNode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E23FDB771860678B007BC04F /* SapanaViewerLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E23FDB7C1860678B007BC04F /* Build configuration list for PBXNativeTarget "SapanaViewerLibrary" */;
+			buildPhases = (
+				E23FDB741860678B007BC04F /* Sources */,
+				E23FDB751860678B007BC04F /* Frameworks */,
+				E23FDB761860678B007BC04F /* Headers */,
+				E2C98E4518EABF0F008D6018 /* Copy Headers to Includes */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SapanaViewerLibrary;
+			productName = SapanaViewerLibrary;
+			productReference = E23FDB781860678B007BC04F /* libSapanaViewerLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E23FDB701860678B007BC04F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Visualization and MultiMedia Lab, University of Zurich, Switzerland";
+			};
+			buildConfigurationList = E23FDB731860678B007BC04F /* Build configuration list for PBXProject "SapanaViewerLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E23FDB6F1860678B007BC04F;
+			productRefGroup = E23FDB791860678B007BC04F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E23FDB771860678B007BC04F /* SapanaViewerLibrary */,
+				E2455F291863443A000EEB2F /* SapanaViewerLibraryiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E2455F2D1863447B000EEB2F /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PROJECT_NAME=\"SapanaViewerLibrary\"\nTARGET_NAME=\"SapanaViewerLibrary\"\nLIB_NAME=\"lib\"$PROJECT_NAME\".a\"\nLIB_NAME_COMBINED=\"lib\"$PROJECT_NAME\"-Combined.a\"\n\nXCODEBUILD_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin\nXCODEBUILD=$XCODEBUILD_PATH/xcodebuild\n\n$XCODEBUILD -project $PROJECT_NAME.xcodeproj -target \"$TARGET_NAME\" -sdk \"iphonesimulator\" -configuration \"Release\" clean build\n$XCODEBUILD -project $PROJECT_NAME.xcodeproj -target \"$TARGET_NAME\" -sdk \"iphoneos\" -configuration \"Release\" clean build\n\nlipo -create -output \"lib/$LIB_NAME_COMBINED\" \"build/Release-iphoneos/$LIB_NAME\" \"build/Release-iphonesimulator/\"$LIB_NAME";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E23FDB741860678B007BC04F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A1907518EAB95600472122 /* NodeGraber.cpp in Sources */,
+				E2E4B294187D5EE600EDB878 /* TestNotificationImpl.cpp in Sources */,
+				E21D9B101875ADB400B6ED08 /* RenderableCameraNode.cpp in Sources */,
+				E2A190A518EABAA400472122 /* SceneRendererController.cpp in Sources */,
+				E2A190CC18EABB6E00472122 /* ListItemSpv.cpp in Sources */,
+				E2A190AB18EABAE100472122 /* HierarchicalList.cpp in Sources */,
+				E2A190DB18EABBAC00472122 /* ModelInformation.cpp in Sources */,
+				E2A13D791872FA3700F57EFE /* CubeData.cpp in Sources */,
+				E2A190C618EABB6500472122 /* ListSpv.cpp in Sources */,
+				E25C0CB1188DB2F900DC5B6B /* SceneNodeTreeView.cpp in Sources */,
+				E2A1905418EAB89E00472122 /* FrameNode.cpp in Sources */,
+				E2A1909018EAB9F100472122 /* SceneGraph.cpp in Sources */,
+				E2A190B118EABAEF00472122 /* HierarchicalListItem.cpp in Sources */,
+				E2C56E4D1884942F00D8B535 /* TestCameraNode.cpp in Sources */,
+				E2A1906F18EAB93900472122 /* ModelData.cpp in Sources */,
+				E2A1909C18EABA3000472122 /* SceneNodeModifier.cpp in Sources */,
+				E2A190FF18EABC4600472122 /* SceneNodeController.cpp in Sources */,
+				E2A190F918EABC2000472122 /* RenderableLeafNode.cpp in Sources */,
+				E2A1909618EABA1F00472122 /* SceneNode.cpp in Sources */,
+				E2C98E5118EAC1B4008D6018 /* ListController.cpp in Sources */,
+				E2A1906318EAB91900472122 /* LeafNode.cpp in Sources */,
+				E21D9B141875C3D800B6ED08 /* TestRenderableCameraNode.cpp in Sources */,
+				E2A190BD18EABB2D00472122 /* HierarchicalListController.cpp in Sources */,
+				E256F3CA1864A83800C1FDA3 /* TestController.cpp in Sources */,
+				E2A1908118EAB97900472122 /* ObserverImpl.cpp in Sources */,
+				E256F3D01864A99500C1FDA3 /* TestSceneRendererContext.cpp in Sources */,
+				E2DCB5E5187735CB00E7B440 /* Screen.cpp in Sources */,
+				E25C0CA5188D9AD600DC5B6B /* TreeViewNode.cpp in Sources */,
+				E256F3CD1864A83800C1FDA3 /* TestSceneData.cpp in Sources */,
+				E2A1910518EABC8500472122 /* SceneNodeProperties.cpp in Sources */,
+				E2C56E3B18844F9500D8B535 /* SceneGraphController.cpp in Sources */,
+				E2C56E491884541500D8B535 /* TestSceneManager.cpp in Sources */,
+				E2A190B718EABAFC00472122 /* HierarchicalModelList.cpp in Sources */,
+				E2A190D718EABBAC00472122 /* MatrixForGUI.cpp in Sources */,
+				E2594D9118631B65005570B0 /* RenderableModel.cpp in Sources */,
+				E2A1905018EAB89E00472122 /* CameraNode.cpp in Sources */,
+				E2A1907D18EAB97900472122 /* ObservableImpl.cpp in Sources */,
+				E2594D8F18631B65005570B0 /* ModelRenderer.cpp in Sources */,
+				E2D90410188558C900A7A0F5 /* RenderableCamera.cpp in Sources */,
+				E2C56E4118844FB300D8B535 /* TestSceneRenderer.cpp in Sources */,
+				E2A1904818EAB89300472122 /* Camera.cpp in Sources */,
+				E25C0CB5188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp in Sources */,
+				E29FC09E1870813300A9B42E /* TestRenderableModelNode.cpp in Sources */,
+				E2A190F318EABC0B00472122 /* RendererUtils.cpp in Sources */,
+				E2A190E918EABBD800472122 /* NodeAncestorList.cpp in Sources */,
+				E2594D9418631B65005570B0 /* RenderableScene.cpp in Sources */,
+				E2594D9918631B65005570B0 /* SceneRenderer.cpp in Sources */,
+				E2DCB5E3187735CB00E7B440 /* SapanaViewer.cpp in Sources */,
+				E28BA13318707AF100B189F3 /* TestModelNode.cpp in Sources */,
+				E256F3D41864AEA300C1FDA3 /* TestRenderableScene.cpp in Sources */,
+				E2594D9B18631B65005570B0 /* SceneRendererContext.cpp in Sources */,
+				E2A190E518EABBD800472122 /* ModelList.cpp in Sources */,
+				E2A1908918EAB9C000472122 /* RootNode.cpp in Sources */,
+				E2A1906918EAB92400472122 /* ModelNode.cpp in Sources */,
+				E2A190ED18EABBD800472122 /* NodeTransformationsList.cpp in Sources */,
+				E29FC0A2187082A100A9B42E /* RenderableModelNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E23FDB7A1860678B007BC04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E23FDB7B1860678B007BC04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E23FDB7D1860678B007BC04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/external/vmmlib/include/**/**";
+				PRIVATE_HEADERS_FOLDER_PATH = $SRCROOT/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $SRCROOT/include;
+				USER_HEADER_SEARCH_PATHS = "./external/vmmlib/include/**";
+			};
+			name = Debug;
+		};
+		E23FDB7E1860678B007BC04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/external/vmmlib/include/**/**";
+				PRIVATE_HEADERS_FOLDER_PATH = $SRCROOT/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $SRCROOT/include;
+				USER_HEADER_SEARCH_PATHS = "./external/vmmlib/include/**";
+			};
+			name = Release;
+		};
+		E2455F2B1863443B000EEB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2455F2C1863443B000EEB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E23FDB731860678B007BC04F /* Build configuration list for PBXProject "SapanaViewerLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23FDB7A1860678B007BC04F /* Debug */,
+				E23FDB7B1860678B007BC04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E23FDB7C1860678B007BC04F /* Build configuration list for PBXNativeTarget "SapanaViewerLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E23FDB7D1860678B007BC04F /* Debug */,
+				E23FDB7E1860678B007BC04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2455F2A1863443B000EEB2F /* Build configuration list for PBXAggregateTarget "SapanaViewerLibraryiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2455F2B1863443B000EEB2F /* Debug */,
+				E2455F2C1863443B000EEB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E23FDB701860678B007BC04F /* Project object */;
+}
