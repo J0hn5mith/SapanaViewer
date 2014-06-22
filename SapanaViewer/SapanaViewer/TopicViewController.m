@@ -97,7 +97,10 @@
     self.selectionViewController.view.layer.borderColor = self.layoutProperties.primaryColor.CGColor;
     self.selectionViewController.view.layer.borderWidth = borderWidth;
     
+    // Propagate layout properties setting
     [self.sceneViewController setLayoutProperties:layoutProperties];
+    
+    [self.visualizationViewController setLayoutProperties:self.layoutProperties];
 
 }
 
@@ -171,7 +174,12 @@
 
 -(void)loadVisualizationViewController
 {
-    
+    [self configureSelectionViewController];
+}
+
+-(void)configureVisualizationViewController
+{
+
 }
 
 #pragma mark - TopicViewController Methodes

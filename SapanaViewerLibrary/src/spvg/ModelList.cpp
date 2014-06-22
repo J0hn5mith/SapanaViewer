@@ -23,9 +23,9 @@ ModelList::ModelList(std::shared_ptr< const spvs::SceneGraph > sceneGraph)
 : sceneGraph_(sceneGraph)
 , items_(std::vector < ListItemSpv >())
 {                                                                               
-    std::shared_ptr< std::vector< std::shared_ptr< const spvs::ModelNode > > > modelNodes = sceneGraph_->getModelNodes();
+    std::vector< std::shared_ptr< const spvs::ModelNode > > modelNodes = sceneGraph_->getModelNodes();
     
-    std::for_each (modelNodes->begin(), modelNodes->end(),
+    std::for_each (modelNodes.begin(), modelNodes.end(),
                    [&](std::shared_ptr< const spvs::ModelNode > node)
                    {
                        std::string name = std::string("Model Node ") + std::to_string(items_.size());

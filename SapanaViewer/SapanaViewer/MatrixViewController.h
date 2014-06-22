@@ -12,7 +12,8 @@
 @interface MatrixViewController : UIViewController
 
 #pragma mark - Number Fields and Operands
-@property NSMutableArray * labelMatrix;
+@property (weak, nonatomic) IBOutlet UIView *matrixLabelView;
+@property NSMutableArray * labelMatrix; // holds labels as CGTextLayer
 @property (weak, nonatomic) IBOutlet UILabel *field00;
 @property (weak, nonatomic) IBOutlet UILabel *field01;
 @property (weak, nonatomic) IBOutlet UILabel *field02;
@@ -35,14 +36,22 @@
 
 
 
-
-#pragma mark - Util Members
+#pragma mark - Properties
 @property TransMatrix * currentMatrix;
+
+@property UIColor * highLightColor;
+@property (nonatomic) BOOL * isHighlighted;
+
+@property UIColor * fontColor;
+@property UIColor * fontHighlightColor;
+
 @property NSNumberFormatter * numberFormater;
+
 
 #pragma mark - Update Methods
 -(void) updateWithMatrix:(TransMatrix * ) matrix;
 -(void) updateWithMatrixWithHighlight:(TransMatrix * ) matrix;
+
 
 #pragma mark - Util Methods
 -(NSString *) floatToString:(NSNumber *) number;

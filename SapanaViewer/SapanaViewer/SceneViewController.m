@@ -267,8 +267,8 @@
 -(IBAction) oneFingerPanGestureRecognizer: (UIPanGestureRecognizer * ) recognizer
 {
     CGPoint velocity = [recognizer velocityInView:self.view];
-    CGFloat xVel = velocity.y ;
-    CGFloat yVel = velocity.x;
+    CGFloat xVel = -velocity.y ;
+    CGFloat yVel = -velocity.x;
     
     CGFloat xAngle = [Util smoothenVelocity:xVel] * NAVIGATOIN_SPEED_REDUCTION_FACTOR;
     CGFloat yAngle = [Util smoothenVelocity:yVel] * NAVIGATOIN_SPEED_REDUCTION_FACTOR;
@@ -280,8 +280,8 @@
 -(IBAction) twoFingerPanGestureRecognizer: (UIPanGestureRecognizer * ) recognizer
 {
     CGPoint velocity = [recognizer velocityInView:self.view];
-    CGFloat xVel = velocity.x ;
-    CGFloat yVel = velocity.y;
+    CGFloat xVel = -velocity.x ;
+    CGFloat yVel = -velocity.y;
     
     CGFloat xDistance = [Util smoothenVelocity:xVel] * NAVIGATOIN_SPEED_REDUCTION_FACTOR;
     CGFloat yDistance = [Util smoothenVelocity:yVel] * NAVIGATOIN_SPEED_REDUCTION_FACTOR;
@@ -297,4 +297,5 @@
     self.oneFingerPanGestureRecognizer.enabled = active;
     self.twoFingerPanGestureRecognizer.enabled = active;
 }
+
 @end

@@ -38,6 +38,12 @@
     
 }
 
+-(void)setLayoutProperties:(TopicLayoutProperties *)layoutProperties
+{
+
+}
+
+#pragma mark - Gesture Handling
 -(IBAction)singleTap:(UITapGestureRecognizer *)recognizer
 {
     CGRect newframe;

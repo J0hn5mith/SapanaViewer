@@ -15,9 +15,10 @@
 
 using namespace spvg;
                                                                                 
-HierarchicalListItem::HierarchicalListItem(spvu::ListItemID itemID, std::string label, unsigned int level)
+HierarchicalListItem::HierarchicalListItem(spvu::ListItemID itemID, std::string label, bool expanded, bool expandable, unsigned int level)
 : ListItemSpv (itemID, label)
-, isExpanded_(false)
+, isExpanded_(expanded)
+, isExpandedable_(expandable)
 , level_(level)
 {                                                                               
   // TODO: Implement                                     

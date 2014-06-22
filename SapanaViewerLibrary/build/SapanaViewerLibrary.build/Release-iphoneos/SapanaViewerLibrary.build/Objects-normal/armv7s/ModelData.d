@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/ModelData.cpp \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/ModelData.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/Util.h \
+  external/vmmlib/include/vmmlib/vmmlib.hpp \
+  external/vmmlib/include/vmmlib/frustum.hpp \
+  external/vmmlib/include/vmmlib/vmmlib_config.hpp \
+  external/vmmlib/include/vmmlib/matrix.hpp \
+  external/vmmlib/include/vmmlib/matrix_functors.hpp \
+  external/vmmlib/include/vmmlib/enable_if.hpp \
+  external/vmmlib/include/vmmlib/vector.hpp \
+  external/vmmlib/include/vmmlib/math.hpp \
+  external/vmmlib/include/vmmlib/exception.hpp \
+  external/vmmlib/include/vmmlib/frustum_culler.hpp \
+  external/vmmlib/include/vmmlib/visibility.hpp \
+  external/vmmlib/include/vmmlib/intersection.hpp \
+  external/vmmlib/include/vmmlib/lowpass_filter.hpp \
+  external/vmmlib/include/vmmlib/quaternion.hpp \
+  external/vmmlib/include/vmmlib/version.hpp

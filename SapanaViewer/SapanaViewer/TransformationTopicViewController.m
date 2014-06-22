@@ -121,53 +121,74 @@
 
 -(void)loadVisualizationViewController
 {
-    self.transformationVisualisationViewController = [[TransformationVisualizationViewController alloc] initWithNibName:@"TransformationVisualizationViewController" bundle:nil];
+    self.transformationVisualisationViewController = [[TransformationVisualizationViewController alloc] initWithNibName:@"VisualizationViewController" bundle:nil];
+    self.visualizationViewController = self.transformationVisualisationViewController;
     
     self.sceneViewController.visualizationViewController  = self.transformationVisualisationViewController;
+    
+    [self configureVisualizationViewController];
+}
+
+-(void)configureVisualizationViewController
+{
+    [super configureVisualizationViewController];
 }
 
 #pragma mark -
 #pragma mark ModelSelectionViewControllerDelegate Protocol
 - (void) modelSelected:(int) modelId
 {
-    [self.sapanaViewer selectModelNode: modelId];
-    
-    SceneNodeModifierWrapper * sceneNodeModifier = [self.sapanaViewer getSelectedNodeModifier];
-    
-    // Change Configuration View Controller
-    TransformationConfigurationViewController * tcvController = ((TransformationConfigurationViewController *)self.configurationViewController);
-    tcvController.sceneNodeModifier = sceneNodeModifier;
-
-    // Change Information View Controller
-    [((TransformationInformationViewController*)self.informationViewController)hideMatrix:true];
-    
-    // Change The Visualization View Controller
-    // TODO: Remove this. Because this methodes is called from the model selector, and the visualization view hasen't been changed then, the needed methode is not available
-    
-    TransformationVisualizationViewController * tmp = ((TransformationVisualizationViewController*)self.sceneViewController.visualizationViewController);
-    if([tmp isKindOfClass:[TransformationVisualizationViewController class]])
+    if (modelId != -1)
     {
+        [self.sapanaViewer selectModelNode: modelId];
         
-        [tmp setNodeModifier:sceneNodeModifier];
+        SceneNodeModifierWrapper * sceneNodeModifier = [self.sapanaViewer getSelectedNodeModifier];
+        
+        // Change Configuration View Controller
+        TransformationConfigurationViewController * tcvController = ((TransformationConfigurationViewController *)self.configurationViewController);
+        tcvController.sceneNodeModifier = sceneNodeModifier;
+        
+        // Change Information View Controller
+        [((TransformationInformationViewController*)self.informationViewController)hideMatrix:true];
+        
+        // Change The Visualization View Controller
+        // TODO: Remove this. Because this methodes is called from the model selector, and the visualization view hasen't been changed then, the needed methode is not available
+        
+        TransformationVisualizationViewController * tmp = ((TransformationVisualizationViewController*)self.sceneViewController.visualizationViewController);
+        if([tmp isKindOfClass:[TransformationVisualizationViewController class]])
+        {
+            [tmp setNodeModifier:sceneNodeModifier];
+        }
+        
+        
+        [self.sceneViewController hideVisualizationView:false];
+        [self.transformationVisualisationViewController setNodeModifier:sceneNodeModifier];
+        [((TransformationInformationViewController*)self.informationViewController)showNoMatrixSelected:true];
+    }
+    else
+    {
+        [((TransformationConfigurationViewController *)self.configurationViewController) setNoModelSelected:true];
+        
+        //[((TransformationInformationViewController*)self.informationViewController) showNoNodeSelected:true];
+        
+        [self.sceneViewController hideVisualizationView:true];
     }
     
-    
-    [self.sceneViewController hideVisualizationView:false];
-    [((TransformationInformationViewController*)self.informationViewController)showNoMatrixSelected:true];
     
 }
 
 #pragma mark -
 #pragma mark TransformationConfigurationViewControllerDelegate Protocol
--(void) transformationSelected:(BOOL) matrixSelected
+-(void) transformationSelected:(NSInteger) transformationPosition;
 {
-    if (matrixSelected)
+    if (transformationPosition >= 0)
     {
         [((TransformationInformationViewController*)self.informationViewController)hideMatrix:false];
         TransMatrix * activeTransformationMatrix = [[self.sapanaViewer getSelectedNodeModifier] getActiveTransformationMatrix];
         TransformationInformationViewController *matrixInformationVC =((TransformationInformationViewController*)self.informationViewController);
         [matrixInformationVC.matrixVC updateWithMatrix:activeTransformationMatrix];
             [((TransformationInformationViewController*)self.informationViewController)showNoMatrixSelected:false];
+        [self.transformationVisualisationViewController selectMatrix:transformationPosition];
     }
     else
     {
@@ -175,6 +196,11 @@
             [((TransformationInformationViewController*)self.informationViewController)showNoMatrixSelected:true];
     }
     
+}
+
+-(void) transformationDeleted:(NSInteger)position
+{
+    [self.transformationVisualisationViewController deleteMatrix:position];
 }
 
 -(void) transformationModified
@@ -200,7 +226,7 @@
     if([tmp isKindOfClass:[TransformationVisualizationViewController class]])
     {
         
-        [tmp moveMatrix:fromPosition toIndex:toPosition];
+        [tmp.matrixMultiplicationVVC moveMatrix:fromPosition toIndex:toPosition];
     }
 }
 

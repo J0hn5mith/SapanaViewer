@@ -129,7 +129,10 @@
 
 -(ListWrapper *) getFlatCameraList
 {
-   return NULL;
+    ListWrapperImpl * listImpl = [[ListWrapperImpl alloc] init];
+    listImpl.list = impl.sapanaViewer->getFlatCameraList();
+    ListWrapper * wrappedList = [[ListWrapper alloc] initWithList:listImpl];
+    return wrappedList;
 }
 
 -(void) moveNode:(unsigned long)childID newParent:(unsigned long)parentID

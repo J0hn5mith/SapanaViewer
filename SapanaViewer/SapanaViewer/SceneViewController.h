@@ -18,13 +18,26 @@
 
 @interface SceneViewController : GLKViewController <VisualizationViewControllerDelegate,
 PreviewViewControllerDelegate>
+{
+    @private
+    BOOL _useDepthBuffer;
+    GLint _backingWidth;
+    GLint _backingHeight;
+    
+    GLuint _viewRenderbuffer;
+    GLuint _viewFramebuffer;
+    GLuint _depthRenderbuffer;
+}
 
 
 @property (nonatomic) SapanaViewerWrapper * sapanaViewer;
 @property (nonatomic) TopicLayoutProperties * layoutProperties;
 
 #pragma mark - OpenGL
+
 @property (strong, nonatomic) EAGLContext * eaglContext;
+
+
 
 #pragma mark - Subviews and Subcontroller
 @property (nonatomic, strong) PreviewViewController * previewViewController;

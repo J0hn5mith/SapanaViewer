@@ -21,8 +21,12 @@
 #include "Util.h"
 #include "TypeDefSpv.h"
 #include "SceneNodeProperties.h"
+#include "SceneNodeTransformationList.h"
+#include "ISceneNodeVisitor.h"
 
 // Project internal includes
+#include "IObservable.h"
+#include "ObservableImpl.h"
 
 /**
  * The scene node base class for all nodes.
@@ -34,7 +38,7 @@ namespace spvs{
  * Mus be used by a scene graph. Adding and removing children does not set the childs 
  * parent pointer.
  */
-class SceneNode
+class SceneNode : public std::enable_shared_from_this< SceneNode > , spvu::IObservable
 {
 public:
     
@@ -46,6 +50,7 @@ public:
         LEAF_NODE = 3,
         MODEL_NODE = 4,
         CAMERA_NODE = 5,
+        LIGHT_SOURCE_NODE = 6
     };
     
     const std::string SceneNodeTypeNames[6]  = { "Scene Node", "Root Node", "Frame Node", "Leaf Node", "Model Node", "Camera Node" };
@@ -124,7 +129,7 @@ public:
      */
     virtual void removeChild(std::shared_ptr< SceneNode > childNode);
     
-#pragma mark - Transformationlist Management Methodes
+#pragma mark - Interface for SceneNodeTransformationList
     /**
      * Returns a list with all transformation matrices on this node. 
      * The multiplication of them, ergo the trans matrix that defines
@@ -150,6 +155,13 @@ public:
     virtual void removeTransformationMatrix(int position);
     
     /**
+     * Applies a transformation to the scene node.
+     * @param tMatrix Transformation that is applied to the node.
+     * @param index Index of the transformation on the transformation list to which the transformation is applied to.
+     */
+    virtual void transform(const spvu::TransMatrix tMatrix, int index);
+    
+    /**
      * Returns the transformation matrix of the scene node. This transition
      * matrix defines the transition in regard to the world (root node)  coordinates.
      * @deprecated use getWorldTransCoordinates
@@ -171,12 +183,7 @@ public:
      */
     virtual spvu::TransMatrix getNodeTransMatrix() const;
     
-    /**
-     * Applies a transformation to the scene node.
-     * @param tMatrix Transformation that is applied to the node.
-     * @param index Index of the transformation on the transformation list to which the transformation is applied to.
-     */
-    virtual void transform(const spvu::TransMatrix tMatrix, int index);
+
     
     
  #pragma mark - Properties Methodes
@@ -214,10 +221,30 @@ public:
      * @return id of the node
      */
     spvu::SceneNodeID getID() const {return id_;}
+ 
     
+#pragma mark - Implementation IObserver Interface
+    /**
+     * @ Implementation
+     */
+    virtual void notifyObservers(std::shared_ptr<const spvu::INotification > notification) const{observableImpl_->notifyObservers(notification);}
+    
+    /**
+     * @ Implementation
+     */
+    virtual void registerObserver(std::shared_ptr< spvu::IObserver >observer) const {observableImpl_->registerObserver(observer);}
+    
+    /**
+     * @ Implementation
+     */
+    virtual void unregisterObserver(std::shared_ptr< spvu::IObserver > observer) const{observableImpl_->unregisterObserver(observer);}
+    
+#pragma mark - Visitor Pattern
+    virtual void accept(spvs::ISceneNodeVisitor &visitor);
 
 private:
-    
+
+#pragma mark - Private Member Variables
     /**
      * Type of the scene node.
      */
@@ -234,13 +261,6 @@ private:
      * childNodes_ is a vector holding the references to the node's child nodes.
      */
     std::unordered_set< std::shared_ptr< SceneNode > > childNodes_;
-    
-    /**
-     * List of transformations that defines the position of the node
-     * regerdint its PARENT node. The matrices are processed in the order
-     * they are stored.
-     */
-    std::list< spvu::TransMatrix > transformationList_;
     
     /**
      * Caches the result when multiplying the transformation matrices in 
@@ -262,6 +282,12 @@ private:
     spvs::SceneNodeProperties  properties_;
     
     /**
+     * List with all the matrices that are currently applyied to the node. The multiplicatoin
+     * of these matrices defines the nodes orientation regarding his parent node.
+     */
+    spvs::SceneNodeTransformationList transformationList_;
+    
+    /**
      * Flag that idnicats if the node or a parent node has changed.
      */
     bool hasChanged_;
@@ -271,7 +297,12 @@ private:
      * 0 by default
      */
     spvu::SceneNodeID id_;
+ 
     
+    std::shared_ptr< spvu::ObservableImpl > observableImpl_;
+
+    
+#pragma mark - Private Methodes
     /**
      * Updates the transition matrix of the node.
      */

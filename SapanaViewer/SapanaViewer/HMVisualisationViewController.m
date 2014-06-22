@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
     self.matrixMultiplicationVVC = [[MatrixMultiplicationVisualisationViewController alloc] init];
     [self addChildViewController:self.matrixMultiplicationVVC];
@@ -48,7 +49,6 @@
 -(void)setNodeModifier:(SceneNodeModifierWrapper *)nodeModifier
 {
     _nodeModifier = nodeModifier;
-    // DUMMY ATRICES
     NSMutableArray * ancestors = [nodeModifier getAncesterMatrices];
     
     NSMutableArray* reverseAncestors = [[NSMutableArray alloc] init];

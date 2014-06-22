@@ -29,6 +29,8 @@ public:
      */
     explicit FrameNode();
     
+    explicit FrameNode(void * dummyPtr);
+    
     /**
      * Destroys the frame node object.
      */

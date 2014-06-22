@@ -18,6 +18,7 @@
 @property UILabel * expandedLabel;
 
 @property int level;
+@property bool canExpand;
 @property bool expanded;
 @property NSString *  labelText;
 
@@ -25,6 +26,7 @@
 - (id)initWithStyle:(UITableViewCellStyle)style
     reuseIdentifier:(NSString *)reuseIdentifier
              level_:(NSUInteger)level
+         canExpand_:(BOOL)canExpand
           expanded_:(BOOL)expanded
             nodeID_:(unsigned long) nodeID;
 

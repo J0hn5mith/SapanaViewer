@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -11,17 +11,32 @@
                 <outlet property="pinchGestureRecognizer" destination="b86-4m-amt" id="n9w-1O-SkH"/>
                 <outlet property="previewView" destination="8Ho-YH-iPJ" id="zMb-6X-foo"/>
                 <outlet property="twoFingerPanGestureRecognizer" destination="cqe-rs-qqz" id="IBm-Dp-esY"/>
-                <outlet property="view" destination="2" id="3"/>
+                <outlet property="view" destination="uza-fL-Svu" id="sUT-rd-TPq"/>
                 <outlet property="visualizationView" destination="0gl-Do-mne" id="uwe-cR-sSv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2" customClass="GLKView">
+        <pinchGestureRecognizer id="b86-4m-amt">
+            <connections>
+                <action selector="pinchGestureRecognizer:" destination="-1" id="GZ7-Ba-eH0"/>
+            </connections>
+        </pinchGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="bVY-XZ-crL" userLabel="1F Pan Gesture Recognizer">
+            <connections>
+                <action selector="oneFingerPanGestureRecognizer:" destination="-1" id="acA-dg-sf1"/>
+            </connections>
+        </panGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="2" maximumNumberOfTouches="2" id="cqe-rs-qqz" userLabel="2F Pan Gesture Recognizer">
+            <connections>
+                <action selector="twoFingerPanGestureRecognizer:" destination="-1" id="9wA-Pf-O2L"/>
+            </connections>
+        </panGestureRecognizer>
+        <glkView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" drawableDepthFormat="16" enableSetNeedsDisplay="NO" id="uza-fL-Svu">
             <rect key="frame" x="0.0" y="0.0" width="714" height="482"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-KM-NSj">
-                    <rect key="frame" x="3" y="4" width="714" height="482"/>
+                    <rect key="frame" x="0.0" y="0.0" width="714" height="482"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOn-3P-Hv8" userLabel="Large View">
@@ -42,30 +57,12 @@
                     </subviews>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <gestureRecognizers/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outletCollection property="gestureRecognizers" destination="b86-4m-amt" appends="YES" id="vnS-hk-bVI"/>
-                <outletCollection property="gestureRecognizers" destination="bVY-XZ-crL" appends="YES" id="HV1-rv-BJ6"/>
-                <outletCollection property="gestureRecognizers" destination="cqe-rs-qqz" appends="YES" id="9Xt-33-GDh"/>
+                <outlet property="delegate" destination="-1" id="cdX-e8-flr"/>
+                <outletCollection property="gestureRecognizers" destination="cqe-rs-qqz" appends="YES" id="JtK-61-Ydv"/>
+                <outletCollection property="gestureRecognizers" destination="bVY-XZ-crL" appends="YES" id="9qz-WV-Koy"/>
+                <outletCollection property="gestureRecognizers" destination="b86-4m-amt" appends="YES" id="MLa-ur-bIc"/>
             </connections>
-        </view>
-        <pinchGestureRecognizer id="b86-4m-amt">
-            <connections>
-                <action selector="pinchGestureRecognizer:" destination="-1" id="GZ7-Ba-eH0"/>
-            </connections>
-        </pinchGestureRecognizer>
-        <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="bVY-XZ-crL" userLabel="1F Pan Gesture Recognizer">
-            <connections>
-                <action selector="oneFingerPanGestureRecognizer:" destination="-1" id="acA-dg-sf1"/>
-            </connections>
-        </panGestureRecognizer>
-        <panGestureRecognizer minimumNumberOfTouches="2" maximumNumberOfTouches="2" id="cqe-rs-qqz" userLabel="2F Pan Gesture Recognizer">
-            <connections>
-                <action selector="twoFingerPanGestureRecognizer:" destination="-1" id="9wA-Pf-O2L"/>
-            </connections>
-        </panGestureRecognizer>
+        </glkView>
     </objects>
 </document>

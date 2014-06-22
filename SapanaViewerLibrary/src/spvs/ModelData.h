@@ -28,9 +28,7 @@ namespace spvs
   {
   public:
     explicit ModelData(
-        const GLsizeiptr numVertices
-        , const GLsizeiptr numIndices
-        , const GLenum drawMode
+          const GLenum drawMode
         , const GLenum verticesType
         , const GLenum indicesType
         );
@@ -215,14 +213,6 @@ namespace spvs
 
 
 private:
-
-    /*
-     * TODO: These two structures should be replaced by vectors.
-     * Because MoSync does not support the usage of std::vectors
-     * they must be changed in the final version of the SV.
-     */
-    const GLsizeiptr numVertices_;
-    const GLsizeiptr numIndices_;
 
     /**
      * TODO: Use vector, make sure no one has reference to underlying array

@@ -50,6 +50,7 @@
 {
     impl.listController->refreshItems();
 }
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:
@@ -60,11 +61,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
 (NSIndexPath *)indexPath
 {
-    auto item = impl.listController->getItemAtPosition(indexPath.row);
+    [self refreshItems];
+    spvg::HierarchicalListItem item = impl.listController->getItemAtPosition(indexPath.row);
  // TODO Clean
     
+    
     // Custom Cells
-    HierarchicalListItemWrapper * cell = [[HierarchicalListItemWrapper alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell" level_:item.getLevel() expanded_:item.isExpanded() nodeID_:item.getID()];
+    HierarchicalListItemWrapper * cell = [[HierarchicalListItemWrapper alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell" level_:item.getLevel() canExpand_:item.isExpandable() expanded_:item.isExpanded()  nodeID_:item.getID()];
     
     cell.valueLabel.text = [NSString stringWithCString:item.getLabel().c_str()
                                              encoding:[NSString defaultCStringEncoding]];

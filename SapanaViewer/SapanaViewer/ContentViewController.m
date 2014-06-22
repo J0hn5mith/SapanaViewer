@@ -20,7 +20,6 @@
 // External Includes
 
 
-
 // CONFIG
 #include "Config.h"
 
@@ -69,7 +68,14 @@ const NSInteger PANEL_WIDTH  = 60;
     // DEBUG - move to inti method
     self.eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
     [EAGLContext setCurrentContext:self.eaglContext];
+    GLuint _depthRenderbuffer;
     [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    
+        glGenRenderbuffersOES(1, &_depthRenderbuffer);
+        glBindRenderbufferOES(GL_RENDERBUFFER_OES, _depthRenderbuffer);
+        glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, 1000, 1000); //Change
+        glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, _depthRenderbuffer);
+
     
     self.sapanaViewer = [[SapanaViewerWrapper alloc] init];
     
@@ -116,7 +122,6 @@ const NSInteger PANEL_WIDTH  = 60;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark -
 #pragma mark Setup View
@@ -422,5 +427,8 @@ const NSInteger PANEL_WIDTH  = 60;
 {
     // TODO: Implement
 }
+
+#pragma mark - Utils
+
 
 @end

@@ -17,6 +17,12 @@ FrameNode::FrameNode()
   
 }
 
+FrameNode::FrameNode(void * dummyPtr)
+:SceneNode(SceneNodeType::FRAME_NODE)
+{
+    
+}
+
 FrameNode::~FrameNode()
 {
   

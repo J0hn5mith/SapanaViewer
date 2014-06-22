@@ -48,7 +48,7 @@
 -(void)configureSelectionViewController;
 -(void)configureConfigurationViewController;
 -(void)configureInformationViewController;
-
+-(void)configureVisualizationViewController;
 #pragma mark - Masking
 @property UIView * mask;
 -(void)activateMask:(BOOL) active;

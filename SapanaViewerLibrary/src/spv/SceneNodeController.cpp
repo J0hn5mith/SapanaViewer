@@ -56,6 +56,15 @@ namespace spv
                 ancestorList_->update();
             }
             
+            virtual std::vector< std::shared_ptr< const spv::IController > > getChildController() const
+            {
+                auto childControllers = std::vector< std::shared_ptr< const spv::IController > >();
+                
+                
+               // childControllers.push_back(selectedNodeController_);
+                return childControllers;
+            }
+            
             
 #pragma mark - Transformations
             void rotateX(float angle)
@@ -165,6 +174,7 @@ namespace spv
                     index = 0;
                 }
                 
+                sceneNodeModifier_->setActiveTransformationIndex(index);
                 activeTransformationIndex_ = (spvu::Index) index;
             }
             
@@ -185,9 +195,25 @@ namespace spv
                 return spvu::matrix_to_vector(activeMatrix);
             }
             
-            std::vector< std::vector< std::vector<float> > >  getTransformationMatrixList()
+            std::vector<  MatrixForGUI >  getTransformationMatrixList()
             {
-                return spvu::matrix_list_to_vector(sceneNodeReference_->getTransformationList());
+                
+                
+                auto transMatrices =  sceneNodeReference_->getTransformationList();
+                
+                std::vector< MatrixForGUI > result = std::vector<  MatrixForGUI > ();
+                int i = 1;
+                std::for_each (transMatrices.begin(), transMatrices.end(),
+                               [&]( spvu::TransMatrix matrix)
+                               {
+                                   auto vectorMatrix  = spvu::matrix_to_vector(matrix);
+                                   std::string label = "Transformation " + std::to_string(i++);
+                                   result.push_back(MatrixForGUI(label, 0, vectorMatrix ));
+                                   
+                               }
+                               );
+                
+                return result;
             }
             
             std::vector< std::vector<float> >  getWorldTransformationMatrix()

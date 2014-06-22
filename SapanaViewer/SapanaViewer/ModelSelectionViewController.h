@@ -21,7 +21,7 @@
 - (void) modelSelected:(int) modelId;
 @end
 
-@interface ModelSelectionViewController : SelectionViewController
+@interface ModelSelectionViewController : SelectionViewController < UITableViewDelegate >
 
 #pragma mark - GUI Elements
 @property (weak, nonatomic) IBOutlet UIButton *addButton;

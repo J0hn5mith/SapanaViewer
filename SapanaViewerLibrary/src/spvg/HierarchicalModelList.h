@@ -14,6 +14,7 @@
 
 // External includes
 #include <map>
+#include <set>
 
 // Project includes
 #include "SceneGraph.h"
@@ -22,6 +23,10 @@
 #include "HierarchicalListItem.h"
 
 namespace spvg{
+namespace HMLUtil
+{
+
+}
 class HierarchicalModelList : public detail::IHierarchicalList
 {    
 public:    
@@ -55,35 +60,43 @@ private:
     /**
      * Holds a reference to all Scenen nodes that are in the model list.
      */
-    std::map < spvu::SceneNodeID, HierarchicalListItem > nodesInList_;
+    //std::map < spvu::SceneNodeID, HierarchicalListItem > nodesInList_;
     
+    
+    std::set <spvu::SceneNodeID > expandedNodeIDs_;
     std::vector < HierarchicalListItem > items_;
     
     std::shared_ptr< spvu::ObserverImpl> observerImpl_;
     
     bool itemsHaveChanged_;
-
-#pragma mark - Node List Management
-    void addNode(spvu::SceneNodeID nodeID);
-    void removeNode(spvu::SceneNodeID nodeID);
-    void expandNode(spvu::SceneNodeID nodeID);
-    void collapseNode(spvu::SceneNodeID nodeID);
     
-#pragma mark - Item Management
+#pragma mark - Item List Management
+        void createItemList();
     /**
      * Updates the items_ vector.
      */
-    void updateItems();
+    //void updateItems();
+    void insertItem(spvu::SceneNodeID nodeID, unsigned int level);
+    
+    
+
+    //OLD STUFF
+#pragma mark - Node List Management
+//    void addNode(spvu::SceneNodeID nodeID);
+//    void removeNode(spvu::SceneNodeID nodeID);
+//    void expandNode(spvu::SceneNodeID nodeID);
+//    void collapseNode(spvu::SceneNodeID nodeID);
+    
+
     
     
     
-    void insertItem(spvu::SceneNodeID nodeID);
 
 #pragma mark - Observer Util Methodes
     void handleNotifications();
-    void rebuildList();
-    void readdNode(spvu::SceneNodeID nodeID, std::map < spvu::SceneNodeID, HierarchicalListItem > & oldNodes);
-    void updateNodeLevel(spvu::SceneNodeID);
+//    void rebuildList();
+//    void readdNode(spvu::SceneNodeID nodeID, std::map < spvu::SceneNodeID, HierarchicalListItem > & oldNodes);
+//    void updateNodeLevel(spvu::SceneNodeID);
 };
 }
 #endif /* defined(SapanaViewerLibrary_HierarchicalModelList_H_ */

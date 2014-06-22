@@ -33,6 +33,8 @@ namespace spvs {
     class ModelNode;
     class NodeGraber;
     class CameraNode;
+    class LightSourceNode;
+    class FrameNode;
 }
 
 namespace spvs{
@@ -77,13 +79,20 @@ public:
     /**
      * Returns all model nodes of the scene graph
      */
-    std::shared_ptr< std::vector< std::shared_ptr< const spvs::ModelNode > > >getModelNodes() const;
+    std::vector< std::shared_ptr< const spvs::ModelNode > >getModelNodes() const;
     
     /**
      * Returns all camera nodes of the scene graph
      */
-    std::shared_ptr< std::vector< std::shared_ptr< const spvs::CameraNode > > >getCameraNodes() const;
-
+    std::vector< std::shared_ptr< const spvs::CameraNode > >getCameraNodes() const;
+    
+    /**
+     * Returns all light source nodes of the scene graph
+     */
+    std::shared_ptr< std::vector< std::shared_ptr< const spvs::LightSourceNode > > >getLightSourceNodes() const;
+    
+    std::vector< std::shared_ptr< const spvs::FrameNode > > getFrameNodes() const;
+    
     
 #pragma mark - Node Management
     /**
@@ -139,7 +148,8 @@ public:
         ACTIV_CAMERA_CHANGED = 2,
         NODE_MOVED = 3
     };
-    
+ 
+#pragma mark - IObservable Implementation
     /**
      * @ Implementation
      */
@@ -154,6 +164,8 @@ public:
      * @ Implementation
      */
     virtual void unregisterObserver(std::shared_ptr< spvu::IObserver > observer) const{observableImpl_->unregisterObserver(observer);}
+  
+    
     
 private:
 

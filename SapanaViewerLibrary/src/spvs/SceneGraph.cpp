@@ -14,8 +14,13 @@
 #include "ModelNode.h"
 #include "NodeGraber.h"
 #include "CameraNode.h"
+#include "LightSourceNode.h"
+#include "FrameNode.h"
 #include "SceneNodeModifier.h"
 
+// DEBUG
+
+#include "NodeGraberSceneNodeVisitor.h"
 using namespace spvs;
 
 SceneGraph::SceneGraph()
@@ -33,9 +38,13 @@ SceneGraph::~SceneGraph()
     // TODO: Implement
 }
 
-std::shared_ptr< std::vector< std::shared_ptr< const spvs::ModelNode > > > SceneGraph::getModelNodes() const
+std::vector< std::shared_ptr< const spvs::ModelNode > > SceneGraph::getModelNodes() const
 {
-    return  nodeGraber_->getNodes< spvs::ModelNode >(rootNode_);
+    NodeGraberSceneNodeVisitor< const spvs::ModelNode > modelGrabber = NodeGraberSceneNodeVisitor< const spvs::ModelNode >();
+    SceneGraph * uThis = const_cast< SceneGraph * >(this);
+    uThis->rootNode_->accept(modelGrabber);
+    
+    return modelGrabber.getMatchingNodes();
 }
 
 std::shared_ptr< spvs::SceneNodeModifier > SceneGraph::getNodeModifier(spvu::SceneNodeID nodeID)
@@ -44,9 +53,27 @@ std::shared_ptr< spvs::SceneNodeModifier > SceneGraph::getNodeModifier(spvu::Sce
     return std::make_shared< spvs::SceneNodeModifier >(node);
 }
 
-std::shared_ptr< std::vector< std::shared_ptr<  const spvs::CameraNode > > > SceneGraph::getCameraNodes() const
+std::vector< std::shared_ptr<  const spvs::CameraNode > >SceneGraph::getCameraNodes() const
 {
-    return  nodeGraber_->getNodes< spvs::CameraNode >(rootNode_);
+    NodeGraberSceneNodeVisitor< const spvs::CameraNode > cameraGrabber = NodeGraberSceneNodeVisitor< const spvs::CameraNode >();
+    SceneGraph * uThis = const_cast< SceneGraph * >(this);
+    uThis->rootNode_->accept(cameraGrabber);
+    
+    return cameraGrabber.getMatchingNodes();
+}
+
+std::shared_ptr< std::vector< std::shared_ptr<  const spvs::LightSourceNode > > > SceneGraph::getLightSourceNodes() const
+{
+    return  nodeGraber_->getNodes< spvs::LightSourceNode >(rootNode_);
+}
+
+std::vector< std::shared_ptr< const spvs::FrameNode > > SceneGraph::getFrameNodes() const
+{
+    NodeGraberSceneNodeVisitor< const spvs::FrameNode > frameNodeGrabber = NodeGraberSceneNodeVisitor< const spvs::FrameNode >();
+    SceneGraph * uThis = const_cast< SceneGraph * >(this);
+    uThis->rootNode_->accept(frameNodeGrabber);
+    
+    return frameNodeGrabber.getMatchingNodes();
 }
 
 void SceneGraph::moveNode( spvu::SceneNodeID childNodeID, spvu::SceneNodeID parentNodeID)
@@ -104,5 +131,5 @@ void SceneGraph::removeNode(spvu::SceneNodeID nodeID)
 std::shared_ptr< const CameraNode > SceneGraph::getActiveCamerNode() const
 {
     // TODO: Clean up
-    return getCameraNodes()->at(0);
+    return getCameraNodes().at(0);
 }

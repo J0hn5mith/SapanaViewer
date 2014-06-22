@@ -62,13 +62,18 @@ void SceneGraphController::selectSceneNode(spvu::SceneNodeID sceneNodeId)
 #pragma mark - Implementation of IController Interface
 void SceneGraphController::update() const
 {
-    // TODO: Do some updating
     if (selectedNodeController_ != nullptr )
     {
         selectedNodeController_->update();
     }
 }
 
+std::vector< std::shared_ptr< const spv::IController > > SceneGraphController::getChildController() const
+{
+    auto childControllers = std::vector< std::shared_ptr< const spv::IController > >();
+   // childControllers.push_back(selectedNodeController_);
+    return childControllers;
+}
 
 void SceneGraphController::selectObserverCameraNode(  std::shared_ptr< const spvs::CameraNode > cNode)
 {

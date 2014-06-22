@@ -25,13 +25,13 @@ SceneNode::SceneNode(SceneNodeType type)
 , properties_(spvs::SceneNodeProperties())
 , hasChanged_(false)
 , id_()
+, observableImpl_(std::make_shared< spvu::ObservableImpl >())
 {
     vmml::identity(worldTransMatrix_);
     vmml::identity(nodeTransMatrix_);
     
     spvu::TransMatrix identityMatrix;
     vmml::identity(identityMatrix);
-    transformationList_.push_back(identityMatrix);
     
     id_ = reinterpret_cast< unsigned long >( this );
 }
@@ -90,27 +90,18 @@ void SceneNode::removeChild(std::shared_ptr< SceneNode > childNode)
 # pragma mark - Transformation List
 std::list< spvu::TransMatrix > SceneNode::getTransformationList() const
 {
-    return transformationList_;
+    return transformationList_.getTransformationList();
 }
 
 void SceneNode::addTransformationMatrix()
 {
-    spvu::TransMatrix identityMatrix;
-    vmml::identity(identityMatrix);
-    transformationList_.push_back(identityMatrix);
+    transformationList_.addTransformationMatrix();
     nodeHasChanged();
 }
 
 void SceneNode::removeTransformationMatrix(int position)
 {
-     if ( transformationList_.empty() )
-     {
-         return;
-     }
-    auto it = transformationList_.begin();
-    std::advance( it, position);
-    
-    transformationList_.erase(it);
+    transformationList_.removeTransformationMatrix((spvu::ListPosition) position);
     
     nodeHasChanged();
     // TODO: Remove at right position
@@ -124,6 +115,7 @@ spvu::TransMatrix SceneNode::getTransMatrix() const
 {
     return getWorldTransMatrix();
 }
+
 spvu::TransMatrix SceneNode::getWorldTransMatrix() const
 {
     SceneNode * mThis = const_cast<SceneNode *>(this);
@@ -149,57 +141,23 @@ spvu::TransMatrix SceneNode::getNodeTransMatrix() const
 
 void SceneNode::transform(const spvu::TransMatrix tMatrix, int index)
 {
-    
-    if ( transformationList_.empty() || transformationList_.size() <= index)
-    {
-        // TODO: Exception handling
-        return;
-        
-    }
-    
-    auto it = transformationList_.begin();
-    std::advance( it, index);
-
-    const spvu::TransMatrix  previousMatrix = *it;
-    spvu::TransMatrix resultMatrix;
-    vmml::identity(resultMatrix);
-    resultMatrix.multiply(tMatrix, previousMatrix);
-    
-    (*it) = resultMatrix;
-    
+    transformationList_.transformMatrix(tMatrix, index);
     nodeHasChanged();
 }
 
  void SceneNode::shiftTransformationMatrix(int oldPosition, int newPosition)
 {
-    
-    if (oldPosition < 0 || oldPosition >= transformationList_.size())
-    {
-        // TODO Exception Handling
-        return;
-    }
-    if (newPosition < 0 || newPosition >= transformationList_.size())
-    {
-        // TODO Exception Handling
-        return;
-    }
-    
-    if ( newPosition > oldPosition )
-    {
-        newPosition++;
-    }
-    
-    auto  itOld = transformationList_.begin();
-    std::advance( itOld, oldPosition);
-    
-    auto itNew = transformationList_.begin();
-    std::advance( itNew, newPosition);
-    
-    transformationList_.splice(itNew, transformationList_, itOld);
-    
+    transformationList_.moveTransformationMatrix(oldPosition, newPosition);
     nodeHasChanged();
 }
 
+#pragma mark - Visitor Pattern
+void SceneNode::accept(spvs::ISceneNodeVisitor &visitor)
+{
+    visitor.visit(shared_from_this());
+}
+
+#pragma mark - Private Methodes
 void SceneNode::updateWorldTransMatrix()
 {
         if (!hasChanged()) {
@@ -222,6 +180,7 @@ void SceneNode::updateWorldTransMatrix()
 void SceneNode::nodeHasChanged()
 {
         hasChanged_ = true;
+        notifyObservers(std::make_shared<spvu::NotificationImpl>(1));// TODO: use enum for notification types
         for (auto node : childNodes_)
         {
                 node->nodeHasChanged();
@@ -230,11 +189,6 @@ void SceneNode::nodeHasChanged()
 
 void SceneNode::updateNodeTransMatrix() const
 {
-        SceneNode * unconstThis = const_cast<SceneNode *>(this);
-        vmml::identity(unconstThis->nodeTransMatrix_);
-        for (auto tMatrix : transformationList_)
-        {
-            spvu::TransMatrix tmp = unconstThis->nodeTransMatrix_;
-            unconstThis->nodeTransMatrix_.multiply(tMatrix, tmp);
-        }
+    SceneNode * unconstThis = const_cast<SceneNode *>(this);
+    unconstThis->nodeTransMatrix_ = transformationList_.getResultingTransMatrix();
 }

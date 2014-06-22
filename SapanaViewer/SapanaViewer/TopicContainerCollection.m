@@ -44,11 +44,11 @@
         
         [transformation.layoutProperties setSecondaryColor:[Util colorFromIntRGB:218  green:246 blue:254 alpha:255]];
         
-        TopicContainer * coordinateSystems = [TopicContainer initWithControllers: @"Coordinate Systems" withTPController:NULL withRPController:NULL withTController:[[CSTopicViewController alloc] initWithNibName:@"TopicViewController" bundle:nil]];
-        
-        [coordinateSystems.layoutProperties setPrimaryColor: [Util colorFromIntRGB:82  green:168 blue:252 alpha:255]];
-        
-        [coordinateSystems.layoutProperties setSecondaryColor:[Util colorFromIntRGB:218  green:246 blue:254 alpha:255]];
+//        TopicContainer * coordinateSystems = [TopicContainer initWithControllers: @"Coordinate Systems" withTPController:NULL withRPController:NULL withTController:[[CSTopicViewController alloc] initWithNibName:@"TopicViewController" bundle:nil]];
+//        
+//        [coordinateSystems.layoutProperties setPrimaryColor: [Util colorFromIntRGB:82  green:168 blue:252 alpha:255]];
+//        
+//        [coordinateSystems.layoutProperties setSecondaryColor:[Util colorFromIntRGB:218  green:246 blue:254 alpha:255]];
         
         TopicContainer * hierarchicalModelling = [TopicContainer initWithControllers: @"Hierachical Modelling" withTPController:NULL withRPController:NULL withTController:[[HMTopicViewController alloc] initWithNibName:@"TopicViewController" bundle:nil]];
         
@@ -60,7 +60,7 @@
         _topicContainers = @[
                              modelling
                              , transformation
-                             , coordinateSystems
+//                             , coordinateSystems
                              , hierarchicalModelling
                              
                              ];

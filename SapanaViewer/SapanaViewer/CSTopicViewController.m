@@ -13,6 +13,8 @@
 
 @interface CSTopicViewController ()
 
+@property ModelCameraSelectionViewController * modelCameraSelectionViewController;
+
 @end
 
 @implementation CSTopicViewController
@@ -44,8 +46,9 @@
 #pragma mark Overrides
 -(void)loadSelectionViewController
 {
-    ModelCameraSelectionViewController * msvController = [[ModelCameraSelectionViewController alloc] initWithNibName:@"ModelCameraSelectionViewController" bundle:nil];
-    self.selectionViewController = msvController;
+    self.modelCameraSelectionViewController = [[ModelCameraSelectionViewController alloc] initWithNibName:@"ModelCameraSelectionViewController" bundle:nil];
+    self.selectionViewController = self.modelCameraSelectionViewController;
+    
     
     self.selectionViewController.view.frame = self.selectionView.frame;
    // msvController.delegate = self;
@@ -60,6 +63,9 @@
 -(void)configureSelectionViewController
 {
     [super configureSelectionViewController];
+    
+    self.modelCameraSelectionViewController.modelSelectorDelegate = self;
+    self.modelCameraSelectionViewController.cameraSelectorDelegate = self;
 }
 
 
@@ -82,6 +88,17 @@
     [self.view addSubview:self.informationViewController.view];
     [self addChildViewController:self.informationViewController];
     [self.configurationViewController didMoveToParentViewController:self];
+}
+
+#pragma mark - ModelSelectorDelegate & CameraSelectorDelegate Implementation
+-(void) modelSelected:(int)modelID
+{
+    
+}
+
+-(void) cameraSelected:(int)cameraID
+{
+    
 }
 
 @end

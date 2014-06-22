@@ -11,15 +11,11 @@
 using namespace spvs;
 // If I don't use pointers to hold the class fields, I don't have to initialize them?
 ModelData::ModelData(
-    const GLsizeiptr numVertices
-    , const GLsizeiptr numIndices
-    , const GLenum drawMode
+     const GLenum drawMode
     , const GLenum verticesType
     , const GLenum indicesType
     )
-: numVertices_(numVertices)
-, numIndices_(numIndices)
-, vertices_(std::vector< spvu::Vertex>())
+: vertices_(std::vector< spvu::Vertex>())
 , indices_(std::vector< spvu::VertexIndex >())
 , drawMode_(drawMode)
 , verticesType_(verticesType)

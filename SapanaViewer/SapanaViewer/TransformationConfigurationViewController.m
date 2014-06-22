@@ -37,7 +37,9 @@
     [super viewDidLoad];
     
     // Set up page views
-    self.pageViews = [NSArray arrayWithObjects: self.rotationViewController, self.translationViewController, self.scalingViewController, self.shearingViewController, nil];
+//    self.pageViews = [NSArray arrayWithObjects: self.rotationViewController, self.translationViewController, self.scalingViewController, self.shearingViewController, nil];
+    self.pageViews = [NSArray arrayWithObjects: self.rotationViewController, self.translationViewController, self.scalingViewController, nil];
+
     // Set up table view controller
     
     [self setUpTableView];
@@ -258,19 +260,17 @@
     if (indexPath.row < numRows)
     {
         [self.sceneNodeModifier setActiveTransformationIndex:(unsigned int)indexPath.row];
+        [self.delegate transformationSelected:indexPath.row];
     }
     else{
         
         // TODO
         [self.sceneNodeModifier addTransformation];
         self.tableViewSource = [self.sceneNodeModifier getTransformationStack];
-        [self tmModified];
         [self.tableView reloadData];
         
-        [self.delegate transformationListModified:true];
     }
     
-    [self tmSelected];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -331,7 +331,7 @@
     self.tableViewSource = [self.sceneNodeModifier getTransformationStack];
     [self.tableView reloadData];
     
-    [self.delegate transformationListModified:true];
+    [self.delegate transformationDeleted:indexPath.row];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -354,11 +354,20 @@
 }
 
 #pragma mark - Transformation Manipulation Action Handlers
+
+-(IBAction)steperTouchUp:(id)sender
+{
+    UIStepper * sendingStepper =((UIStepper *) sender);
+    sendingStepper.value = sendingStepper.tag;
+}
+
 -(IBAction)xTranslationChanged:(id)sender
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier translateX:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -366,7 +375,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier translateY:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -374,7 +385,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier translateZ:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -382,7 +395,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier rotateX:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -390,7 +405,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier rotateY:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -398,7 +415,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier rotateZ:sendingStepper.value];
-    sendingStepper.value = 0;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -406,7 +425,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier scaleX:sendingStepper.value];
-    sendingStepper.value = 1;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -414,7 +435,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier scaleY:sendingStepper.value];
-    sendingStepper.value = 1;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -422,7 +445,9 @@
 {
     UIStepper * sendingStepper =((UIStepper *) sender);
     [self.sceneNodeModifier scaleZ:sendingStepper.value];
-    sendingStepper.value = 1;
+    
+    [self continuousStepping:sendingStepper];
+    
     [self tmModified];
 }
 
@@ -446,17 +471,22 @@
 
 #pragma mark - Some Util Methodes
 
-
+-(void) continuousStepping:(UIStepper *)sendingStepper
+{
+    
+    if (sendingStepper.value <= (sendingStepper.minimumValue + sendingStepper.stepValue * 3))
+    {
+        sendingStepper.value += sendingStepper.stepValue * 2;
+    }
+    if (sendingStepper.value >= (sendingStepper.maximumValue - sendingStepper.stepValue * 3))
+    {
+        sendingStepper.value -= (sendingStepper.stepValue * 2);
+    }
+}
 // Returns true if the cell has custom behaviour (is not normal transformation _
 -(BOOL) isSpecialCell:(NSIndexPath *)indexPath
 {
     return !(indexPath.row < [self.tableViewSource tableView:NULL numberOfRowsInSection:indexPath.section]);
-}
-
--(void) tmSelected
-{
-    //TODO: Implement case that no matrix is selected
-    [self.delegate transformationSelected:YES];
 }
 
 -(void) tmModified

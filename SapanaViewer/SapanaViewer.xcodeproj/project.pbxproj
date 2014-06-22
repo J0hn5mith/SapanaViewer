@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2015E1F18EAD18700103FBE /* libSapanaViewerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */; };
 		E205F1D818D9D0780056AA87 /* TransformationVisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E205F1D618D9D0780056AA87 /* TransformationVisualizationViewController.m */; };
 		E205F1D918D9D0780056AA87 /* TransformationVisualizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E205F1D718D9D0780056AA87 /* TransformationVisualizationViewController.xib */; };
 		E206692F18C7C1460053B6FA /* CSTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E206692D18C7C1460053B6FA /* CSTopicViewController.m */; };
@@ -16,6 +15,10 @@
 		E206693518C7C1B50053B6FA /* ModelCameraSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206693318C7C1B50053B6FA /* ModelCameraSelectionViewController.xib */; };
 		E221D3EA18C6609B00508E1A /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E221D3E818C6609B00508E1A /* PreviewViewController.m */; };
 		E221D3EB18C6609B00508E1A /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E221D3E918C6609B00508E1A /* PreviewViewController.xib */; };
+		E22680C518FB2ED600E82589 /* cow-nonormals.obj in Resources */ = {isa = PBXBuildFile; fileRef = E22680C418FB2ED600E82589 /* cow-nonormals.obj */; };
+		E22680C918FB3BF700E82589 /* house.obj in Resources */ = {isa = PBXBuildFile; fileRef = E22680C818FB3BF700E82589 /* house.obj */; };
+		E22680CB18FB3E8A00E82589 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = E22680CA18FB3E8A00E82589 /* sphere.obj */; };
+		E24912AD18F6C6970002F790 /* libSapanaViewerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E24912AC18F6C6970002F790 /* libSapanaViewerLibrary.a */; };
 		E254BB8218E2D6090017AFEA /* ModelInformationWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E254BB8118E2D6090017AFEA /* ModelInformationWrapper.mm */; };
 		E254BB8A18E2DA480017AFEA /* ModelInformationImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = E254BB8918E2DA480017AFEA /* ModelInformationImpl.mm */; };
 		E255B6F918C8CF84003BEBA9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E255B6F818C8CF84003BEBA9 /* GLKit.framework */; };
@@ -120,19 +123,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E214F92F18F81BFB0011B8F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E23FDB781860678B007BC04F;
+			remoteInfo = SapanaViewerLibrary;
+		};
 		E258490018C4972D004AEEDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E25848D818C4972C004AEEDB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E25848DF18C4972C004AEEDB;
 			remoteInfo = SapanaViewer;
-		};
-		E2B5B72D18E17C3000E0DA59 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E23FDB781860678B007BC04F;
-			remoteInfo = SapanaViewerLibrary;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -149,6 +152,12 @@
 		E221D3E718C6609B00508E1A /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		E221D3E818C6609B00508E1A /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 		E221D3E918C6609B00508E1A /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		E22680C418FB2ED600E82589 /* cow-nonormals.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "cow-nonormals.obj"; path = "../../SapanaViewerLibrary/data/cow-nonormals.obj"; sourceTree = "<group>"; };
+		E22680C818FB3BF700E82589 /* house.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = house.obj; sourceTree = "<group>"; };
+		E22680CA18FB3E8A00E82589 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		E24912A218F6AF760002F790 /* CameraSelectorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraSelectorDelegate.h; sourceTree = "<group>"; };
+		E24912A318F6AFCA0002F790 /* ModelSelectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSelectorDelegate.h; sourceTree = "<group>"; };
+		E24912AC18F6C6970002F790 /* libSapanaViewerLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSapanaViewerLibrary.a; path = "../SapanaViewerLibrary/build/Debug-iphoneos/libSapanaViewerLibrary.a"; sourceTree = "<group>"; };
 		E254BB8018E2D6090017AFEA /* ModelInformationWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInformationWrapper.h; sourceTree = "<group>"; };
 		E254BB8118E2D6090017AFEA /* ModelInformationWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModelInformationWrapper.mm; sourceTree = "<group>"; };
 		E254BB8818E2DA480017AFEA /* ModelInformationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInformationImpl.h; sourceTree = "<group>"; };
@@ -282,7 +291,7 @@
 		E29A7BB718C7778400B55EF0 /* TransformationConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformationConfigurationViewController.m; sourceTree = "<group>"; };
 		E29A7BB918C777B000B55EF0 /* TransformationConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformationConfigurationViewController.xib; sourceTree = "<group>"; };
 		E2A393BF18C8DF8B0033EF40 /* libSapanaViewerLibrary-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSapanaViewerLibrary-Combined.a"; path = "../SapanaViewerLibrary/lib/libSapanaViewerLibrary-Combined.a"; sourceTree = "<group>"; };
-		E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SapanaViewerLibrary.xcodeproj; path = ../../SapanaViewerLibrary/SapanaViewerLibrary.xcodeproj; sourceTree = "<group>"; };
+		E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SapanaViewerLibrary.xcodeproj; path = /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/SapanaViewerLibrary.xcodeproj; sourceTree = "<absolute>"; };
 		E2C9C00C18CF591F0058E016 /* SapanaViewerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SapanaViewerImpl.h; sourceTree = "<group>"; };
 		E2C9C00D18CF591F0058E016 /* SapanaViewerImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SapanaViewerImpl.mm; sourceTree = "<group>"; };
 		E2C9C00F18CF5EC90058E016 /* TopicContainerCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicContainerCollection.h; sourceTree = "<group>"; };
@@ -318,8 +327,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24912AD18F6C6970002F790 /* libSapanaViewerLibrary.a in Frameworks */,
 				E25C86F218D1A5E900BE78B1 /* colorPicker.bundle in Frameworks */,
-				E2015E1F18EAD18700103FBE /* libSapanaViewerLibrary.a in Frameworks */,
 				E255B6F918C8CF84003BEBA9 /* GLKit.framework in Frameworks */,
 				E25848E618C4972C004AEEDB /* CoreGraphics.framework in Frameworks */,
 				E25848E818C4972C004AEEDB /* UIKit.framework in Frameworks */,
@@ -362,6 +371,23 @@
 			name = "Visualization Views";
 			sourceTree = "<group>";
 		};
+		E214F92B18F81BFB0011B8F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E214F93018F81BFB0011B8F5 /* libSapanaViewerLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E249129E18F6AF1F0002F790 /* Selector Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E24912A218F6AF760002F790 /* CameraSelectorDelegate.h */,
+				E24912A318F6AFCA0002F790 /* ModelSelectorDelegate.h */,
+			);
+			name = "Selector Protocols";
+			sourceTree = "<group>";
+		};
 		E254BB7D18E2D59B0017AFEA /* Wrapped Types */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				E25848E918C4972C004AEEDB /* SapanaViewer */,
+				E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */,
 				E258490218C4972D004AEEDB /* SapanaViewerTests */,
 				E25848E218C4972C004AEEDB /* Frameworks */,
 				E25848E118C4972C004AEEDB /* Products */,
@@ -403,6 +430,7 @@
 		E25848E218C4972C004AEEDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E24912AC18F6C6970002F790 /* libSapanaViewerLibrary.a */,
 				E25C86F118D1A5E900BE78B1 /* colorPicker.bundle */,
 				E2A393BF18C8DF8B0033EF40 /* libSapanaViewerLibrary-Combined.a */,
 				E255B6F818C8CF84003BEBA9 /* GLKit.framework */,
@@ -429,6 +457,9 @@
 		E25848EA18C4972C004AEEDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E22680CA18FB3E8A00E82589 /* sphere.obj */,
+				E22680C418FB2ED600E82589 /* cow-nonormals.obj */,
+				E22680C818FB3BF700E82589 /* house.obj */,
 				E25848EB18C4972C004AEEDB /* SapanaViewer-Info.plist */,
 				E25848EC18C4972C004AEEDB /* InfoPlist.strings */,
 				E25848EF18C4972C004AEEDB /* main.m */,
@@ -618,6 +649,7 @@
 				E206693218C7C1B50053B6FA /* ModelCameraSelectionViewController.m */,
 				E2987C1118C7CE12008C00F5 /* HModelSelectionViewController.h */,
 				E2987C1218C7CE12008C00F5 /* HModelSelectionViewController.m */,
+				E249129E18F6AF1F0002F790 /* Selector Protocols */,
 			);
 			name = SelectionViews;
 			sourceTree = "<group>";
@@ -701,17 +733,8 @@
 		E2B5B72718E17C2100E0DA59 /* Sapana Viewer Library */ = {
 			isa = PBXGroup;
 			children = (
-				E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */,
 			);
 			name = "Sapana Viewer Library";
-			sourceTree = "<group>";
-		};
-		E2B5B72918E17C3000E0DA59 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E2CC4E0218C66E860045B945 /* Panels */ = {
@@ -860,7 +883,7 @@
 		E25848D818C4972C004AEEDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Visualization and MultiMedia Lab, University of Zurich, Switzerland";
 				TargetAttributes = {
 					E25848FA18C4972D004AEEDB = {
@@ -880,7 +903,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E2B5B72918E17C3000E0DA59 /* Products */;
+					ProductGroup = E214F92B18F81BFB0011B8F5 /* Products */;
 					ProjectRef = E2B5B72818E17C3000E0DA59 /* SapanaViewerLibrary.xcodeproj */;
 				},
 			);
@@ -893,11 +916,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E2B5B72E18E17C3000E0DA59 /* libSapanaViewerLibrary.a */ = {
+		E214F93018F81BFB0011B8F5 /* libSapanaViewerLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSapanaViewerLibrary.a;
-			remoteRef = E2B5B72D18E17C3000E0DA59 /* PBXContainerItemProxy */;
+			remoteRef = E214F92F18F81BFB0011B8F5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -910,9 +933,11 @@
 				E29A7BB518C773D500B55EF0 /* TransformationInformationViewController.xib in Resources */,
 				E25C870E18D1A73A00BE78B1 /* NEOColorPickerHSLViewController.xib in Resources */,
 				E29A7B8E18C7382800B55EF0 /* SelectionViewController.xib in Resources */,
+				E22680C518FB2ED600E82589 /* cow-nonormals.obj in Resources */,
 				E25C871218D1A73A00BE78B1 /* NEOColorPickerViewController.xib in Resources */,
 				E25C870818D1A73A00BE78B1 /* colorPicker.bundle in Resources */,
 				E2CC4E0118C6660E0045B945 /* VisualizationViewController.xib in Resources */,
+				E22680CB18FB3E8A00E82589 /* sphere.obj in Resources */,
 				E206693018C7C1460053B6FA /* CSTopicViewController.xib in Resources */,
 				E28EDC0F18C61DDF00728B62 /* SceneViewController.xib in Resources */,
 				E29323D418EAB689009DB6C6 /* LeftPanelViewController.xib in Resources */,
@@ -928,6 +953,7 @@
 				E29A7BB018C7716600B55EF0 /* TransformationTopicViewController.xib in Resources */,
 				E221D3EB18C6609B00508E1A /* PreviewViewController.xib in Resources */,
 				E29A7BAB18C76EA400B55EF0 /* ModelInformationViewController.xib in Resources */,
+				E22680C918FB3BF700E82589 /* house.obj in Resources */,
 				E2D0DE7518DF153E001065CD /* MatrixMultiplicationVisualisationViewController.xib in Resources */,
 				E258492518C4A86C004AEEDB /* MainViewController.xib in Resources */,
 				E29A7BBA18C777B000B55EF0 /* TransformationConfigurationViewController.xib in Resources */,
@@ -1069,7 +1095,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1103,7 +1128,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
 			};
 			name = Debug;
 		};
@@ -1111,7 +1136,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1138,7 +1162,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/build/Debug-iphonesimulator/include/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1156,9 +1180,10 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SapanaViewerLibrary-daqhrkqtvuzwaraycbzekqprowmv/Build/Products/Debug-iphoneos",
 					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/lib,
 					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build,
+					"$(PROJECT_DIR)Library/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SapanaViewerLibrary/build/Debug-iphonesimulator/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/include\"";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/build/Release-iphonesimulator/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1176,9 +1201,10 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SapanaViewerLibrary-daqhrkqtvuzwaraycbzekqprowmv/Build/Products/Debug-iphoneos",
 					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/lib,
 					/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewerLibrary/build,
+					"$(PROJECT_DIR)Library/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../SapanaViewerLibrary/build/Debug-iphonesimulator/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/include\"";
+				USER_HEADER_SEARCH_PATHS = "/Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/build/Release-iphonesimulator/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1186,7 +1212,6 @@
 		E258491018C4972D004AEEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SapanaViewer.app/SapanaViewer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1209,7 +1234,6 @@
 		E258491118C4972D004AEEDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SapanaViewer.app/SapanaViewer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

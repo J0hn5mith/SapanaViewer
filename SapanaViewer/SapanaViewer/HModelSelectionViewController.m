@@ -194,8 +194,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
 (NSIndexPath *)indexPath
 {
+    // Configure List View
+    self.tableView.frame = self.view.bounds;
     
     HierarchicalListItemWrapper * cell = (HierarchicalListItemWrapper * )[self.hierarchicalModelList tableView:tableView cellForRowAtIndexPath:indexPath];
+    
     
     cell.valueLabel.text = [self.sapanaViewer getSceneNodeName:cell.tag];
     
@@ -231,8 +234,13 @@
         return;
     }
     // Find new Parent
-    HierarchicalListItemWrapper * newParent = (HierarchicalListItemWrapper *) [ tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:toIndexPath.row - 1 inSection:toIndexPath.section]];
-    
+    NSIndexPath * parentPath = parentPath = [NSIndexPath indexPathForRow:toIndexPath.row - 1 inSection:toIndexPath.section];;
+    if ( fromIndexPath.row  < toIndexPath.row)
+    {
+        parentPath = [NSIndexPath indexPathForRow:toIndexPath.row  inSection:toIndexPath.section];
+    }
+
+    HierarchicalListItemWrapper * newParent = (HierarchicalListItemWrapper *) [ tableView cellForRowAtIndexPath:parentPath];
 
     
     unsigned long childID = [tableView cellForRowAtIndexPath:fromIndexPath].tag;

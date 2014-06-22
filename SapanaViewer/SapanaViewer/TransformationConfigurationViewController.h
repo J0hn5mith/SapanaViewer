@@ -17,9 +17,11 @@
 
 @required
 // The matrix selected flag is used to tell the delegate, that currently no matrix is selected.
--(void) transformationSelected:(BOOL) matrixSelected;
+-(void) transformationSelected:(NSInteger) transformationPosition;
 
 -(void) transformationModified;
+
+-(void) transformationDeleted:(NSInteger)position;
 
 -(void) transformationMoved:(NSInteger)fromPosition toPosition:(NSInteger ) toPosition;
 
@@ -74,6 +76,8 @@
 -(IBAction)rearagneButton:(id)sender;
 
 #pragma mark - Transformation Manipulation Action Handlers
+-(IBAction)steperTouchUp:(id)sender;
+
 -(IBAction)xTranslationChanged:(id)sender;
 -(IBAction)yTranslationChanged:(id)sender;
 -(IBAction)zTranslationChanged:(id)sender;

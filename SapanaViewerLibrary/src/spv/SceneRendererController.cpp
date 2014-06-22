@@ -45,6 +45,11 @@ void SceneRendererController::update() const
 
 }
 
+std::vector< std::shared_ptr< const spv::IController > > SceneRendererController::getChildController() const
+{
+    return std::vector< std::shared_ptr< const spv::IController > >();
+}
+
 void SceneRendererController::renderScene() const
 {
     // DEBUG

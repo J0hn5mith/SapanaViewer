@@ -16,20 +16,16 @@
 
 // Project includes
 #include "RenderableModelNode.h"
+#include "SceneNodeRenderer.h"
 #include "RenderableModel.h"
 #include "RendererUtils.h"
 
-// Debug includes
-#include <math.h>
-#include "CubeData.h"
 
 using namespace spvr;
-
-ModelRenderer::ModelRenderer()
-: coordinateSystem_(nullptr)
-, normal_(nullptr)
+ModelRenderer::ModelRenderer( std::shared_ptr< spvr::SceneNodeRenderer > sceneNodeRenderer )
+: sceneNodeRenderer_(sceneNodeRenderer)
 {
-    loadSupportModels();
+    
 }
 
 ModelRenderer::~ModelRenderer()
@@ -134,8 +130,10 @@ void ModelRenderer::drawModelNode(std::shared_ptr< const RenderableModelNode > m
     
     drawModelNodeSupport(modelNode);
     unsetPosition();
+    
+    sceneNodeRenderer_->drawLineToParent(modelNode);
     // Connectoin to world origin
-    this->drawLineToWorldCoordinates(modelNode);
+    
     
 }
 
@@ -163,6 +161,7 @@ void ModelRenderer::drawModel( std::shared_ptr< const RenderableModel > model, b
     const GLenum indicesType = model->getIndicesType();
     
     const GLubyte * indicePointer = ((GLubyte *)(NULL));
+    glEnable(GL_DEPTH_TEST);
     glDrawElements(drawMode, numIndices, indicesType, indicePointer);
     
     unbindBuffers(model);
@@ -172,9 +171,7 @@ void ModelRenderer::setPosition(std::shared_ptr< const RenderableModelNode > mod
 {
     spvu::TransMatrix    transMatrix =  *modelNode->getTransMatrix();
     glMatrixMode(GL_MODELVIEW);
-  glPushMatrix();
-  //glLoadMatrixf(transMatrix->array);
-  //glLoadIdentity();
+    glPushMatrix();
     glMultMatrixf(transMatrix);
 }
 
@@ -192,45 +189,7 @@ void ModelRenderer::drawModelNodeSupport(std::shared_ptr< const RenderableModelN
     if (modelNode->getModelNodeProperties().getShowCoordinateSystem())
     {
         //drawModel(coordinateSystem_);
-        
-        spvu::Color color;
-        // TODO Define color in config
-        color.r = 1.f;
-        color.g = .5f;
-        color.b = 0.f;
-        color.a = 1.0f;
-        
-        spvu::Position endPosition;
-        endPosition.x = -10.f;
-        endPosition.y = 0;
-        endPosition.z = 0;
-        
-        spvu::Position startPosition;
-        startPosition.x = 10.f;
-        startPosition.y = 0.f;
-        startPosition.z = 0.f;
-        
-        spvr::RendererUtils::drawLine(startPosition, endPosition, color);
-        
-        endPosition.x = 0.f;
-        endPosition.y = -10.;
-        endPosition.z = 0;
-        
-        startPosition.x = 0.f;
-        startPosition.y = 10.0;
-        startPosition.z = 0;
-        
-        spvr::RendererUtils::drawLine(startPosition, endPosition, color);
-        
-        endPosition.x = 0.f;
-        endPosition.y = 0.;
-        endPosition.z = -10;
-        
-        startPosition.x = 0.f;
-        startPosition.y = 0.0;
-        startPosition.z = 10;
-        
-        spvr::RendererUtils::drawLine(startPosition, endPosition, color);
+       spvr::RendererUtils::drawCoordinateSystem(5.0, false);
         
     }
     
@@ -244,20 +203,21 @@ void ModelRenderer::drawModelNodeSupport(std::shared_ptr< const RenderableModelN
                           spvu::Color color;
                           // TODO Define color in config
                           color.r = .5f;
-                          color.g = .5f;
+                          color.
+                          g = .5f;
                           color.b = 0.f;
                           color.a = 1.0f;
                           spvu::Position endPosition;
-                          endPosition.x = vertex.normal.nx;
-                          endPosition.y = vertex.normal.ny;
-                          endPosition.z = vertex.normal.nz;
+                          endPosition.x = vertex.position.x + vertex.normal.nx;
+                          endPosition.y = vertex.position.y +vertex.normal.ny;
+                          endPosition.z = vertex.position.z +vertex.normal.nz;
                           spvr::RendererUtils::drawLine(vertex.position, endPosition, color);
                       }
                       );
     }
 }
 
-void ModelRenderer::drawLineToWorldCoordinates(std::shared_ptr< const RenderableModelNode > modelNode) const
+void ModelRenderer::drawLineToParentNode(std::shared_ptr< const RenderableModelNode > modelNode) const
 {
     spvu::Color color;
     // TODO Define color in config
@@ -271,7 +231,7 @@ void ModelRenderer::drawLineToWorldCoordinates(std::shared_ptr< const Renderable
     startPoint.y = 0;
     startPoint.z = 0;
     
-    auto transformation = *modelNode->getTransMatrix();
+    auto transformation = modelNode->getNodeTransMatrix();
     
     spvu::Position endPosition;
     endPosition.x = transformation[0][3];
@@ -280,13 +240,6 @@ void ModelRenderer::drawLineToWorldCoordinates(std::shared_ptr< const Renderable
     spvr::RendererUtils::drawLine(startPoint, endPosition, color);
 }
 
-void ModelRenderer::loadSupportModels()
-{
-    coordinateSystem_ = std::make_shared< spvr::RenderableModel >(std::make_shared< spvt::CoordinateSystem >());
-    // TODO: Change to line
-    normal_ = std::make_shared< spvr::RenderableModel >(std::make_shared< spvt::NormalArrow >());
-
-}
 
 
 

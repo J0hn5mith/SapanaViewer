@@ -28,7 +28,7 @@ NodeTransformationsList::NodeTransformationsList(std::shared_ptr< const spvs::Sc
     std::for_each (transformations.begin(), transformations.end(),
                    [&]( spvu::TransMatrix node)
                    {
-                       std::string name = std::string("Transformation ") + std::to_string(items_.size());
+                       std::string name = std::string("Transformation ") + std::to_string(items_.size() + 1);
                        items_.push_back(spvg::ListItemSpv(1, name));
                    }
                    );

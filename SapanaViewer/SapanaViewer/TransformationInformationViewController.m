@@ -31,6 +31,7 @@
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view.
+    self.matrixVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.8, 0.8);
 }
 
 - (void)didReceiveMemoryWarning

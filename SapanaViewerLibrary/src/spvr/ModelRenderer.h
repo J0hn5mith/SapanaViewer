@@ -22,6 +22,7 @@
 namespace spvr {
     class RenderableModelNode;
     class RenderableModel;
+    class SceneNodeRenderer;
 }
 
 namespace spvr{
@@ -33,18 +34,20 @@ namespace spvr{
 class ModelRenderer
 {
 public:
-    explicit ModelRenderer();
-
+#pragma mark - Constructor & Destructor
+    explicit ModelRenderer(std::shared_ptr< spvr::SceneNodeRenderer > sceneNodeRenderer);
     ~ModelRenderer();
 
+    
+#pragma mark - Render Methodes
     void renderModel(std::shared_ptr< const RenderableModelNode > modelNode) const;
 
     void renderModels(std::shared_ptr< std::vector< std::shared_ptr< const RenderableModelNode > > > models) const;
+
+
 private:
-    
-#pragma mark - Support Models Members
-    std::shared_ptr< spvr::RenderableModel > coordinateSystem_;
-    std::shared_ptr< spvr::RenderableModel > normal_;
+#pragma mark - Decorated Class
+    std::shared_ptr< SceneNodeRenderer > sceneNodeRenderer_;
     
 #pragma mark - Render Methodes
 
@@ -97,12 +100,7 @@ private:
      * Draws a line from the models cs origin to the 
      * world cs origin
      */
-    void drawLineToWorldCoordinates(std::shared_ptr< const RenderableModelNode > modelNode) const;
-
-    /**
-     * Loads a bounch of support models
-     */
-    void loadSupportModels();
+    void drawLineToParentNode(std::shared_ptr< const RenderableModelNode > modelNode) const;
 
 };
 

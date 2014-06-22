@@ -35,7 +35,8 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:
-(NSInteger)section{
+(NSInteger)section
+{
     return impl.list->getNumItems();
 }
 

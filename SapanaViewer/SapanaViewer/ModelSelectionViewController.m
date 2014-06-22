@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    // Configure Table View
+    self.tableView.frame = self.view.bounds;
     
 }
 
@@ -51,11 +53,11 @@
     [self.tableView reloadData];
     
     // Select first item
-    if ([self.tableView numberOfRowsInSection:1 ] > 0)
-    {
-        NSIndexPath *indexPath=[NSIndexPath indexPathForRow:0 inSection:0];
-        [self.tableView selectRowAtIndexPath:indexPath animated:YES  scrollPosition:UITableViewScrollPositionBottom];
-    }
+//    if ([self.tableView numberOfRowsInSection:1 ] > 0)
+//    {
+//        NSIndexPath *indexPath=[NSIndexPath indexPathForRow:0 inSection:0];
+//        [self.tableView selectRowAtIndexPath:indexPath animated:YES  scrollPosition:UITableViewScrollPositionBottom];
+//    }
 }
 
 #pragma mark - Sapana Viewer

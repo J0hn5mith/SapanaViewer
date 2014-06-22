@@ -158,7 +158,19 @@
 
 -(NSMutableArray *) getTransformationMatrixList
 {
-    return [WrapperUtils create_matrix_list:impl.controller->getTransformationMatrixList()];
+    NSMutableArray * result = [[NSMutableArray alloc] init];
+    auto matrixVector = impl.controller->getTransformationMatrixList();
+    
+    std::for_each(matrixVector.begin(), matrixVector.end(),
+                  [&] (MatrixForGUI guiMatrix)
+                  {
+                      TransMatrix * matrix =[WrapperUtils create_matrix:guiMatrix.getMatrix()];
+                      matrix.label = [[NSString alloc] initWithUTF8String:guiMatrix.getLabel().c_str()];
+                      [result addObject:matrix];
+                  }
+                  );
+    
+    return result;
 }
 
 

@@ -63,7 +63,7 @@
     if (indexPath.row == 0) // Return World coordinate node
     {
         UITableViewCell * firstCell = [[UITableViewCell alloc] init];
-        firstCell.textLabel.text =  @"Worold Coordinates";
+        firstCell.textLabel.text =  @"World Coordinates";
         firstCell.textLabel.font = TABLE_FONT;
         return firstCell;
     }

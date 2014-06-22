@@ -42,3 +42,8 @@ void ListController::update() const
 {
     
 }
+
+std::vector< std::shared_ptr< const spv::IController > > ListController::getChildController() const
+{
+    return std::vector< std::shared_ptr< const spv::IController > >();
+}

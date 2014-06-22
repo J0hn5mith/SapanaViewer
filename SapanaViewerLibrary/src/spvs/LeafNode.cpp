@@ -11,7 +11,7 @@ using namespace spvs;
 
 LeafNode::LeafNode(SceneNodeType sceneNodeType)
 : SceneNode(sceneNodeType)
-, observableImpl_(std::make_shared< spvu::ObservableImpl >())
+
 {
     // TODO: Implement
 }
@@ -34,5 +34,5 @@ void LeafNode::removeChild(spvu::SceneNodeID childPos)
 void LeafNode::nodeHasChanged()
 {
     SceneNode::nodeHasChanged();
-    notifyObservers(std::make_shared<spvu::NotificationImpl>(1));// TODO: use enum for notification types
+
 }

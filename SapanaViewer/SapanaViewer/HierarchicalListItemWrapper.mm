@@ -21,6 +21,7 @@
 - (id)initWithStyle:(UITableViewCellStyle)style
     reuseIdentifier:(NSString *)reuseIdentifier
              level_:(NSUInteger)level
+          canExpand_:(BOOL)canExpand
           expanded_:(BOOL)expanded
             nodeID_:(unsigned long) nodeID
 {
@@ -30,6 +31,7 @@
     {
         
         _level = level;
+        _canExpand = canExpand;
         _expanded = expanded;
        
         self.valueLabel =  [[UILabel alloc] initWithFrame:CGRectZero];
@@ -51,10 +53,12 @@
         UIView * content = self.contentView;
         [content addSubview:self.valueLabel];
         
+        if( self.canExpand)
+        {
+            self.expandedLabel.text = self.expanded ? @"+" : @"-";
+            [content addSubview:self.expandedLabel];
+        }
         
-        self.expandedLabel.text = self.expanded ? @"+" : @"-";
-        [content addSubview:self.expandedLabel];
-
     }
     return self;
 }

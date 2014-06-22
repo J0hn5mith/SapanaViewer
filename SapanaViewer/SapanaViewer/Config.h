@@ -11,6 +11,7 @@
 extern const float CORNER_RADIUS_TOPIC_SUBVIEW;
 extern const float BORDER_WIDTH_TOPIC_SUBVIEW;
 extern const float CORNER_RADIUS_TOPIC_SUBSUBVIEW;
+extern const float CORNER_RADIUS_MATRIX_VIEW;
 extern const float SV_UPDATE_INTERVAL;
 extern const float NAVIGATOIN_SPEED_REDUCTION_FACTOR;
 extern const UIFont * TABLE_FONT;

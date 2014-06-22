@@ -7,6 +7,8 @@
 //
 
 #import "MatrixViewController.h"
+#import "Config.h"
+ #import <CoreText/CoreText.h>
 
 @interface MatrixViewController ()
 
@@ -21,6 +23,7 @@
         self.numberFormater = [[NSNumberFormatter alloc] init];
         [self.numberFormater setPositiveFormat:@"0.##"];
         [self.numberFormater setNegativeFormat:@"0.##"];
+        _isHighlighted = false;
         
     }
     return self;
@@ -31,29 +34,72 @@
     [super viewDidLoad];
     
     self.labelMatrix = [[NSMutableArray alloc] init];
-    NSArray *line = [[NSArray alloc] initWithObjects:self.field00, self.field01, self.field02, self.field03, nil];
+    NSArray *line = [[NSArray alloc] initWithObjects:
+                     [self labelToTextLayer:self.field00],
+                     [self labelToTextLayer:self.field01],
+                     [self labelToTextLayer:self.field02],
+                     [self labelToTextLayer:self.field03],
+                     nil];
     [self.labelMatrix addObject:line];
     
-    line = [[NSArray alloc] initWithObjects:self.field10, self.field11, self.field12, self.field13, nil];
+    line = [[NSArray alloc] initWithObjects:
+            [self labelToTextLayer:self.field10],
+            [self labelToTextLayer:self.field11],
+            [self labelToTextLayer:self.field12],
+            [self labelToTextLayer:self.field13],
+            nil];
     [self.labelMatrix addObject:line];
     
-    line = [[NSArray alloc] initWithObjects:self.field20, self.field21, self.field22, self.field23, nil];
+    line = [[NSArray alloc] initWithObjects:
+            [self labelToTextLayer:self.field20],
+            [self labelToTextLayer:self.field21],
+            [self labelToTextLayer:self.field22],
+            [self labelToTextLayer:self.field23],
+            nil];
     [self.labelMatrix addObject:line];
     
-    line = [[NSArray alloc] initWithObjects:self.field30, self.field31, self.field32, self.field33, nil];
+    line = [[NSArray alloc] initWithObjects:
+            [self labelToTextLayer:self.field30],
+            [self labelToTextLayer:self.field31],
+            [self labelToTextLayer:self.field32],
+            [self labelToTextLayer:self.field33],
+            nil];
     [self.labelMatrix addObject:line];
     
-    // Do any additional setup after loading the view from its nib.
+
     
     TransMatrix * mat = [[TransMatrix alloc] init];
+    [self updateWithMatrixWithHighlight:mat];
+   
     
-    [self updateWithMatrix:mat];
+    self.view.layer.cornerRadius = CORNER_RADIUS_MATRIX_VIEW;
+    [self.view clipsToBounds];
+    
+    self.highLightColor = [UIColor whiteColor];
+    self.fontColor = [UIColor blackColor];
+    self.fontHighlightColor = [UIColor greenColor];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreadted.
+}
+
+#pragma mark - Setter and Getter Methodes
+-(void) setIsHighlighted:(BOOL *)isHighlighted
+{
+    _isHighlighted = isHighlighted;
+    
+    if(_isHighlighted)
+    {
+        [self.view setBackgroundColor:self.highLightColor];
+    }
+    else
+    {
+        [self.view setBackgroundColor:self.highLightColor];
+    }
 }
 
 -(void) updateWithMatrixWithHighlight:(TransMatrix * ) matrix
@@ -67,15 +113,10 @@
             NSNumber * oldNumber = [[self.currentMatrix.elements objectAtIndex:lineCounter] objectAtIndex:elementCounter];
             if ( number.floatValue != oldNumber.floatValue)
             {
-                UILabel * targetLabel = [[self.labelMatrix objectAtIndex:lineCounter] objectAtIndex:elementCounter];
+                CATextLayer * targetTextLayer = [[self.labelMatrix objectAtIndex:lineCounter] objectAtIndex:elementCounter];
                 
-                targetLabel.text = [self floatToString:number];
-                targetLabel.textColor = [UIColor redColor];
-                
-//                [UIView animateWithDuration:2.0 animations:^{
-//                    targetLabel.layer.backgroundColor = [UIColor greenColor].CGColor;
-//                } completion:NULL];
-                
+                [targetTextLayer setString:[self floatToString:number]];
+                [self textColorAnimation:targetTextLayer ];
             }
             elementCounter++;
         }
@@ -86,30 +127,21 @@
 }
 -(void) updateWithMatrix:(TransMatrix * ) matrix
 {
+    int lineCounter = 0;
+    for (NSMutableArray * line in matrix.elements)
+    {
+        int elementCounter = 0;
+        for (NSNumber * number in line)
+        {
+            CATextLayer * targetTextLayer = [[self.labelMatrix objectAtIndex:lineCounter] objectAtIndex:elementCounter];
+            [targetTextLayer setString:[self floatToString:number]];
+            
+            elementCounter++;
+        }
+        lineCounter++;
+    }
     
-    // TODO: use itteration
-    self.field00.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:0] objectAtIndex:0]];
-    self.field01.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:0] objectAtIndex:1]]
-    ;
-    self.field02.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:0] objectAtIndex:2]];
-    self.field03.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:0] objectAtIndex:3]];
-    
-    self.field10.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:1] objectAtIndex:0]];
-    self.field11.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:1] objectAtIndex:1]];
-    self.field12.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:1] objectAtIndex:2]];
-    self.field13.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:1] objectAtIndex:3]];
-//
-    self.field20.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:2] objectAtIndex:0]];
-    self.field21.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:2] objectAtIndex:1]];
-    self.field22.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:2] objectAtIndex:2]];
-    self.field23.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:2] objectAtIndex:3]];
-//
-    self.field30.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:3] objectAtIndex:0]];
-    self.field31.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:3] objectAtIndex:1]];
-    self.field32.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:3] objectAtIndex:2]];
-    self.field33.text = [self floatToString:(NSNumber *)[[[matrix elements] objectAtIndex:3] objectAtIndex:3]];
-    
-     self.currentMatrix = matrix;
+    self.currentMatrix = matrix;
 }
 
 -(NSString *) floatToString:(NSNumber *) number
@@ -117,4 +149,55 @@
     return [self.numberFormater stringFromNumber:number];
 }
 
+-(CATextLayer *) labelToTextLayer:(UILabel *) label
+{
+    CATextLayer *textLayer = [CATextLayer layer];
+    
+    [textLayer setString:label.text];
+    [textLayer setForegroundColor:label.textColor.CGColor];
+    [textLayer setFontSize:label.font.pointSize];
+    CTFontRef myCTFont = CTFontCreateWithName( (CFStringRef)label.font.fontName, label.font.pointSize, NULL);
+    [textLayer setFont:myCTFont];
+    [textLayer setFrame:label.frame];
+    [textLayer setAlignmentMode:@"kCAAlignmentCenter"];
+    [[self.matrixLabelView layer] addSublayer:textLayer];
+    
+    [label removeFromSuperview];
+    
+    return textLayer;
+}
+#pragma mark - Utils
+-(void) textColorAnimation:(CATextLayer*)textLayer
+{
+    
+    
+//    [textLayer setString:@"Hello World"];
+//    [textLayer setForegroundColor:[UIColor purpleColor].CGColor];
+//    [textLayer setFontSize:30];
+//    [textLayer setFrame:CGRectMake(20, 200, 300, 40)];
+//    [[self.view layer] addSublayer:textLayer];
+    
+    CGFloat animationDuration = 1.5;
+    CABasicAnimation *colorAnimation = [CABasicAnimation
+                                        animationWithKeyPath:@"foregroundColor"];
+    colorAnimation.duration = animationDuration;
+    colorAnimation.fillMode = kCAFillModeForwards;
+    colorAnimation.removedOnCompletion = NO;
+    colorAnimation.fromValue = (id)self.fontHighlightColor.CGColor;
+    colorAnimation.toValue = (id)self.fontColor.CGColor;
+    colorAnimation.timingFunction = [CAMediaTimingFunction
+                                     functionWithName:kCAMediaTimingFunctionLinear];
+    
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.duration = animationDuration;
+    animationGroup.timingFunction = [CAMediaTimingFunction
+                                     functionWithName:kCAMediaTimingFunctionLinear];
+    animationGroup.fillMode = kCAFillModeForwards;
+    animationGroup.removedOnCompletion = NO;
+    animationGroup.animations =
+    [NSArray arrayWithObjects:colorAnimation, nil];
+    
+    [textLayer addAnimation:animationGroup forKey:@"animateColor"];
+    
+}
 @end

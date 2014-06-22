@@ -24,16 +24,16 @@
 /* Begin PBXBuildFile section */
 		E21D9B101875ADB400B6ED08 /* RenderableCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */; };
 		E21D9B111875ADB400B6ED08 /* RenderableCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */; };
-		E21D9B141875C3D800B6ED08 /* TestRenderableCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */; };
-		E21D9B151875C3D800B6ED08 /* TestRenderableCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */; };
+		E22680BF18FB259200E82589 /* ModelLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E22680BD18FB259200E82589 /* ModelLoader.h */; };
+		E22680C318FB288A00E82589 /* objload.h in Headers */ = {isa = PBXBuildFile; fileRef = E22680C118FB288A00E82589 /* objload.h */; };
 		E2455F2418634369000EEB2F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23FDBF3186069F0007BC04F /* OpenGLES.framework */; };
+		E249129C18F6A9150002F790 /* CameraList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E249129A18F6A9150002F790 /* CameraList.cpp */; };
+		E249129D18F6A9150002F790 /* CameraList.h in Headers */ = {isa = PBXBuildFile; fileRef = E249129B18F6A9150002F790 /* CameraList.h */; };
+		E24912A618F6BF770002F790 /* SceneNodeRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E24912A418F6BF770002F790 /* SceneNodeRenderer.cpp */; };
+		E24912A718F6BF770002F790 /* SceneNodeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E24912A518F6BF770002F790 /* SceneNodeRenderer.h */; };
+		E24912AA18F6C39A0002F790 /* RenderableSceneNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E24912A818F6C39A0002F790 /* RenderableSceneNode.cpp */; };
+		E24912AB18F6C39A0002F790 /* RenderableSceneNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E24912A918F6C39A0002F790 /* RenderableSceneNode.h */; };
 		E255B6F718C8AEF0003BEBA9 /* SapanaViewer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */; };
-		E256F3CA1864A83800C1FDA3 /* TestController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBECB1864767100217658 /* TestController.cpp */; };
-		E256F3CD1864A83800C1FDA3 /* TestSceneData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBE96186470AA00217658 /* TestSceneData.cpp */; };
-		E256F3D01864A99500C1FDA3 /* TestSceneRendererContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */; };
-		E256F3D11864A99500C1FDA3 /* TestSceneRendererContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */; };
-		E256F3D41864AEA300C1FDA3 /* TestRenderableScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */; };
-		E256F3D51864AEA300C1FDA3 /* TestRenderableScene.h in Headers */ = {isa = PBXBuildFile; fileRef = E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */; };
 		E2594D8F18631B65005570B0 /* ModelRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8018631B65005570B0 /* ModelRenderer.cpp */; };
 		E2594D9018631B65005570B0 /* ModelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2594D8118631B65005570B0 /* ModelRenderer.h */; };
 		E2594D9118631B65005570B0 /* RenderableModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2594D8218631B65005570B0 /* RenderableModel.cpp */; };
@@ -51,19 +51,13 @@
 		E25C0CAE188DB25F00DC5B6B /* ITreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CAC188DB25F00DC5B6B /* ITreeView.h */; };
 		E25C0CB1188DB2F900DC5B6B /* SceneNodeTreeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25C0CAF188DB2F900DC5B6B /* SceneNodeTreeView.cpp */; };
 		E25C0CB2188DB2F900DC5B6B /* SceneNodeTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CB0188DB2F900DC5B6B /* SceneNodeTreeView.h */; };
-		E25C0CB5188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */; };
-		E25C0CB6188DB47A00DC5B6B /* TestSceneNodeTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */; };
 		E278FEFD18E46AB400331A35 /* SceneGraphController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2C56E3418844F9500D8B535 /* SceneGraphController.h */; };
 		E27B6489188DDD3E00FC7547 /* TreeViewNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E25C0CA4188D9AD600DC5B6B /* TreeViewNode.h */; };
-		E28BA13318707AF100B189F3 /* TestModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28BA13118707AF100B189F3 /* TestModelNode.cpp */; };
-		E28BA13418707AF100B189F3 /* TestModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BA13218707AF100B189F3 /* TestModelNode.h */; };
+		E285C77818EC09C000C3F55A /* SceneNodeTransformationList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E285C77618EC09C000C3F55A /* SceneNodeTransformationList.cpp */; };
+		E285C77918EC09C000C3F55A /* SceneNodeTransformationList.h in Headers */ = {isa = PBXBuildFile; fileRef = E285C77718EC09C000C3F55A /* SceneNodeTransformationList.h */; };
 		E28E04B818997D1200CF4705 /* IRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = E28E04B618997D1200CF4705 /* IRenderable.h */; };
 		E28F246E18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h in Headers */ = {isa = PBXBuildFile; fileRef = E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */; };
-		E29FC09E1870813300A9B42E /* TestRenderableModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */; };
-		E29FC09F1870813300A9B42E /* TestRenderableModelNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */; };
-		E29FC0A0187081DB00A9B42E /* TestSceneData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBE97186470AA00217658 /* TestSceneData.h */; };
 		E29FC0A2187082A100A9B42E /* RenderableModelNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */; };
-		E2A13D791872FA3700F57EFE /* CubeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCBE91186470AA00217658 /* CubeData.cpp */; };
 		E2A1904818EAB89300472122 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A1904618EAB89300472122 /* Camera.cpp */; };
 		E2A1904918EAB89300472122 /* Camera.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1904618EAB89300472122 /* Camera.cpp */; };
 		E2A1904A18EAB89300472122 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1904718EAB89300472122 /* Camera.h */; };
@@ -134,7 +128,7 @@
 		E2A190AE18EABAE100472122 /* HierarchicalList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190AA18EABAE100472122 /* HierarchicalList.h */; };
 		E2A190B118EABAEF00472122 /* HierarchicalListItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */; };
 		E2A190B218EABAEF00472122 /* HierarchicalListItem.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */; };
-		E2A190B318EABAEF00472122 /* HierarchicalListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190B018EABAEF00472122 /* HierarchicalListItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2A190B318EABAEF00472122 /* HierarchicalListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A190B018EABAEF00472122 /* HierarchicalListItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2A190B418EABAEF00472122 /* HierarchicalListItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190B018EABAEF00472122 /* HierarchicalListItem.h */; };
 		E2A190B718EABAFC00472122 /* HierarchicalModelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */; };
 		E2A190B818EABAFC00472122 /* HierarchicalModelList.cpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */; };
@@ -194,18 +188,21 @@
 		E2A1910818EABC8500472122 /* SceneNodeProperties.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1910418EABC8500472122 /* SceneNodeProperties.h */; };
 		E2A1910A18EABCB800472122 /* TypeDefSpv.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A1910918EABCB800472122 /* TypeDefSpv.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2A1910B18EABCB800472122 /* TypeDefSpv.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2A1910918EABCB800472122 /* TypeDefSpv.h */; };
+		E2AF418D18EEF9D4005F5CD2 /* LightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF418B18EEF9D4005F5CD2 /* LightSource.cpp */; };
+		E2AF418E18EEF9D4005F5CD2 /* LightSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF418C18EEF9D4005F5CD2 /* LightSource.h */; };
+		E2AF419118EEFBE8005F5CD2 /* LightSourceNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF418F18EEFBE8005F5CD2 /* LightSourceNode.cpp */; };
+		E2AF419218EEFBE8005F5CD2 /* LightSourceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF419018EEFBE8005F5CD2 /* LightSourceNode.h */; };
+		E2AF419618EEFED1005F5CD2 /* RenderableLightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF419418EEFED1005F5CD2 /* RenderableLightSource.cpp */; };
+		E2AF419718EEFED1005F5CD2 /* RenderableLightSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF419518EEFED1005F5CD2 /* RenderableLightSource.h */; };
+		E2AF419A18EF00CD005F5CD2 /* RenderableLightSourceNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF419818EF00CD005F5CD2 /* RenderableLightSourceNode.cpp */; };
+		E2AF419B18EF00CD005F5CD2 /* RenderableLightSourceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF419918EF00CD005F5CD2 /* RenderableLightSourceNode.h */; };
+		E2AF419E18EF09C5005F5CD2 /* LightSourceNodeRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AF419C18EF09C5005F5CD2 /* LightSourceNodeRenderer.cpp */; };
+		E2AF419F18EF09C5005F5CD2 /* LightSourceNodeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF419D18EF09C5005F5CD2 /* LightSourceNodeRenderer.h */; };
+		E2BA633918F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BA633718F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.cpp */; };
+		E2BA633A18F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BA633818F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.h */; };
 		E2BCBE881864557400217658 /* IRenderer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2594D8718631B65005570B0 /* IRenderer.h */; };
-		E2BCBECE1864767100217658 /* TestController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBECC1864767100217658 /* TestController.h */; };
-		E2BCBECF1864767D00217658 /* TestController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2BCBECC1864767100217658 /* TestController.h */; };
-		E2BF0AFA1872F94D00D9E0F0 /* CubeData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BCBE92186470AA00217658 /* CubeData.h */; };
 		E2C56E3B18844F9500D8B535 /* SceneGraphController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */; };
 		E2C56E3C18844F9500D8B535 /* SceneGraphController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E3418844F9500D8B535 /* SceneGraphController.h */; };
-		E2C56E4118844FB300D8B535 /* TestSceneRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */; };
-		E2C56E4218844FB300D8B535 /* TestSceneRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */; };
-		E2C56E491884541500D8B535 /* TestSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E471884541500D8B535 /* TestSceneManager.cpp */; };
-		E2C56E4A1884541500D8B535 /* TestSceneManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E481884541500D8B535 /* TestSceneManager.h */; };
-		E2C56E4D1884942F00D8B535 /* TestCameraNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */; };
-		E2C56E4E1884942F00D8B535 /* TestCameraNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C56E4C1884942F00D8B535 /* TestCameraNode.h */; };
 		E2C98E4618EABF6B008D6018 /* IController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190C118EABB4800472122 /* IController.h */; };
 		E2C98E4718EABF6E008D6018 /* SceneNodeController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190FE18EABC4600472122 /* SceneNodeController.h */; };
 		E2C98E4818EABF74008D6018 /* SceneRendererController.h in Copy Headers to Includes */ = {isa = PBXBuildFile; fileRef = E2A190A418EABAA400472122 /* SceneRendererController.h */; };
@@ -221,8 +218,8 @@
 		E2DCB5E4187735CB00E7B440 /* SapanaViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2DCB5E5187735CB00E7B440 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2DCB5E1187735CB00E7B440 /* Screen.cpp */; };
 		E2DCB5E6187735CB00E7B440 /* Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DCB5E2187735CB00E7B440 /* Screen.h */; };
-		E2E4B294187D5EE600EDB878 /* TestNotificationImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */; };
-		E2E4B295187D5EE600EDB878 /* TestNotificationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */; };
+		E2E08BE618FEF528006150E2 /* TestData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E08BE418FEF528006150E2 /* TestData.cpp */; };
+		E2E08BE718FEF528006150E2 /* TestData.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E08BE518FEF528006150E2 /* TestData.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -290,7 +287,6 @@
 				E27B6489188DDD3E00FC7547 /* TreeViewNode.h in CopyFiles */,
 				E2A190AC18EABAE100472122 /* HierarchicalList.cpp in CopyFiles */,
 				E2A190C018EABB2D00472122 /* HierarchicalListController.h in CopyFiles */,
-				E2BCBECF1864767D00217658 /* TestController.h in CopyFiles */,
 				E2A190E818EABBD800472122 /* ModelList.h in CopyFiles */,
 				E2A190B418EABAEF00472122 /* HierarchicalListItem.h in CopyFiles */,
 				E2A1909D18EABA3000472122 /* SceneNodeModifier.cpp in CopyFiles */,
@@ -327,15 +323,17 @@
 /* Begin PBXFileReference section */
 		E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableCameraNode.cpp; path = src/spvr/RenderableCameraNode.cpp; sourceTree = "<group>"; };
 		E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableCameraNode.h; path = src/spvr/RenderableCameraNode.h; sourceTree = "<group>"; };
-		E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableCameraNode.cpp; path = test/TestRenderableCameraNode.cpp; sourceTree = "<group>"; };
-		E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableCameraNode.h; path = test/TestRenderableCameraNode.h; sourceTree = "<group>"; };
+		E22680BD18FB259200E82589 /* ModelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLoader.h; sourceTree = "<group>"; };
+		E22680C118FB288A00E82589 /* objload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objload.h; path = external/objload/objload.h; sourceTree = "<group>"; };
 		E23FDB781860678B007BC04F /* libSapanaViewerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSapanaViewerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23FDBF3186069F0007BC04F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E2455F22186340FC000EEB2F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneRendererContext.cpp; path = test/TestSceneRendererContext.cpp; sourceTree = "<group>"; };
-		E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneRendererContext.h; path = test/TestSceneRendererContext.h; sourceTree = "<group>"; };
-		E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableScene.cpp; path = test/TestRenderableScene.cpp; sourceTree = "<group>"; };
-		E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableScene.h; path = test/TestRenderableScene.h; sourceTree = "<group>"; };
+		E249129A18F6A9150002F790 /* CameraList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraList.cpp; path = src/spvg/CameraList.cpp; sourceTree = "<group>"; };
+		E249129B18F6A9150002F790 /* CameraList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraList.h; path = src/spvg/CameraList.h; sourceTree = "<group>"; };
+		E24912A418F6BF770002F790 /* SceneNodeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeRenderer.cpp; path = src/spvr/SceneNodeRenderer.cpp; sourceTree = "<group>"; };
+		E24912A518F6BF770002F790 /* SceneNodeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeRenderer.h; path = src/spvr/SceneNodeRenderer.h; sourceTree = "<group>"; };
+		E24912A818F6C39A0002F790 /* RenderableSceneNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableSceneNode.cpp; path = src/spvs/RenderableSceneNode.cpp; sourceTree = "<group>"; };
+		E24912A918F6C39A0002F790 /* RenderableSceneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableSceneNode.h; path = src/spvs/RenderableSceneNode.h; sourceTree = "<group>"; };
 		E2594D8018631B65005570B0 /* ModelRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ModelRenderer.cpp; path = src/spvr/ModelRenderer.cpp; sourceTree = "<group>"; };
 		E2594D8118631B65005570B0 /* ModelRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelRenderer.h; path = src/spvr/ModelRenderer.h; sourceTree = "<group>"; };
 		E2594D8218631B65005570B0 /* RenderableModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableModel.cpp; path = src/spvr/RenderableModel.cpp; sourceTree = "<group>"; };
@@ -356,15 +354,11 @@
 		E25C0CAC188DB25F00DC5B6B /* ITreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITreeView.h; path = src/spvg/ITreeView.h; sourceTree = "<group>"; };
 		E25C0CAF188DB2F900DC5B6B /* SceneNodeTreeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeTreeView.cpp; path = src/spvg/SceneNodeTreeView.cpp; sourceTree = "<group>"; };
 		E25C0CB0188DB2F900DC5B6B /* SceneNodeTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeTreeView.h; path = src/spvg/SceneNodeTreeView.h; sourceTree = "<group>"; };
-		E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneNodeTreeView.cpp; path = test/TestSceneNodeTreeView.cpp; sourceTree = "<group>"; };
-		E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneNodeTreeView.h; path = test/TestSceneNodeTreeView.h; sourceTree = "<group>"; };
 		E26828B51874D275000AA0C0 /* external */ = {isa = PBXFileReference; lastKnownFileType = folder; path = external; sourceTree = "<group>"; };
-		E28BA13118707AF100B189F3 /* TestModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestModelNode.cpp; path = test/TestModelNode.cpp; sourceTree = "<group>"; };
-		E28BA13218707AF100B189F3 /* TestModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestModelNode.h; path = test/TestModelNode.h; sourceTree = "<group>"; };
+		E285C77618EC09C000C3F55A /* SceneNodeTransformationList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeTransformationList.cpp; path = src/spvs/SceneNodeTransformationList.cpp; sourceTree = "<group>"; };
+		E285C77718EC09C000C3F55A /* SceneNodeTransformationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeTransformationList.h; path = src/spvs/SceneNodeTransformationList.h; sourceTree = "<group>"; };
 		E28E04B618997D1200CF4705 /* IRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRenderable.h; path = src/spvr/IRenderable.h; sourceTree = "<group>"; };
 		E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleInheritableEnableSharedFromThis.h; path = src/spvu/MultipleInheritableEnableSharedFromThis.h; sourceTree = "<group>"; };
-		E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestRenderableModelNode.cpp; path = test/TestRenderableModelNode.cpp; sourceTree = "<group>"; };
-		E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestRenderableModelNode.h; path = test/TestRenderableModelNode.h; sourceTree = "<group>"; };
 		E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableModelNode.cpp; path = src/spvr/RenderableModelNode.cpp; sourceTree = "<group>"; };
 		E2A1904618EAB89300472122 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = src/spvs/Camera.cpp; sourceTree = "<group>"; };
 		E2A1904718EAB89300472122 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = src/spvs/Camera.h; sourceTree = "<group>"; };
@@ -431,23 +425,24 @@
 		E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneNodeProperties.cpp; path = src/spvs/SceneNodeProperties.cpp; sourceTree = "<group>"; };
 		E2A1910418EABC8500472122 /* SceneNodeProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneNodeProperties.h; path = src/spvs/SceneNodeProperties.h; sourceTree = "<group>"; };
 		E2A1910918EABCB800472122 /* TypeDefSpv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDefSpv.h; path = src/spvu/TypeDefSpv.h; sourceTree = "<group>"; };
-		E2BCBE91186470AA00217658 /* CubeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeData.cpp; path = test/CubeData.cpp; sourceTree = "<group>"; };
-		E2BCBE92186470AA00217658 /* CubeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeData.h; path = test/CubeData.h; sourceTree = "<group>"; };
-		E2BCBE93186470AA00217658 /* CubeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeRenderer.cpp; path = test/CubeRenderer.cpp; sourceTree = "<group>"; };
-		E2BCBE94186470AA00217658 /* CubeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeRenderer.h; path = test/CubeRenderer.h; sourceTree = "<group>"; };
-		E2BCBE95186470AA00217658 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = test/main.cpp; sourceTree = "<group>"; };
-		E2BCBE96186470AA00217658 /* TestSceneData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneData.cpp; path = test/TestSceneData.cpp; sourceTree = "<group>"; };
-		E2BCBE97186470AA00217658 /* TestSceneData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneData.h; path = test/TestSceneData.h; sourceTree = "<group>"; };
-		E2BCBECB1864767100217658 /* TestController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestController.cpp; path = test/TestController.cpp; sourceTree = "<group>"; };
-		E2BCBECC1864767100217658 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestController.h; path = test/TestController.h; sourceTree = "<group>"; };
+		E2AF418A18EEF9C1005F5CD2 /* IDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDataObject.h; sourceTree = "<group>"; };
+		E2AF418B18EEF9D4005F5CD2 /* LightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightSource.cpp; sourceTree = "<group>"; };
+		E2AF418C18EEF9D4005F5CD2 /* LightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightSource.h; sourceTree = "<group>"; };
+		E2AF418F18EEFBE8005F5CD2 /* LightSourceNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LightSourceNode.cpp; path = src/spvr/LightSourceNode.cpp; sourceTree = "<group>"; };
+		E2AF419018EEFBE8005F5CD2 /* LightSourceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightSourceNode.h; path = src/spvr/LightSourceNode.h; sourceTree = "<group>"; };
+		E2AF419318EEFEAD005F5CD2 /* IRenderableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IRenderableData.h; path = src/spvr/IRenderableData.h; sourceTree = "<group>"; };
+		E2AF419418EEFED1005F5CD2 /* RenderableLightSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableLightSource.cpp; path = src/spvr/RenderableLightSource.cpp; sourceTree = "<group>"; };
+		E2AF419518EEFED1005F5CD2 /* RenderableLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableLightSource.h; path = src/spvr/RenderableLightSource.h; sourceTree = "<group>"; };
+		E2AF419818EF00CD005F5CD2 /* RenderableLightSourceNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableLightSourceNode.cpp; path = src/spvr/RenderableLightSourceNode.cpp; sourceTree = "<group>"; };
+		E2AF419918EF00CD005F5CD2 /* RenderableLightSourceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderableLightSourceNode.h; path = src/spvr/RenderableLightSourceNode.h; sourceTree = "<group>"; };
+		E2AF419C18EF09C5005F5CD2 /* LightSourceNodeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightSourceNodeRenderer.cpp; sourceTree = "<group>"; };
+		E2AF419D18EF09C5005F5CD2 /* LightSourceNodeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightSourceNodeRenderer.h; sourceTree = "<group>"; };
+		E2BA633418F2FD3E009E7804 /* IVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IVisitor.h; path = src/spvu/IVisitor.h; sourceTree = "<group>"; };
+		E2BA633518F2FE00009E7804 /* ISceneNodeVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ISceneNodeVisitor.h; path = src/spvs/ISceneNodeVisitor.h; sourceTree = "<group>"; };
+		E2BA633718F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeGraberSceneNodeVisitor.cpp; sourceTree = "<group>"; };
+		E2BA633818F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeGraberSceneNodeVisitor.h; sourceTree = "<group>"; };
 		E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGraphController.cpp; path = src/spv/SceneGraphController.cpp; sourceTree = "<group>"; };
 		E2C56E3418844F9500D8B535 /* SceneGraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGraphController.h; path = src/spv/SceneGraphController.h; sourceTree = "<group>"; };
-		E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneRenderer.cpp; path = test/TestSceneRenderer.cpp; sourceTree = "<group>"; };
-		E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneRenderer.h; path = test/TestSceneRenderer.h; sourceTree = "<group>"; };
-		E2C56E471884541500D8B535 /* TestSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestSceneManager.cpp; path = test/TestSceneManager.cpp; sourceTree = "<group>"; };
-		E2C56E481884541500D8B535 /* TestSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSceneManager.h; path = test/TestSceneManager.h; sourceTree = "<group>"; };
-		E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestCameraNode.cpp; path = test/TestCameraNode.cpp; sourceTree = "<group>"; };
-		E2C56E4C1884942F00D8B535 /* TestCameraNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCameraNode.h; path = test/TestCameraNode.h; sourceTree = "<group>"; };
 		E2C98E4F18EAC1B4008D6018 /* ListController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ListController.cpp; path = src/spv/ListController.cpp; sourceTree = "<group>"; };
 		E2C98E5018EAC1B4008D6018 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListController.h; path = src/spv/ListController.h; sourceTree = "<group>"; };
 		E2D9040E188558C900A7A0F5 /* RenderableCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderableCamera.cpp; path = src/spvr/RenderableCamera.cpp; sourceTree = "<group>"; };
@@ -456,8 +451,9 @@
 		E2DCB5E0187735CB00E7B440 /* SapanaViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SapanaViewer.h; path = src/spv/SapanaViewer.h; sourceTree = "<group>"; };
 		E2DCB5E1187735CB00E7B440 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Screen.cpp; path = src/spv/Screen.cpp; sourceTree = "<group>"; };
 		E2DCB5E2187735CB00E7B440 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Screen.h; path = src/spv/Screen.h; sourceTree = "<group>"; };
-		E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestNotificationImpl.cpp; path = test/TestNotificationImpl.cpp; sourceTree = "<group>"; };
-		E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestNotificationImpl.h; path = test/TestNotificationImpl.h; sourceTree = "<group>"; };
+		E2E08BE218FEDCB3006150E2 /* spvNamespace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = spvNamespace.h; path = src/doxygen/spvNamespace.h; sourceTree = "<group>"; };
+		E2E08BE418FEF528006150E2 /* TestData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestData.cpp; sourceTree = "<group>"; };
+		E2E08BE518FEF528006150E2 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,7 +474,7 @@
 				E26828B51874D275000AA0C0 /* external */,
 				E23FDBF3186069F0007BC04F /* OpenGLES.framework */,
 				E23FDB7F186067CB007BC04F /* src */,
-				E2BCBE901864708B00217658 /* test */,
+				E2E08BE118FEDC75006150E2 /* Doxygen Stuff */,
 				E2594DD618633A27005570B0 /* Frameworks */,
 				E23FDB791860678B007BC04F /* Products */,
 			);
@@ -523,9 +519,21 @@
 				E28FB55F18E067450009D425 /* Renderable Data */,
 				E28FB55D18E066E30009D425 /* Renderable Nodes */,
 				E2A190F118EABC0B00472122 /* RendererUtils.cpp */,
-				E2A190F218EABC0B00472122 /* RendererUtils.h */,
 			);
 			name = spvr;
+			sourceTree = "<group>";
+		};
+		E24912AE18F6D0070002F790 /* Node Renderes */ = {
+			isa = PBXGroup;
+			children = (
+				E24912A518F6BF770002F790 /* SceneNodeRenderer.h */,
+				E24912A418F6BF770002F790 /* SceneNodeRenderer.cpp */,
+				E2594D8118631B65005570B0 /* ModelRenderer.h */,
+				E2594D8018631B65005570B0 /* ModelRenderer.cpp */,
+				E2AF419D18EF09C5005F5CD2 /* LightSourceNodeRenderer.h */,
+				E2AF419C18EF09C5005F5CD2 /* LightSourceNodeRenderer.cpp */,
+			);
+			name = "Node Renderes";
 			sourceTree = "<group>";
 		};
 		E2594DD618633A27005570B0 /* Frameworks */ = {
@@ -545,7 +553,7 @@
 				E2B5B72518E07D0000E0DA59 /* Scene Graph and Nodes */,
 				E2B5B72418E07CEB00E0DA59 /* Data */,
 				E278FEFB18E45D6D00331A35 /* Accessors */,
-				E2B5B72618E07D1200E0DA59 /* spvs Utils */,
+				E2B5B72618E07D1200E0DA59 /* Utils (spvs) */,
 			);
 			name = spvs;
 			sourceTree = "<group>";
@@ -569,8 +577,8 @@
 				E2C56E3318844F9500D8B535 /* SceneGraphController.cpp */,
 				E2A190FE18EABC4600472122 /* SceneNodeController.h */,
 				E2A190FD18EABC4600472122 /* SceneNodeController.cpp */,
-				E2A190A318EABAA400472122 /* SceneRendererController.cpp */,
 				E2A190A418EABAA400472122 /* SceneRendererController.h */,
+				E2A190A318EABAA400472122 /* SceneRendererController.cpp */,
 				E292DA6818E5C5CB00AE18D3 /* GUI Abstraction controller */,
 			);
 			name = Controller;
@@ -588,10 +596,13 @@
 		E28F246A18898DFD00DD944C /* spvu */ = {
 			isa = PBXGroup;
 			children = (
+				E22680C118FB288A00E82589 /* objload.h */,
 				E2A190A018EABA5800472122 /* Util.h */,
+				E22680BD18FB259200E82589 /* ModelLoader.h */,
 				E2A1910918EABCB800472122 /* TypeDefSpv.h */,
 				E2A1908518EAB98200472122 /* Interfaces */,
 				E28F246C18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h */,
+				E2E08BE318FEF438006150E2 /* Test Data */,
 			);
 			name = spvu;
 			sourceTree = "<group>";
@@ -599,12 +610,17 @@
 		E28FB55D18E066E30009D425 /* Renderable Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				E24912A918F6C39A0002F790 /* RenderableSceneNode.h */,
+				E24912A818F6C39A0002F790 /* RenderableSceneNode.cpp */,
+				E2A190F818EABC2000472122 /* RenderableLeafNode.h */,
+				E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */,
 				E2594D8418631B65005570B0 /* RenderableModelNode.h */,
 				E29FC0A1187082A100A9B42E /* RenderableModelNode.cpp */,
 				E21D9B0F1875ADB400B6ED08 /* RenderableCameraNode.h */,
 				E21D9B0E1875ADB400B6ED08 /* RenderableCameraNode.cpp */,
-				E2A190F718EABC2000472122 /* RenderableLeafNode.cpp */,
-				E2A190F818EABC2000472122 /* RenderableLeafNode.h */,
+				E2AF419918EF00CD005F5CD2 /* RenderableLightSourceNode.h */,
+				E2AF419818EF00CD005F5CD2 /* RenderableLightSourceNode.cpp */,
+				E2A190F218EABC0B00472122 /* RendererUtils.h */,
 			);
 			name = "Renderable Nodes";
 			sourceTree = "<group>";
@@ -615,10 +631,9 @@
 				E2594D8718631B65005570B0 /* IRenderer.h */,
 				E2594D8B18631B65005570B0 /* SceneRenderer.h */,
 				E2594D8A18631B65005570B0 /* SceneRenderer.cpp */,
+				E24912AE18F6D0070002F790 /* Node Renderes */,
 				E2594D8D18631B65005570B0 /* SceneRendererContext.h */,
 				E2594D8C18631B65005570B0 /* SceneRendererContext.cpp */,
-				E2594D8118631B65005570B0 /* ModelRenderer.h */,
-				E2594D8018631B65005570B0 /* ModelRenderer.cpp */,
 			);
 			name = Renderer;
 			sourceTree = "<group>";
@@ -627,12 +642,15 @@
 			isa = PBXGroup;
 			children = (
 				E28E04B618997D1200CF4705 /* IRenderable.h */,
+				E2AF419318EEFEAD005F5CD2 /* IRenderableData.h */,
 				E2594D8618631B65005570B0 /* RenderableScene.h */,
 				E2594D8518631B65005570B0 /* RenderableScene.cpp */,
 				E2594D8318631B65005570B0 /* RenderableModel.h */,
 				E2594D8218631B65005570B0 /* RenderableModel.cpp */,
 				E2D9040F188558C900A7A0F5 /* RenderableCamera.h */,
 				E2D9040E188558C900A7A0F5 /* RenderableCamera.cpp */,
+				E2AF419518EEFED1005F5CD2 /* RenderableLightSource.h */,
+				E2AF419418EEFED1005F5CD2 /* RenderableLightSource.cpp */,
 			);
 			name = "Renderable Data";
 			sourceTree = "<group>";
@@ -655,6 +673,7 @@
 				E2A1905918EAB8F200472122 /* IObservable.h */,
 				E2A1905A18EAB8F200472122 /* IObserver.h */,
 				E2A1908618EAB98E00472122 /* Implementations */,
+				E2BA633418F2FD3E009E7804 /* IVisitor.h */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -673,10 +692,12 @@
 		E2A1908D18EAB9CD00472122 /* Custom Leaf Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				E2A1906718EAB92400472122 /* ModelNode.cpp */,
 				E2A1906818EAB92400472122 /* ModelNode.h */,
-				E2A1904C18EAB89E00472122 /* CameraNode.cpp */,
+				E2A1906718EAB92400472122 /* ModelNode.cpp */,
 				E2A1904D18EAB89E00472122 /* CameraNode.h */,
+				E2A1904C18EAB89E00472122 /* CameraNode.cpp */,
+				E2AF419018EEFBE8005F5CD2 /* LightSourceNode.h */,
+				E2AF418F18EEFBE8005F5CD2 /* LightSourceNode.cpp */,
 			);
 			name = "Custom Leaf Nodes";
 			sourceTree = "<group>";
@@ -684,10 +705,13 @@
 		E2B5B72418E07CEB00E0DA59 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E2AF418A18EEF9C1005F5CD2 /* IDataObject.h */,
 				E2A1904618EAB89300472122 /* Camera.cpp */,
 				E2A1904718EAB89300472122 /* Camera.h */,
-				E2A1906D18EAB93900472122 /* ModelData.cpp */,
 				E2A1906E18EAB93900472122 /* ModelData.h */,
+				E2A1906D18EAB93900472122 /* ModelData.cpp */,
+				E2AF418C18EEF9D4005F5CD2 /* LightSource.h */,
+				E2AF418B18EEF9D4005F5CD2 /* LightSource.cpp */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -699,26 +723,30 @@
 				E2A1908E18EAB9F100472122 /* SceneGraph.cpp */,
 				E2A1909518EABA1F00472122 /* SceneNode.h */,
 				E2A1909418EABA1F00472122 /* SceneNode.cpp */,
-				E2A1904E18EAB89E00472122 /* FrameNode.cpp */,
 				E2A1904F18EAB89E00472122 /* FrameNode.h */,
-				E2A1906118EAB91900472122 /* LeafNode.cpp */,
+				E2A1904E18EAB89E00472122 /* FrameNode.cpp */,
 				E2A1906218EAB91900472122 /* LeafNode.h */,
-				E2A1908718EAB9C000472122 /* RootNode.cpp */,
+				E2A1906118EAB91900472122 /* LeafNode.cpp */,
 				E2A1908818EAB9C000472122 /* RootNode.h */,
+				E2A1908718EAB9C000472122 /* RootNode.cpp */,
 				E2A1908D18EAB9CD00472122 /* Custom Leaf Nodes */,
 			);
 			name = "Scene Graph and Nodes";
 			sourceTree = "<group>";
 		};
-		E2B5B72618E07D1200E0DA59 /* spvs Utils */ = {
+		E2B5B72618E07D1200E0DA59 /* Utils (spvs) */ = {
 			isa = PBXGroup;
 			children = (
 				E2A1910318EABC8500472122 /* SceneNodeProperties.cpp */,
 				E2A1910418EABC8500472122 /* SceneNodeProperties.h */,
-				E2A1907318EAB95600472122 /* NodeGraber.cpp */,
 				E2A1907418EAB95600472122 /* NodeGraber.h */,
+				E2A1907318EAB95600472122 /* NodeGraber.cpp */,
+				E285C77718EC09C000C3F55A /* SceneNodeTransformationList.h */,
+				E285C77618EC09C000C3F55A /* SceneNodeTransformationList.cpp */,
+				E2BA633518F2FE00009E7804 /* ISceneNodeVisitor.h */,
+				E2BA633618F2FFDA009E7804 /* Node Visitors */,
 			);
-			name = "spvs Utils";
+			name = "Utils (spvs)";
 			sourceTree = "<group>";
 		};
 		E2B5B73018E184BD00E0DA59 /* List Base Classes */ = {
@@ -730,8 +758,8 @@
 				E2A190AA18EABAE100472122 /* HierarchicalList.h */,
 				E2A190CA18EABB6E00472122 /* ListItemSpv.cpp */,
 				E2A190CB18EABB6E00472122 /* ListItemSpv.h */,
-				E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */,
 				E2A190B018EABAEF00472122 /* HierarchicalListItem.h */,
+				E2A190AF18EABAEF00472122 /* HierarchicalListItem.cpp */,
 			);
 			name = "List Base Classes";
 			sourceTree = "<group>";
@@ -739,14 +767,16 @@
 		E2B5B73118E184E200E0DA59 /* List Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */,
-				E2A190B618EABAFC00472122 /* HierarchicalModelList.h */,
-				E2A190DF18EABBD800472122 /* ModelList.cpp */,
 				E2A190E018EABBD800472122 /* ModelList.h */,
+				E2A190DF18EABBD800472122 /* ModelList.cpp */,
+				E249129B18F6A9150002F790 /* CameraList.h */,
+				E249129A18F6A9150002F790 /* CameraList.cpp */,
 				E2A190E118EABBD800472122 /* NodeAncestorList.cpp */,
 				E2A190E218EABBD800472122 /* NodeAncestorList.h */,
 				E2A190E318EABBD800472122 /* NodeTransformationsList.cpp */,
 				E2A190E418EABBD800472122 /* NodeTransformationsList.h */,
+				E2A190B618EABAFC00472122 /* HierarchicalModelList.h */,
+				E2A190B518EABAFC00472122 /* HierarchicalModelList.cpp */,
 			);
 			name = "List Implementations";
 			sourceTree = "<group>";
@@ -775,40 +805,30 @@
 			name = "Wrapped Data Types";
 			sourceTree = "<group>";
 		};
-		E2BCBE901864708B00217658 /* test */ = {
+		E2BA633618F2FFDA009E7804 /* Node Visitors */ = {
 			isa = PBXGroup;
 			children = (
-				E2C56E4018844FB300D8B535 /* TestSceneRenderer.h */,
-				E2C56E3F18844FB300D8B535 /* TestSceneRenderer.cpp */,
-				E29FC09D1870813300A9B42E /* TestRenderableModelNode.h */,
-				E29FC09C1870813300A9B42E /* TestRenderableModelNode.cpp */,
-				E2BCBECC1864767100217658 /* TestController.h */,
-				E2BCBECB1864767100217658 /* TestController.cpp */,
-				E2BCBE92186470AA00217658 /* CubeData.h */,
-				E2BCBE91186470AA00217658 /* CubeData.cpp */,
-				E2BCBE93186470AA00217658 /* CubeRenderer.cpp */,
-				E2BCBE94186470AA00217658 /* CubeRenderer.h */,
-				E2BCBE95186470AA00217658 /* main.cpp */,
-				E2BCBE97186470AA00217658 /* TestSceneData.h */,
-				E2BCBE96186470AA00217658 /* TestSceneData.cpp */,
-				E256F3CE1864A99500C1FDA3 /* TestSceneRendererContext.cpp */,
-				E256F3CF1864A99500C1FDA3 /* TestSceneRendererContext.h */,
-				E256F3D31864AEA300C1FDA3 /* TestRenderableScene.h */,
-				E256F3D21864AEA300C1FDA3 /* TestRenderableScene.cpp */,
-				E28BA13118707AF100B189F3 /* TestModelNode.cpp */,
-				E28BA13218707AF100B189F3 /* TestModelNode.h */,
-				E21D9B131875C3D800B6ED08 /* TestRenderableCameraNode.h */,
-				E21D9B121875C3D800B6ED08 /* TestRenderableCameraNode.cpp */,
-				E2E4B292187D5EE600EDB878 /* TestNotificationImpl.cpp */,
-				E2E4B293187D5EE600EDB878 /* TestNotificationImpl.h */,
-				E2C56E481884541500D8B535 /* TestSceneManager.h */,
-				E2C56E471884541500D8B535 /* TestSceneManager.cpp */,
-				E2C56E4C1884942F00D8B535 /* TestCameraNode.h */,
-				E2C56E4B1884942F00D8B535 /* TestCameraNode.cpp */,
-				E25C0CB3188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp */,
-				E25C0CB4188DB47A00DC5B6B /* TestSceneNodeTreeView.h */,
+				E2BA633818F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.h */,
+				E2BA633718F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.cpp */,
 			);
-			name = test;
+			name = "Node Visitors";
+			sourceTree = "<group>";
+		};
+		E2E08BE118FEDC75006150E2 /* Doxygen Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				E2E08BE218FEDCB3006150E2 /* spvNamespace.h */,
+			);
+			name = "Doxygen Stuff";
+			sourceTree = "<group>";
+		};
+		E2E08BE318FEF438006150E2 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2E08BE518FEF528006150E2 /* TestData.h */,
+				E2E08BE418FEF528006150E2 /* TestData.cpp */,
+			);
+			name = "Test Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -832,56 +852,56 @@
 				E2A1907F18EAB97900472122 /* ObservableImpl.h in Headers */,
 				E2A1904A18EAB89300472122 /* Camera.h in Headers */,
 				E2A190E718EABBD800472122 /* ModelList.h in Headers */,
+				E2AF419218EEFBE8005F5CD2 /* LightSourceNode.h in Headers */,
 				E2A1906518EAB91900472122 /* LeafNode.h in Headers */,
 				E2A1909218EAB9F100472122 /* SceneGraph.h in Headers */,
 				E25C0CB2188DB2F900DC5B6B /* SceneNodeTreeView.h in Headers */,
-				E2BF0AFA1872F94D00D9E0F0 /* CubeData.h in Headers */,
 				E2D90411188558C900A7A0F5 /* RenderableCamera.h in Headers */,
-				E29FC0A0187081DB00A9B42E /* TestSceneData.h in Headers */,
+				E2AF419F18EF09C5005F5CD2 /* LightSourceNodeRenderer.h in Headers */,
 				E21D9B111875ADB400B6ED08 /* RenderableCameraNode.h in Headers */,
 				E2A190EF18EABBD800472122 /* NodeTransformationsList.h in Headers */,
 				E25C0CAE188DB25F00DC5B6B /* ITreeView.h in Headers */,
-				E2C56E4A1884541500D8B535 /* TestSceneManager.h in Headers */,
 				E2A190A718EABAA400472122 /* SceneRendererController.h in Headers */,
 				E2A190C818EABB6500472122 /* ListSpv.h in Headers */,
 				E2A190FB18EABC2000472122 /* RenderableLeafNode.h in Headers */,
 				E2A190EB18EABBD800472122 /* NodeAncestorList.h in Headers */,
-				E29FC09F1870813300A9B42E /* TestRenderableModelNode.h in Headers */,
 				E2A190D118EABB8D00472122 /* ITreeViewItem.h in Headers */,
 				E28F246E18898E1700DD944C /* MultipleInheritableEnableSharedFromThis.h in Headers */,
+				E2BA633A18F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.h in Headers */,
+				E2E08BE718FEF528006150E2 /* TestData.h in Headers */,
 				E25C0CA6188D9AD600DC5B6B /* TreeViewNode.h in Headers */,
 				E2A1908318EAB97900472122 /* ObserverImpl.h in Headers */,
 				E2594D9618631B65005570B0 /* IRenderer.h in Headers */,
 				E2594D9018631B65005570B0 /* ModelRenderer.h in Headers */,
 				E2A1909E18EABA3000472122 /* SceneNodeModifier.h in Headers */,
 				E2594D9A18631B65005570B0 /* SceneRenderer.h in Headers */,
-				E25C0CB6188DB47A00DC5B6B /* TestSceneNodeTreeView.h in Headers */,
-				E2E4B295187D5EE600EDB878 /* TestNotificationImpl.h in Headers */,
-				E2C56E4E1884942F00D8B535 /* TestCameraNode.h in Headers */,
+				E24912AB18F6C39A0002F790 /* RenderableSceneNode.h in Headers */,
+				E2AF419718EEFED1005F5CD2 /* RenderableLightSource.h in Headers */,
 				E2A1906B18EAB92400472122 /* ModelNode.h in Headers */,
 				E2594D9318631B65005570B0 /* RenderableModelNode.h in Headers */,
+				E22680C318FB288A00E82589 /* objload.h in Headers */,
 				E2594D9C18631B65005570B0 /* SceneRendererContext.h in Headers */,
-				E21D9B151875C3D800B6ED08 /* TestRenderableCameraNode.h in Headers */,
 				E2A1905218EAB89E00472122 /* CameraNode.h in Headers */,
 				E2C56E3C18844F9500D8B535 /* SceneGraphController.h in Headers */,
+				E2AF418E18EEF9D4005F5CD2 /* LightSource.h in Headers */,
 				E2A1907718EAB95600472122 /* NodeGraber.h in Headers */,
+				E22680BF18FB259200E82589 /* ModelLoader.h in Headers */,
+				E24912A718F6BF770002F790 /* SceneNodeRenderer.h in Headers */,
 				E2594D9218631B65005570B0 /* RenderableModel.h in Headers */,
 				E28E04B818997D1200CF4705 /* IRenderable.h in Headers */,
 				E2A1905F18EAB8F200472122 /* IObserver.h in Headers */,
 				E2A190F518EABC0B00472122 /* RendererUtils.h in Headers */,
-				E2BCBECE1864767100217658 /* TestController.h in Headers */,
+				E249129D18F6A9150002F790 /* CameraList.h in Headers */,
 				E2A1908B18EAB9C000472122 /* RootNode.h in Headers */,
 				E2DCB5E6187735CB00E7B440 /* Screen.h in Headers */,
-				E2C56E4218844FB300D8B535 /* TestSceneRenderer.h in Headers */,
+				E285C77918EC09C000C3F55A /* SceneNodeTransformationList.h in Headers */,
 				E2A1907118EAB93900472122 /* ModelData.h in Headers */,
-				E28BA13418707AF100B189F3 /* TestModelNode.h in Headers */,
-				E256F3D11864A99500C1FDA3 /* TestSceneRendererContext.h in Headers */,
 				E2A1905D18EAB8F200472122 /* IObservable.h in Headers */,
 				E2594D9518631B65005570B0 /* RenderableScene.h in Headers */,
-				E256F3D51864AEA300C1FDA3 /* TestRenderableScene.h in Headers */,
 				E2A1905618EAB89E00472122 /* FrameNode.h in Headers */,
 				E2A190AD18EABAE100472122 /* HierarchicalList.h in Headers */,
 				E2A1905B18EAB8F200472122 /* INotification.h in Headers */,
+				E2AF419B18EF00CD005F5CD2 /* RenderableLightSourceNode.h in Headers */,
 				E2A1910718EABC8500472122 /* SceneNodeProperties.h in Headers */,
 				E2A190B918EABAFC00472122 /* HierarchicalModelList.h in Headers */,
 				E2A1909818EABA1F00472122 /* SceneNode.h in Headers */,
@@ -959,19 +979,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A1907518EAB95600472122 /* NodeGraber.cpp in Sources */,
-				E2E4B294187D5EE600EDB878 /* TestNotificationImpl.cpp in Sources */,
 				E21D9B101875ADB400B6ED08 /* RenderableCameraNode.cpp in Sources */,
 				E2A190A518EABAA400472122 /* SceneRendererController.cpp in Sources */,
+				E24912AA18F6C39A0002F790 /* RenderableSceneNode.cpp in Sources */,
 				E2A190CC18EABB6E00472122 /* ListItemSpv.cpp in Sources */,
 				E2A190AB18EABAE100472122 /* HierarchicalList.cpp in Sources */,
 				E2A190DB18EABBAC00472122 /* ModelInformation.cpp in Sources */,
-				E2A13D791872FA3700F57EFE /* CubeData.cpp in Sources */,
+				E2BA633918F2FFFA009E7804 /* NodeGraberSceneNodeVisitor.cpp in Sources */,
 				E2A190C618EABB6500472122 /* ListSpv.cpp in Sources */,
 				E25C0CB1188DB2F900DC5B6B /* SceneNodeTreeView.cpp in Sources */,
 				E2A1905418EAB89E00472122 /* FrameNode.cpp in Sources */,
 				E2A1909018EAB9F100472122 /* SceneGraph.cpp in Sources */,
 				E2A190B118EABAEF00472122 /* HierarchicalListItem.cpp in Sources */,
-				E2C56E4D1884942F00D8B535 /* TestCameraNode.cpp in Sources */,
+				E2E08BE618FEF528006150E2 /* TestData.cpp in Sources */,
 				E2A1906F18EAB93900472122 /* ModelData.cpp in Sources */,
 				E2A1909C18EABA3000472122 /* SceneNodeModifier.cpp in Sources */,
 				E2A190FF18EABC4600472122 /* SceneNodeController.cpp in Sources */,
@@ -979,41 +999,39 @@
 				E2A1909618EABA1F00472122 /* SceneNode.cpp in Sources */,
 				E2C98E5118EAC1B4008D6018 /* ListController.cpp in Sources */,
 				E2A1906318EAB91900472122 /* LeafNode.cpp in Sources */,
-				E21D9B141875C3D800B6ED08 /* TestRenderableCameraNode.cpp in Sources */,
+				E285C77818EC09C000C3F55A /* SceneNodeTransformationList.cpp in Sources */,
 				E2A190BD18EABB2D00472122 /* HierarchicalListController.cpp in Sources */,
-				E256F3CA1864A83800C1FDA3 /* TestController.cpp in Sources */,
 				E2A1908118EAB97900472122 /* ObserverImpl.cpp in Sources */,
-				E256F3D01864A99500C1FDA3 /* TestSceneRendererContext.cpp in Sources */,
 				E2DCB5E5187735CB00E7B440 /* Screen.cpp in Sources */,
 				E25C0CA5188D9AD600DC5B6B /* TreeViewNode.cpp in Sources */,
-				E256F3CD1864A83800C1FDA3 /* TestSceneData.cpp in Sources */,
 				E2A1910518EABC8500472122 /* SceneNodeProperties.cpp in Sources */,
+				E24912A618F6BF770002F790 /* SceneNodeRenderer.cpp in Sources */,
 				E2C56E3B18844F9500D8B535 /* SceneGraphController.cpp in Sources */,
-				E2C56E491884541500D8B535 /* TestSceneManager.cpp in Sources */,
+				E2AF419118EEFBE8005F5CD2 /* LightSourceNode.cpp in Sources */,
 				E2A190B718EABAFC00472122 /* HierarchicalModelList.cpp in Sources */,
+				E249129C18F6A9150002F790 /* CameraList.cpp in Sources */,
 				E2A190D718EABBAC00472122 /* MatrixForGUI.cpp in Sources */,
 				E2594D9118631B65005570B0 /* RenderableModel.cpp in Sources */,
 				E2A1905018EAB89E00472122 /* CameraNode.cpp in Sources */,
 				E2A1907D18EAB97900472122 /* ObservableImpl.cpp in Sources */,
 				E2594D8F18631B65005570B0 /* ModelRenderer.cpp in Sources */,
 				E2D90410188558C900A7A0F5 /* RenderableCamera.cpp in Sources */,
-				E2C56E4118844FB300D8B535 /* TestSceneRenderer.cpp in Sources */,
 				E2A1904818EAB89300472122 /* Camera.cpp in Sources */,
-				E25C0CB5188DB47A00DC5B6B /* TestSceneNodeTreeView.cpp in Sources */,
-				E29FC09E1870813300A9B42E /* TestRenderableModelNode.cpp in Sources */,
+				E2AF419A18EF00CD005F5CD2 /* RenderableLightSourceNode.cpp in Sources */,
 				E2A190F318EABC0B00472122 /* RendererUtils.cpp in Sources */,
 				E2A190E918EABBD800472122 /* NodeAncestorList.cpp in Sources */,
 				E2594D9418631B65005570B0 /* RenderableScene.cpp in Sources */,
 				E2594D9918631B65005570B0 /* SceneRenderer.cpp in Sources */,
 				E2DCB5E3187735CB00E7B440 /* SapanaViewer.cpp in Sources */,
-				E28BA13318707AF100B189F3 /* TestModelNode.cpp in Sources */,
-				E256F3D41864AEA300C1FDA3 /* TestRenderableScene.cpp in Sources */,
 				E2594D9B18631B65005570B0 /* SceneRendererContext.cpp in Sources */,
 				E2A190E518EABBD800472122 /* ModelList.cpp in Sources */,
+				E2AF418D18EEF9D4005F5CD2 /* LightSource.cpp in Sources */,
 				E2A1908918EAB9C000472122 /* RootNode.cpp in Sources */,
 				E2A1906918EAB92400472122 /* ModelNode.cpp in Sources */,
+				E2AF419E18EF09C5005F5CD2 /* LightSourceNodeRenderer.cpp in Sources */,
 				E2A190ED18EABBD800472122 /* NodeTransformationsList.cpp in Sources */,
 				E29FC0A2187082A100A9B42E /* RenderableModelNode.cpp in Sources */,
+				E2AF419618EEFED1005F5CD2 /* RenderableLightSource.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

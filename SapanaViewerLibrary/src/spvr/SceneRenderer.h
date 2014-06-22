@@ -20,6 +20,8 @@ namespace spvr {
     class RenderableScene;
     class SceneRendererContext;
     class ModelRenderer;
+    class LightSourceNodeRenderer;
+    class SceneNodeRenderer;
 }
 
         
@@ -33,17 +35,22 @@ class SceneRenderer : public IRenderer
 {
 public:
 
+#pragma mark - Con- & Destructors
     /**
     * @ Note: context has no use so far.
     */
     SceneRenderer(
                   std::shared_ptr< const  RenderableScene > rScene
-               , std::shared_ptr< ModelRenderer > modelRenderer
-               , std::shared_ptr< SceneRendererContext > context
+                  , std::shared_ptr< ModelRenderer > modelRenderer
+                  , std::shared_ptr< LightSourceNodeRenderer > lightSourceRenderer
+                  , std::shared_ptr< SceneNodeRenderer > frameNodeRenderer
+                  , std::shared_ptr< SceneRendererContext > context
+                  
                );
 
     ~SceneRenderer();
 
+#pragma mark - Getter and Setter Methodes
     /**
     * Returns the SceneRendererContext associated that defines the
     * behaviour of the scene renderer.
@@ -71,6 +78,7 @@ public:
 
 private:
     
+#pragma mark - Private Member Variables
     std::shared_ptr< const RenderableScene > rScene_;
     
     /**
@@ -80,15 +88,21 @@ private:
     */
     std::shared_ptr< ModelRenderer >  modelRenderer_;
 
+    std::shared_ptr< LightSourceNodeRenderer >  lightSourceRenderer_;
+    
+    std::shared_ptr< SceneNodeRenderer >  frameNodeRenderer_;
     /**
     * Scene renderer context used by the scene renderer.
     * TODO: Clear who is the owner of this object!
     */
     std::shared_ptr< SceneRendererContext > sceneRendererContext_;
+    
+    GLuint depthRenderBuffer_;
 
-
+#pragma mark - Private Methodes
     virtual void setUpOpenGL(std::shared_ptr < const RenderableScene > renderableScene) const;
-
+    
+    virtual void setUpDepthBuffer() const;
     /**
     * Sets up to projection matrix that is used to render the scene. 
     */
@@ -103,12 +117,17 @@ private:
     * Clears the depth and color buffer.
     */
     void clearScreen(std::shared_ptr < const RenderableScene > renderableScene) const;
-
+    
+    void drawWorldPlane() const;
     /**
     * Renders the modles of the associated RenderableScene. To 
     * render the model the modelRenderer_ is used. 
     */
     void renderModels(std::shared_ptr < const RenderableScene > renderableScene) const;
+    
+    void renderLightSources(std::shared_ptr < const RenderableScene > renderableScene) const;
+    
+    void renderFrameNodes(std::shared_ptr < const RenderableScene > renderableScene) const;
 };
 }
 

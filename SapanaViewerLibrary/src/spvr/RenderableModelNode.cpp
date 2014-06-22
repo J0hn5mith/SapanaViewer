@@ -18,7 +18,8 @@
 using namespace spvr;
 
 RenderableModelNode::RenderableModelNode(std::shared_ptr< const spvs::ModelNode > modelNode)
-: modelNode_(modelNode)
+: RenderableSceneNode::RenderableSceneNode(modelNode)
+, modelNode_(modelNode)
 , renderableModel_(new RenderableModel(modelNode_->getModelData())) // TODO: Don't use multiple instances of RenderableModel for the same renderable model.
 , transformationMatrix_(modelNode_->getTransMatrix())
 , observerImpl_(std::make_shared< spvu::ObserverImpl >())
@@ -38,6 +39,19 @@ std::shared_ptr< const spvu::TransMatrix > RenderableModelNode::getTransMatrix()
     return std::make_shared< const spvu::TransMatrix >(transformationMatrix_);
 }
 
+const spvu::TransMatrix RenderableModelNode::getWorldTransMatrix() const
+{
+    // TODO: Implement update of trans matrix.
+    
+    return worldTransMatrix_;
+}
+
+const spvu::TransMatrix RenderableModelNode::getNodeTransMatrix() const
+{
+    
+    return nodeTransMatrix_;
+}
+
 const spvs::SceneNodeProperties RenderableModelNode::getModelNodeProperties() const
 {
     return this->modelNode_->getProperties();
@@ -45,6 +59,7 @@ const spvs::SceneNodeProperties RenderableModelNode::getModelNodeProperties() co
 
 void RenderableModelNode::update() const
 {
+    RenderableSceneNode::update();
     RenderableModelNode * unconstThis = const_cast< RenderableModelNode * >(this);
     if( observerImpl_ ->hasNotification() )
     {
@@ -64,5 +79,9 @@ void RenderableModelNode::handleNotifications( std::shared_ptr< std::list< std::
 
 void RenderableModelNode::updateTransMatrix()
 {
+    //DEPRECATED
     transformationMatrix_ = modelNode_->getTransMatrix();
+    
+    worldTransMatrix_ = modelNode_->getWorldTransMatrix();
+    nodeTransMatrix_ = modelNode_->getNodeTransMatrix();
 }

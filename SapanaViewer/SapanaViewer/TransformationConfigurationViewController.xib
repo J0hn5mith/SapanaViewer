@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Model Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-8K-QDi">
-                    <rect key="frame" x="267.5" y="88" width="181" height="21"/>
+                    <rect key="frame" x="268" y="88" width="181" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -39,6 +39,7 @@
                     <rect key="frame" x="1" y="0.0" width="275" height="196"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                 </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0FZ-oI-Ap8" userLabel="PageView">
                     <rect key="frame" x="276" y="0.0" width="443" height="196"/>
@@ -201,24 +202,30 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="119-RG-APU">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-5" maximumValue="5" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="119-RG-APU">
                         <rect key="frame" x="20" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="ak5-v5-bWa"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="nQn-o6-4Zw"/>
                             <action selector="xRotationChanged:" destination="-1" eventType="valueChanged" id="gYd-EK-TIe"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vma-Pk-T3c">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-5" maximumValue="5" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vma-Pk-T3c">
                         <rect key="frame" x="143" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="ULB-xL-1Sy"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="lcC-1s-4nF"/>
                             <action selector="yRotationChanged:" destination="-1" eventType="valueChanged" id="4ZH-D4-yRO"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6wx-Kk-f9o">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-5" maximumValue="5" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6wx-Kk-f9o">
                         <rect key="frame" x="265" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="4IK-Ee-H4P"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="F19-Ub-J4L"/>
                             <action selector="zRotationChanged:" destination="-1" eventType="valueChanged" id="jYy-iH-Bhs"/>
                         </connections>
                     </stepper>
@@ -265,24 +272,30 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="sC8-fv-ZMm">
+                    <stepper opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="sC8-fv-ZMm">
                         <rect key="frame" x="20" y="115" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="IEb-kO-37T"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="n56-jV-KM1"/>
                             <action selector="xScalingChanged:" destination="-1" eventType="valueChanged" id="dN3-9K-jlp"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q5R-Nh-tLu">
+                    <stepper opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Q5R-Nh-tLu">
                         <rect key="frame" x="143" y="115" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="Dfs-Dm-bk6"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="FeW-iE-iGC"/>
                             <action selector="yScalingChanged:" destination="-1" eventType="valueChanged" id="uBJ-lq-Foq"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Jxy-UQ-j4g">
+                    <stepper opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="0.5" maximumValue="2" stepValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Jxy-UQ-j4g">
                         <rect key="frame" x="271" y="115" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="XHe-rt-Mm2"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="clR-s6-LyZ"/>
                             <action selector="zScalingChanged:" destination="-1" eventType="valueChanged" id="toB-Ky-jpG"/>
                         </connections>
                     </stepper>
@@ -329,24 +342,30 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BFN-aS-9cl">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-2" maximumValue="2" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BFN-aS-9cl">
                         <rect key="frame" x="20" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="4px-i7-TE3"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="luI-YD-dpS"/>
                             <action selector="xTranslationChanged:" destination="-1" eventType="valueChanged" id="Bch-Hx-7c5"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yDB-Jy-XMx">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="3" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yDB-Jy-XMx">
                         <rect key="frame" x="143" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="sXz-ZG-HzB"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="tfo-Uc-HRp"/>
                             <action selector="yTranslationChanged:" destination="-1" eventType="valueChanged" id="VWl-As-VQD"/>
                         </connections>
                     </stepper>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-1" maximumValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-1z-zuo">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="3" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-1z-zuo">
                         <rect key="frame" x="265" y="116" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpOutside" id="eWv-cQ-LLt"/>
+                            <action selector="steperTouchUp:" destination="-1" eventType="touchUpInside" id="ocw-IO-x6a"/>
                             <action selector="zTranslationChanged:" destination="-1" eventType="valueChanged" id="EFp-VA-IE1"/>
                         </connections>
                     </stepper>

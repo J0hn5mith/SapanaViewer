@@ -21,6 +21,7 @@
 @end
 
 @interface HModelSelectionViewController : SelectionViewController < UITableViewDelegate, UITableViewDataSource >
+
 @property (nonatomic, assign) id< HModelSelectionViewControllerDelegate > delegate;
 
 @property HierarchicalListControllerWrapper * IBOutlet hierarchicalModelList;

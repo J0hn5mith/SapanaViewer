@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvg/CameraList.cpp \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvg/CameraList.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvg/ListSpv.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvg/ListItemSpv.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/TypeDefSpv.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/SceneGraph.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/IObservable.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/IObserver.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/INotification.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/SceneNode.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/Util.h \
+  external/vmmlib/include/vmmlib/vmmlib.hpp \
+  external/vmmlib/include/vmmlib/frustum.hpp \
+  external/vmmlib/include/vmmlib/vmmlib_config.hpp \
+  external/vmmlib/include/vmmlib/matrix.hpp \
+  external/vmmlib/include/vmmlib/matrix_functors.hpp \
+  external/vmmlib/include/vmmlib/enable_if.hpp \
+  external/vmmlib/include/vmmlib/vector.hpp \
+  external/vmmlib/include/vmmlib/math.hpp \
+  external/vmmlib/include/vmmlib/exception.hpp \
+  external/vmmlib/include/vmmlib/frustum_culler.hpp \
+  external/vmmlib/include/vmmlib/visibility.hpp \
+  external/vmmlib/include/vmmlib/intersection.hpp \
+  external/vmmlib/include/vmmlib/lowpass_filter.hpp \
+  external/vmmlib/include/vmmlib/quaternion.hpp \
+  external/vmmlib/include/vmmlib/version.hpp \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/SceneNodeProperties.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/SceneNodeTransformationList.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/ISceneNodeVisitor.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/IVisitor.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvu/ObservableImpl.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/CameraNode.h \
+  /Users/janmeier/Documents/My_Documents/Studium/Bachelor/Bachelor_Thesis/Code/SapanaViewer/SapanaViewerLibrary/src/spvs/LeafNode.h

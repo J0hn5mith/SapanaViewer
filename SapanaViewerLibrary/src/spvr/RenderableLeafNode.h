@@ -35,7 +35,7 @@ public:
     
     virtual ~RenderableLeafNode();
     
-    //TODO: Does it make sense to return a pointer an not a value? 
+    //TODO: Does it make sense to return a pointer and not a value? 
     virtual std::shared_ptr< const spvu::TransMatrix > getTransMatrix() const;
     
     /**

@@ -67,7 +67,13 @@ void HierarchicalListController::refreshItems()
 }
 
 #pragma mark - Implementation of IController Interface
+
 void HierarchicalListController::update() const
 {
     hierarchicalList_->update();
+}
+
+std::vector< std::shared_ptr< const spv::IController > > HierarchicalListController::getChildController() const
+{
+    return std::vector< std::shared_ptr< const spv::IController > >();
 }
