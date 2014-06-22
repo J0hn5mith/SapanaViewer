@@ -587,8 +587,8 @@
 		E278FEFB18E45D6D00331A35 /* Accessors */ = {
 			isa = PBXGroup;
 			children = (
-				E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */,
 				E2A1909B18EABA3000472122 /* SceneNodeModifier.h */,
+				E2A1909A18EABA3000472122 /* SceneNodeModifier.cpp */,
 			);
 			name = Accessors;
 			sourceTree = "<group>";
